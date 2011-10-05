@@ -5,8 +5,10 @@ gem 'rails', '3.0.10'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
+gem 'unicode_utils'
+gem 'mongo_mapper'
+gem 'nokogiri'
+gem 'bson_ext'
 # Use unicorn as the web server
 # gem 'unicorn'
 
