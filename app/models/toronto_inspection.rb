@@ -1,25 +1,26 @@
 class TorontoInspection < Inspection
 
   key :dinesafe_id, Integer
-  key :description, String
-  key :severity, String
-  key :action, String
-  key :court_outcome, String
-  key :status, String
-  key :minimum_inspections_per_year, Integer
   timestamps!
+  
+  many :toronto_inspection_details
 
-  validates_presence_of :minimum_inspections_per_year, :status, :dinesafe_id
+  belongs_to :toronto_establishment
 
-  validates_presence_of :severity, :description, :action, :amount, :unless => :pass
+  validates_presence_of :dinesafe_id
 
-  validates_numericality_of :minimum_inspections_per_year, :only_integer => true, :greater_than => 0, :allow_blank => true
+  validates_uniqueness_of :dinesafe_id
+ 
+  def self.find_or_create_by_dinesafe_id(dinesafe_id, attributes = {})
+    inspection = find_by_dinesafe_id( dinesafe_id )
 
-  validates_inclusion_of :status, :in => ['Closed', 'Pass', 'Conditional Pass']                                      
-  validates_inclusion_of :severity, :in => ['C - Crucial', 'S - Significant', 'M - Minor', 'NA - Not Applicable'], :unless => :pass                                        
-  validates_inclusion_of :action, :in => ['Notice to Comply', 'Corrected During Inspection', 'Ticket', 'Summons', 'Order', 'Closure Order', 'Summons and Health Hazard Order'], :unless => :pass                                    
-  def pass
-    status == 'Pass'
+    if inspection 
+      inspection 
+    else
+      create!({
+        :dinesafe_id => dinesafe_id
+      }.merge(attributes))
+    end
   end
 
 end

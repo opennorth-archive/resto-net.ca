@@ -1,7 +1,6 @@
 class Inspection
   include MongoMapper::Document
 
-  key :amount, Float
   key :inspection_date, Date
   timestamps!
 
