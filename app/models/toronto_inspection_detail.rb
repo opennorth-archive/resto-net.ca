@@ -19,7 +19,7 @@ class TorontoInspectionDetail
 
   validate :uniqueness_of_dinesafe_id
 
-  validates_inclusion_of :action, :in => ['Notice to Comply', 'Corrected During Inspection', 'Ticket', 'Summons', 'Order', 'Closure Order', 'Summons and Health Hazard Order'], :unless => :pass?                                  
+  validates_inclusion_of :action, :in => ['Notice to Comply', 'Not in Compliance', 'Corrected During Inspection', 'Ticket', 'Summons', 'Order', 'Closure Order', 'Summons and Health Hazard Order'], :unless => :pass?                                  
   validates_inclusion_of :severity, :in => ['C - Crucial', 'S - Significant', 'M - Minor', 'NA - Not Applicable'], :unless => :pass?                                       
 
   validates_inclusion_of :court_outcome, :in => ['Pending', 'Conviction - Suspended Sentence', 'Conviction - Ordered to Close by Court', 'Conviction - Fined', 'Charges Withdrawn', 'Charges Quashed'], :unless => :pass?, :allow_blank => true
