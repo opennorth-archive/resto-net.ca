@@ -1,5 +1,7 @@
 .bundle
 *.swp
+*.swo
+*.swn
 *~
 db/*.sqlite3
 log/*.log
