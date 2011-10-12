@@ -14,6 +14,20 @@ class MontrealEstablishment < Establishment
 
   before_save :fingerprint
 
+  def self.find_or_create_by_name_and_address_and_city(name, address, city, attributes = {})
+    establishment = find_by_name_fingerprint_and_address_fingerprint_and_city_fingerprint( name.fingerprint, address.fingerprint, city.fingerprint )
+
+    if establishment
+      establishment
+    else
+      create!({
+        :name => name,
+        :address => address,
+        :city => city,
+      }.merge(attributes))
+    end
+  end
+
 private
 
   def set_source
