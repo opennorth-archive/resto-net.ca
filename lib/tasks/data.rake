@@ -11,7 +11,6 @@ namespace :data do
   end
 
   namespace :montreal do
-    require 'data_file'
     desc "Download XML infraction data"
     task :download => :environment do
       (2007..Date.today.year).each do |year|
