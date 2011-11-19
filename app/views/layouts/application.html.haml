@@ -11,7 +11,7 @@
     %title= title
     %meta{:name => "author", :content => "Jeff Wallace"}
     %meta{:name => "description", :content => meta_description}
-    = stylesheet_link_tag "reset", "text", "960", "menu", "main"
+    = stylesheet_link_tag "text", "menu", "main"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Droid+Serif|Droid+Sans"
     = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.0.0.min.css"
     = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'
@@ -20,9 +20,9 @@
     = csrf_meta_tag
   %body
     #fb-root
-    #main.container_12
+    #main
 
-      #header.grid_12
+      #header
         = link_to image_tag('logo.png', :alt=>"Resto-Net"), root_path
         %h2
           #facebook-like
@@ -35,7 +35,7 @@
       //%div.clear
 
       - if content_for? :map
-        #map.grid_12
+        #map
           = content_for :map
         %div.clear
 
@@ -43,7 +43,7 @@
         = yield
       %div.clear
 
-      #footer.grid_12
+      #footer
         = render 'shared/footer'
       %div.clear
 

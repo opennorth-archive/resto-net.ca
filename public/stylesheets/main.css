@@ -1,0 +1,214 @@
+body {
+  font-family: 'Droid Serif', serif;
+}
+
+h1, h2, h3 {
+  text-align: left;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 23px;
+  line-height: 27px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 2px 0px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 15px 0;
+}
+
+#header h1 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+#header h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+#header h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.column,
+.box {
+  background-color: #FFF;
+  border-top: 6px solid #990000;
+  box-shadow: 1px 2px 6px #000;
+  -webkit-box-shadow: 1px 2px 6px #000;
+}
+
+#header h1 {
+  font-size: 5em;
+}
+
+div.grid_6 div.box {
+  padding: 10px;
+}
+
+div.search {
+  text-align: center;
+}
+
+div#search input{
+  display: block ;
+  padding: 25px ;
+  height: 25px ;
+  font-size: 25px ;
+}
+
+div.description {
+  padding-bottom: 5px;
+  float: right;
+  width: 420px;
+  margin-right: 40px;
+  margin-top: -10px;
+} div.clear {
+  clear: both;
+  height: 10px;
+}
+
+.column h1,
+.column > div {
+  margin: 5px 10px;
+}
+
+.column h1 {
+  text-align: center;
+  margin: 15px 0px 10px;
+}
+
+.column hr {
+  margin: 3px 35px;
+  border: solid 1px #999;
+}
+
+.column .name {
+  font-weight: 600;
+}
+
+.column a {
+  text-decoration: none;
+  font-family: 'Droid Sans', serif;
+  color: #575757;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.column .stat {
+  width: 100%;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.stat span {
+  color: #000000;
+  font-weight: 500;
+}
+
+.box div {
+  margin: 0px;
+}
+
+div.infraction {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+#footer {
+  border-top: 1px solid #000;
+  padding-top: 15px;
+  text-align: center;
+}
+
+div.description {
+  float: right;
+  width: 440px;
+  margin-right: 40px;
+}
+
+#map_canvas {
+  height: 400px;
+}
+
+.info_window h1 {
+  font-size: 16px;
+}
+
+.info_window ul {
+  margin: 0;
+}
+
+table.pretty {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.pretty td, .pretty th {
+  padding: 4px 10px;
+  border: 1px solid #AAA;
+}
+
+#infractions > div {
+  padding: 10px;
+  border-top: 6px solid #990000;
+  box-shadow: 1px 2px 6px #000;
+  -webkit-box-shadow: 1px 2px 6px #000;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+#infractions ul li {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#main {
+  padding-top: 10px;
+}
+
+div.name,
+div.description,
+div.stat {
+  padding: 5px;
+}
+
+#nav .search {
+  float: right;
+}
+
+tr.hover {
+  background: #D8D8D8;
+}
+
+#facebook-like {
+  float: right;
+}
+
+img.rating {
+  padding-right: 5px;
+  float: left;
+}
