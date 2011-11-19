@@ -16,4 +16,6 @@ class Establishment
 
   before_validation :set_source
 
+  scope :geocoded, where('latitude IS NOT NULL', 'longitude IS NOT NULL')
+
 end

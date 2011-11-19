@@ -77,6 +77,7 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.4)
     rake (0.8.7)
+    rdiscount (1.6.8)
     rdoc (3.9.2)
     routing-filter (0.2.3)
       actionpack
@@ -96,5 +97,6 @@ DEPENDENCIES
   mongo_mapper
   nokogiri
   rails (= 3.0.10)
+  rdiscount
   routing-filter
   unicode_utils

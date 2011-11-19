@@ -9,6 +9,7 @@ gem 'bson_ext'
 
 # Views
 gem 'haml-rails'
+gem 'rdiscount'
 
 # Routes
 gem 'routing-filter'
