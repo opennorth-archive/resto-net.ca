@@ -8,6 +8,8 @@ class TorontoEstablishment < Establishment
 
   many :toronto_inspections
 
+  before_create :geocode
+
   validates_presence_of :address, :city, :establishment_type, :dinesafe_id, :minimum_inspections_per_year
 
   validates_uniqueness_of :dinesafe_id

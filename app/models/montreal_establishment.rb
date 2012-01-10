@@ -12,6 +12,7 @@ class MontrealEstablishment < Establishment
 
   validates_presence_of :address, :city, :establishment_type, :owner_name
 
+  before_create :geocode
   before_save :fingerprint
 
   def self.find_or_create_by_name_and_address_and_city(name, address, city, attributes = {})
