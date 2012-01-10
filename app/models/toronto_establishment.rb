@@ -49,13 +49,15 @@ class TorontoEstablishment < Establishment
 
     begin
       location = @@geocoder.locate "#{address}, #{city}"
-      %w(latitude longitude street_address region locality country postal_code).each do |attr|
+      %w(latitude longitude street region locality country postal_code).each do |attr|
         value = location.send(attr)
         self[attr] = value.is_a?(String) ? value.force_encoding('utf-8') : value
       end
+      print '*'
       location
     rescue
       Rails.logger.warn "Geocoding error for '#{name}' @ '#{address}, #{city}': #{$!.message}"
+      print '!'
       nil
     end
   end
