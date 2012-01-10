@@ -1,6 +1,15 @@
 namespace :data do
   require 'montreal_importer'
   require 'toronto_importer'
+  require 'vancouver_importer'
+
+  namespace :vancouver do
+    desc "Import all infractions"
+    task :import => :environment do
+      I18n.locale = :en
+      VancouverImporter.import
+    end
+  end
 
   namespace :toronto do
     desc "Import all infractions"
