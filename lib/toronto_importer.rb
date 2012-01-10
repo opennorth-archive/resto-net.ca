@@ -1,5 +1,6 @@
 # coding: utf-8
 require 'unicode_utils/titlecase'
+require 'zip/zip'
 
 class TorontoImporter 
   def self.log(msg)
@@ -47,7 +48,23 @@ class TorontoImporter
     end
   end
 
+  def self.download
+     unzip open(URI.encode 'http://opendata.toronto.ca/public.health/dinesafe/dinesafe.zip').read
+  end
+
 private
+
+  def self.unzip(file)
+    Zip::ZipFile.open(file) { |zip_file|
+      zip_file.each { |f|
+        zip_file.extract(f, filepath) unless File.exist?(filepath)
+      }
+    }
+  end
+
+  def self.filepath
+    File.join Rails.root, 'data', 'dinesafe.xml'
+  end
 
   def self.get_name(name)
     UnicodeUtils.titlecase(name.gsub(/&amp;/, '&')).gsub(/'S/, "'s").strip

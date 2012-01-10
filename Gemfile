@@ -12,6 +12,7 @@ gem 'graticule'
 gem 'rest-client'
 gem 'yajl-ruby', :require => 'yajl'
 gem 'texticle', '~> 2.0', :require => 'texticle/rails'
+gem 'rubyzip'
 
 # Views
 gem 'haml-rails'
