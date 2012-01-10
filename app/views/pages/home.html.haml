@@ -1,6 +1,6 @@
 %div.container#search
   %div.row
-  -form_tag '/', :method=>'get' do
+  -form_tag '/establishments/index', :method=>'post' do
     =label_tag :q, "Search for an establishment:"
-    =text_field :q, :options=>{:class=>'span7'}
+    =text_field_tag :q, '', :id => 'search_text'
     =submit_tag "Search"

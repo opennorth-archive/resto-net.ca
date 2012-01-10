@@ -72,8 +72,12 @@ div.search {
 }
 
 div#search input{
-  display: block ;
-  padding: 25px ;
+  height: 35px ;
+  font-size: 25px ;
+}
+
+div#search input#search_text{
+  padding: 10px ;
   height: 25px ;
   font-size: 25px ;
 }
