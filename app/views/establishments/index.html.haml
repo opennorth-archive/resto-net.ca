@@ -1,0 +1,12 @@
+.grid_12
+  %table.pretty
+    %thead
+      %tr
+        %th= t :name
+        %th= t :street
+    %tbody
+      - @establishments.each do |establishment|
+        %tr[establishment]
+          %td= establishment.name
+          %td= establishment.short_address
+
