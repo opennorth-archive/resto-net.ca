@@ -1,5 +1,7 @@
 class Establishment
   include MongoMapper::Document
+  include Tire::Model::Search
+  include Tire::Model::Callbacks
 
   key :source, String
   key :name, String
@@ -17,5 +19,17 @@ class Establishment
   before_validation :set_source
 
   scope :geocoded, where(:latitude.ne => nil, :longitude.ne => nil)
+
+  Establishment.ensure_index :name
+
+  def self.make_index
+    tire.mapping do
+      indexes :name, :type => 'string'
+    end
+  end
+
+  def to_indexed_json
+    self.to_json
+  end
 
 end
