@@ -6,6 +6,12 @@ gem 'unicode_utils'
 gem 'mongo_mapper'
 gem 'nokogiri'
 gem 'bson_ext'
+gem 'tire'
+gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'graticule'
+gem 'rest-client'
+gem 'yajl-ruby', :require => 'yajl'
+gem 'texticle', '~> 2.0', :require => 'texticle/rails'
 
 # Views
 gem 'haml-rails'
