@@ -49,12 +49,19 @@ class TorontoImporter
   end
 
   def self.download
-     unzip open(URI.encode 'http://opendata.toronto.ca/public.health/dinesafe/dinesafe.zip').read
+     File.open File.join(Rails.root, 'data', 'dinesafe.zip'), 'wb' do |f|
+       f.write open(URI.encode 'http://opendata.toronto.ca/public.health/dinesafe/dinesafe.zip').read
+     end
+     unzip File.join(Rails.root, 'data', 'dinesafe.zip'), File.join(Rails.root, 'data')
   end
 
 private
 
-  def self.unzip(file)
+  def self.unzip(filename, dest)
+    system "unzip -o #{filename} -d #{dest}"
+  end
+
+  def self.nzip(file)
     Zip::ZipFile.open(file) { |zip_file|
       zip_file.each { |f|
         zip_file.extract(f, filepath) unless File.exist?(filepath)
