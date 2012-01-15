@@ -1,6 +1,5 @@
 # coding: utf-8
 require 'unicode_utils/titlecase'
-require 'zip/zip'
 
 class TorontoImporter 
   def self.log(msg)
@@ -8,6 +7,7 @@ class TorontoImporter
   end
 
   def self.import
+    self.download
     log 'Opening dinesafe.xml'
     Nokogiri::XML(open(File.join(Rails.root, 'data', 'dinesafe.xml')).read, nil, 'utf-8').css('ROW').each do |row|
       establishment_attributes = {
@@ -20,11 +20,6 @@ class TorontoImporter
       }
       inspection = TorontoInspection.where('toronto_inspection_details.dinesafe_id' => row.at_css('ROW_ID').text.strip.to_i).first
       if inspection
-        establishment_attributes.each do |key, value|
-          unless inspection.toronto_establishment[key] == value
-            puts "expected #{inspection.toronto_establishment[key]} to equal #{value} for #{inspection.toronto_establishment.dinesafe_id}"
-          end
-        end
         print '*'
       else
         establishment = TorontoEstablishment.find_or_create_by_dinesafe_id(row.at_css('ESTABLISHMENT_ID').text.strip.to_i, establishment_attributes)

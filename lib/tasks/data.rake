@@ -12,17 +12,11 @@ namespace :data do
   end
 
   namespace :toronto do
-    desc "Download new dinesafe data"
-    task :download => :environment do
+    desc "Download and import new dinesafe data"
+    task :update => :environment do
       TorontoImporter.download
-    end
-
-    desc "Import all infractions"
-    task :import => :environment do
-      I18n.locale = :en
       TorontoImporter.import
     end
-  end
 
   namespace :montreal do
     desc "Download XML infraction data"
