@@ -1,6 +1,6 @@
 %div.container#search
   %div.row
-  -form_tag '/establishments/index', :method=>'post' do
-    =label_tag :q, "Search for an establishment:"
-    =text_field_tag :q, '', :id => 'search_text'
+  -form_tag establishments_url, :method=> :get do
+    =label_tag :search, "Search for an establishment:"
+    =text_field_tag :search, '', :id => 'search_text'
     =submit_tag "Search"
