@@ -5,7 +5,6 @@ Restonet::Application.routes.draw do
 
   resources :establishments, :only => [:index, :show]
 
-  match 'establishments/index' => 'establishments#index'
   match 'about' => 'pages#about'
   match 'api' => 'pages#api'
 
