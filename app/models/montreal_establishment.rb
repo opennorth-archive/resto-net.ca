@@ -7,13 +7,16 @@ class MontrealEstablishment < Establishment
   key :name_fingerprint, String
   key :address_fingerprint, String
   key :city_fingerprint, String
+  key :total_fines, Float 
 
-  many :montreal_inspections
+  many :montreal_inspections, :dependent => :destroy
 
   validates_presence_of :address, :city, :establishment_type, :owner_name
 
   before_create :geocode
   before_save :fingerprint
+
+  scope :geocoded, where(:latitude => {:$ne => :nil}, :longitude => {:$ne => :nil})
 
   def self.find_or_create_by_name_and_address_and_city(name, address, city, attributes = {})
     establishment = find_by_name_fingerprint_and_address_fingerprint_and_city_fingerprint( name.fingerprint, address.fingerprint, city.fingerprint )
@@ -65,6 +68,12 @@ class MontrealEstablishment < Establishment
 
   def geocoded?
     latitude.present? && longitude.present?
+  end
+
+  def update_calculated_fields
+    self.total_fines = montreal_inspections.sum(:amount)
+    self.judgments_span = montreal_inspections.maximum(:judgment_date) - montreal_inspections.minimum(:judgment_date)
+    save!
   end
 
 private

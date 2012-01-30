@@ -5,8 +5,9 @@ class TorontoEstablishment < Establishment
   key :address, String
   key :establishment_type, String
   key :minimum_inspections_per_year, Integer
+  key :total_fines, Float
 
-  many :toronto_inspections
+  many :toronto_inspections, :dependent => :destroy
 
   before_create :geocode
 
@@ -15,6 +16,8 @@ class TorontoEstablishment < Establishment
   validates_uniqueness_of :dinesafe_id
 
   validates_numericality_of :minimum_inspections_per_year, :only_integer => true, :greater_than => 0, :allow_blank => true
+
+  scope :geocoded, where(:latitude => {:$ne => :nil}, :longitude => {:$ne => :nil})
 
   def self.find_or_create_by_dinesafe_id(dinesafe_id, attributes = {})
     establishment = find_by_dinesafe_id( dinesafe_id )
@@ -64,6 +67,11 @@ class TorontoEstablishment < Establishment
 
   def geocoded?
     latitude.present? && longitude.present?
+  end
+
+  def update_calculated_fields
+    self.total_fines = toronto_inspections.sum(:total_fines)
+    save!
   end
 
 private

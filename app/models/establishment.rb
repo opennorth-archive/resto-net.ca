@@ -32,4 +32,18 @@ class Establishment
     self.to_json
   end
 
+  def reviews
+    term = name.gsub(/ Inc\.?/i, '')
+    begin
+      response = Yelp.reviews :term => term, :location => full_address
+      if response && response['name'] == term
+        response['reviews']
+      else
+        []
+      end
+    rescue
+      []
+    end
+  end
+
 end

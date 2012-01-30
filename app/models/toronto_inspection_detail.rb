@@ -11,6 +11,8 @@ class TorontoInspectionDetail
 
   belongs_to :toronto_inspection
 
+  after_create :update_establishment_calculated_fields
+
   validates_presence_of :dinesafe_id, :status
 
   validates_inclusion_of :status, :in => ['Closed', 'Pass', 'Conditional Pass', 'Out of Business']                                      
@@ -23,6 +25,10 @@ class TorontoInspectionDetail
   validates_inclusion_of :severity, :in => ['C - Crucial', 'S - Significant', 'M - Minor', 'NA - Not Applicable'], :unless => Proc.new {|c| c.pass? || c.out_of_business?} 
 
   validates_inclusion_of :court_outcome, :in => ['Pending', 'Conviction - Suspended Sentence', 'Conviction - Ordered to Close by Court', 'Conviction - Fined', 'Charges Withdrawn', 'Charges Quashed'], :unless => Proc.new {|c| c.pass? || c.out_of_business?}, :allow_blank => true
+
+  def update_establishment_calculated_fields
+    toronto_inspection.update_calculated_fields
+  end
 
   def pass?
     status == 'Pass'

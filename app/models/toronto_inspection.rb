@@ -1,11 +1,14 @@
 class TorontoInspection < Inspection
 
   key :dinesafe_id, Integer
+  key :amount, Float 
   timestamps!
   
   many :toronto_inspection_details
 
   belongs_to :toronto_establishment
+
+  after_create :update_establishment_calculated_fields
 
   validates_presence_of :dinesafe_id
 
@@ -21,6 +24,12 @@ class TorontoInspection < Inspection
         :dinesafe_id => dinesafe_id
       }.merge(attributes))
     end
+  end
+
+  def update_establishment_calculated_fields
+    self.amount = toronto_inspection_details.sum(:amount)
+    save!
+    toronto_establishment.update_calculated_fields
   end
 
 end
