@@ -1,0 +1,23 @@
+- content_for :meta_description, t(:tweet_infraction,
+    :name => @establishment.name,
+    :address => @establishment.short_address,
+    :amount => number_to_currency(@establishment.montreal_inspections.first.amount),
+    :date => l(@establishment.montreal_inspections.first.judgment_date))
+%div
+  .grid_6
+    %div.box
+      %h1= @establishment.name
+      %h2 #{t :total_infractions}: #{number_to_currency @establishment.total_fines} (#{@establishment.montreal_inspections.count.to_s})
+      %h2 #{t :address}: #{@establishment.full_address}
+      %h2 #{t :type}: #{I18n.translate_attribute @establishment, :establishment_type}
+      <a href="http://twitter.com/share" class="twitter-share-button" data-text="#{t :tweet_establishment, :name => @establishment.name, :address => @establishment.short_address, :amount => number_to_currency(@establishment.total_fines)}" data-count="horizontal" data-lang="#{I18n.locale}" data-via="resto_net"></a>
+  .grid_6
+    #map_canvas.box No location information
+  %div.clear
+  #montreal_inspections.grid_12
+    = render :partial => 'inspections/montreal_inspection', :collection => @establishment.montreal_inspections
+  %h2 Reviews from Yelp.com
+  -unless @establishment.reviews.empty?
+    = render :partial => 'review', :collection => @establishment.reviews
+  -else
+    %p No reviews could be found.  Check back later!

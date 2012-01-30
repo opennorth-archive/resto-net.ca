@@ -3,10 +3,10 @@
     %thead
       %tr
         %th= t :name
-        %th= t :street
+        %th= t :address
     %tbody
       - @establishments.each do |establishment|
         %tr[establishment]
-          %td= establishment.name
+          %td= link_to establishment.name, establishment_path(establishment)
           %td= establishment.short_address
 
