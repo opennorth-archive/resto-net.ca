@@ -1,0 +1,10 @@
+.description
+  %h1 #{t :description}:
+  = toronto_inspection_detail.description
+%ul
+  %li Severity: #{toronto_inspection_detail.severity}
+  %li Action: #{toronto_inspection_detail.action}
+  %li Amount: #{number_to_currency toronto_inspection_detail.amount}
+  - if toronto_inspection_detail.court_outcome
+    %li Court Outcome: #{toronto_inspection_detail.court_outcome}
+  %li Status: #{toronto_inspection_detail.status}

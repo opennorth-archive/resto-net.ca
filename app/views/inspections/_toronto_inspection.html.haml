@@ -1,0 +1,6 @@
+%div
+  %p #{t :amount}: #{number_to_currency toronto_inspection.amount}
+  %p #{t :toronto_inspection_detail_date}: #{l toronto_inspection.inspection_date}
+  = render :partial => 'inspections/toronto_inspection_detail', :collection => toronto_inspection.toronto_inspection_details
+  <a href="http://twitter.com/share" class="twitter-share-button" data-text="#{t :tweet_toronto_inspection, :name => toronto_inspection.toronto_establishment.name, :address => toronto_inspection.toronto_establishment.short_address, :amount => number_to_currency(toronto_inspection.amount), :date => l(toronto_inspection.inspection_date)}" data-count="horizontal" data-lang="#{I18n.locale}" data-via="resto_net"></a>
+

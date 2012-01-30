@@ -1,0 +1,13 @@
+%div
+  .description
+    %h1 #{t :description}:
+    = I18n.translate_attribute montreal_inspection, :description
+  %ul
+    - if montreal_inspection.owner_name
+      %li #{t :owner}: #{montreal_inspection.owner_name}
+    %li #{t :montreal_inspection_date}: #{l montreal_inspection.inspection_date}
+    - if montreal_inspection.judgment_date?
+      %li #{t :judgment_date}: #{l montreal_inspection.judgment_date}
+    %li #{t :amount}: #{number_to_currency montreal_inspection.amount}
+  <a href="http://twitter.com/share" class="twitter-share-button" data-text="#{t :tweet_montreal_inspection, :name => montreal_inspection.montreal_establishment.name, :address => montreal_inspection.montreal_establishment.short_address, :amount => number_to_currency(montreal_inspection.amount), :date => l(montreal_inspection.judgment_date)}" data-count="horizontal" data-lang="#{I18n.locale}" data-via="resto_net"></a>
+
