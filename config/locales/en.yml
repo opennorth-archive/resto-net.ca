@@ -7,7 +7,7 @@ en:
   app_sub_title: "An open database of Montreal's health inspections"
   infractions: "Infractions"
   total_infractions: "Total infractions"
-  infraction_date: "Infraction date"
+  inspection_date: "Infraction date"
   judgment_date: "Judgment date"
   amount: "Amount"
   description: "Description"
@@ -26,7 +26,7 @@ en:
   facebook_locale: en_US
 
   values:
-    infraction:
+    montreal_inspection:
       description:
         "Avoir détenu un produit altérable à la chaleur sans le maintenir constamment à une température interne et ambiante ne dépassant pas 4°C jusqu'à sa livraison au consommateur": "Perishable products must be kept at a constant interal and surrounding temperature no higher than 4°C until delivered to the consumer"
         "Avoir détenu un produit périssable vendu ou servi chaud au consommateur sans être gardé à une température interne d'au moins 60°C jusqu'à sa livraison": "Perishable products to be sold or served hot must be kept at an internal temperature of at least 60°C until delivered to the consumer"
@@ -75,7 +75,45 @@ en:
         "Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière.": "Operating a dairy plant without holding a valid permit"
         "Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net.": "Any product packaged for sale must bear in indelible, clearly legible and conspicuous on the container, packaging or envelope that contains the necessary entries to reveal the nature, status, composition, use, the exact quantity, origin and toute unique product, the name and address of the manufacturer, preparer, conditioner, packager, supplier or distributor and the place of manufacture, preparation or product packaging. The list of ingredients must appear in descending order of importance. The indication of weight doit account for the loss that normally undergo the product after packaging and be expressed in net weight."
         "Toute personne tenue de se munir d'un permis ou de s'enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l'espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d'où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l'entreposeur, les nom et adresse de l'entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l'estampille dans le cas des viandes et aliments carnés en provenance d'un exploitant autorisé.": "Any person required to obtain a license or registration under the Act must keep registers and vouchers for his operations and keep them available for inspection. These registers and vouchers must indicate: the nature and quantity of products purchaseded or received, the date of purchase or receipt and, in the case of live marine bivalve molluscs and for each lot, the species, date of collection or harvesting area or sector of a zone from which the lot; the name and address of the supplier and, in the case of the warehouseman, the nameand address of the depositor and the number corresponding to the same batch of stored products with reference to the number of the stamp in the case of meat and meat products from an authorized operator."
-    establishment:
+    toronto_establishment:
+      establishment_type:
+        "Boucherie-épicerie": "Butcher-Grocer"
+        "Boucherie-Épicerie": "Butcher-Grocer"
+        "Boucherie-Épicerie - établissement fermé": "Butcher-Grocer (closed)"
+        "Boucherie-Épicerie - établissement vendu": "Butcher-Grocer (sold)"
+        "Boulangerie": "Bakery"
+        "Boulangerie - établissement fermé": "Bakery (closed)"
+        "Boulangerie - établissement vendu": "Bakery (sold)"
+        "Brasserie": "Brewery"
+        "Cafétéria": "Cafeteria"
+        "Casse-croûte": "Snack shack"
+        "Centre d'accueil": "Welcome center"
+        "Charcuterie": "Delicatessen"
+        "Distributeur en gros de produits mixtes": "Wholesale distributor of various products"
+        "Épicerie": "Grocery store"
+        "Épicerie avec préparation": "Grocery store with prepared foods"
+        "Épicerie avec préparation - établissement fermé": "Grocery store with prepared foods (closed)"
+        "Épicerie avec préparation - établissement vendu": "Grocery store with prepared foods (sold)"
+        "Événements spéciaux": "Special events"
+        "Événements spéciaux sur l'île Notre-Dame": "Special events on Notre-Dame Island"
+        "Garderie": "Daycare"
+        "Inconnue": "Unknown"
+        "Local de préparation": "Preparation area"
+        "Pâtisserie": "Pastry shop"
+        "Poissonnerie": "Fish store"
+        "Produits à base de protéines végétales": "Vegetable protein products"
+        "Restaurant": "Restaurant"
+        "Restaurant service rapide":  "Fast food restaurant"
+        "Restaaurant service rapide": "Fast food restaurant"
+        "Restaurant mets à emporter":    "Take-out restaurant"
+        "Restaurant mets pour emporter": "Take-out restaurant"
+        "Restaurant - établissement fermé": "Restaurant (closed)"
+        "Restaurant - établissement vendu": "Restaurant (sold)"
+        "Supermarché": "Supermarket"
+        "Traiteur": "Caterer"
+        "Usine de produits marins": "Seafood processing plant"
+        "Usine produit autre": "Food processing plant - Other"
+    montreal_establishment:
       establishment_type:
         "Boucherie-épicerie": "Butcher-Grocer"
         "Boucherie-Épicerie": "Butcher-Grocer"

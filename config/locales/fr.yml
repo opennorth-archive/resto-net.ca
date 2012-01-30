@@ -14,7 +14,7 @@ fr:
   app_sub_title: "Inspections sanitaires des établissements alimentaires montréalais"
   infractions: "Infractions"
   total_infractions: "Infractions"
-  infraction_date: "Date de l'infraction"
+  inspection_date: "Date de l'infraction"
   judgment_date: "Date du jugement"
   amount: "Amende"
   description: "Nature de l'infraction"
@@ -33,7 +33,7 @@ fr:
   facebook_locale: fr_CA
 
   values:
-    infraction:
+    montreal_inspection:
       description:
         "Avoir détenu un produit altérable à la chaleur sans le maintenir constamment à une température interne et ambiante ne dépassant pas 4°C jusqu'à sa livraison au consommateur": "Avoir détenu un produit altérable à la chaleur sans le maintenir constamment à une température interne et ambiante ne dépassant pas 4°C jusqu'à sa livraison au consommateur"
         "Avoir détenu un produit périssable vendu ou servi chaud au consommateur sans être gardé à une température interne d'au moins 60°C jusqu'à sa livraison": "Avoir détenu un produit périssable vendu ou servi chaud au consommateur sans être gardé à une température interne d'au moins 60°C jusqu'à sa livraison"
@@ -78,8 +78,46 @@ fr:
         "Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière.": "Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière."
         "Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net.": "Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net."
         "Toute personne tenue de se munir d'un permis ou de s'enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l'espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d'où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l'entreposeur, les nom et adresse de l'entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l'estampille dans le cas des viandes et aliments carnés en provenance d'un exploitant autorisé.": "Toute personne tenue de se munir d'un permis ou de s'enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l'espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d'où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l'entreposeur, les nom et adresse de l'entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l'estampille dans le cas des viandes et aliments carnés en provenance d'un exploitant autorisé."
-    type:
-      name:
+    toronto_establishment:
+      establishment_type:
+        "Boucherie-épicerie": "Boucherie-Épicerie"
+        "Boucherie-Épicerie": "Boucherie-Épicerie"
+        "Boucherie-Épicerie - établissement fermé": "Boucherie-Épicerie - établissement fermé"
+        "Boucherie-Épicerie - établissement vendu": "Boucherie-Épicerie - établissement vendu"
+        "Boulangerie": "Boulangerie"
+        "Boulangerie - établissement fermé": "Boulangerie - établissement fermé"
+        "Boulangerie - établissement vendu": "Boulangerie - établissement vendu"
+        "Brasserie": "Brasserie"
+        "Cafétéria": "Cafétéria"
+        "Casse-croûte": "Casse-croûte"
+        "Centre d'accueil": "Centre d'accueil"
+        "Charcuterie": "Charcuterie"
+        "Distributeur en gros de produits mixtes": "Distributeur en gros de produits mixtes"
+        "Épicerie": "Épicerie"
+        "Épicerie avec préparation": "Épicerie avec préparation"
+        "Épicerie avec préparation - établissement fermé": "Épicerie avec préparation - établissement fermé"
+        "Épicerie avec préparation - établissement vendu": "Épicerie avec préparation - établissement vendu"
+        "Événements spéciaux": "Événements spéciaux"
+        "Événements spéciaux sur l'île Notre-Dame": "Événements spéciaux sur l'île Notre-Dame"
+        "Garderie": "Garderie"
+        "Inconnue": "Inconnue"
+        "Local de préparation": "Local de préparation"
+        "Pâtisserie": "Pâtisserie"
+        "Poissonnerie": "Poissonnerie"
+        "Produits à base de protéines végétales": "Produits à base de protéines végétales"
+        "Restaurant": "Restaurant"
+        "Restaurant service rapide":  "Restaurant service rapide"
+        "Restaaurant service rapide": "Restaurant service rapide"
+        "Restaurant mets à emporter":    "Restaurant mets pour emporter"
+        "Restaurant mets pour emporter": "Restaurant mets pour emporter"
+        "Restaurant - établissement vendu": "Restaurant - établissement vendu"
+        "Restaurant - établissement fermé": "Restaurant - établissement fermé"
+        "Supermarché": "Supermarché"
+        "Traiteur": "Traiteur"
+        "Usine de produits marins": "Usine de produits marins"
+        "Usine produit autre": "Usine produit autre"
+    montreal_establishment:
+      establishment_type:
         "Boucherie-épicerie": "Boucherie-Épicerie"
         "Boucherie-Épicerie": "Boucherie-Épicerie"
         "Boucherie-Épicerie - établissement fermé": "Boucherie-Épicerie - établissement fermé"
@@ -316,20 +354,18 @@ fr:
     models:
       establishment: Établissement
       owner: Propriétaire
-      type: Categorie
       infraction: Infraction
     attributes:
       establishment:
         name: nom
         address: adresse
+        establishment_type: type
+        owner: propriétaire
       owner:
-        name: nom
-      type:
         name: nom
       infraction:
         establishment: établissement
-        owner: propriétaire
         description: description
         amount: montant
-        infraction_date: date infraction
+        inspection_date: date infraction
         judgment_date: date jugement
