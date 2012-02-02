@@ -17,6 +17,7 @@ namespace :data do
       TorontoImporter.download
       TorontoImporter.import
     end
+  end
 
   namespace :montreal do
     desc "Download XML infraction data"
