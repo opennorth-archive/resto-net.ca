@@ -16,7 +16,6 @@ class TorontoImporter
         :establishment_type => row.at_css('ESTABLISHMENTTYPE').text.strip,
         :city => 'Toronto',
         :minimum_inspections_per_year => row.at_css('MINIMUM_INSPECTIONS_PERYEAR').text.strip.to_i,
-        :source => 'Toronto',
       }
       inspection = TorontoInspection.where('toronto_inspection_details.dinesafe_id' => row.at_css('ROW_ID').text.strip.to_i).first
       if inspection

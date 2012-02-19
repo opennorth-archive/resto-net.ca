@@ -20,7 +20,6 @@ class VancouverImporter
           :capacity => table.children[2].xpath('td').first.text.strip,
           :establishment_type => table.children[2].xpath('td').last.text.strip,
           :vch_id => File.basename(file, '.html'),
-          :source => 'Vancouver',
         }
         establishment = VancouverEstablishment.create(establishment_attributes)
           print '*'
