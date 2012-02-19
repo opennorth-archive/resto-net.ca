@@ -7,4 +7,6 @@
       %li= link_to t('menu.english'), :locale => :en
     - else
       %li= link_to t('menu.french'), :locale => :fr
+    - SOURCES.each do |source|
+      %li= link_to(source.capitalize, :source => source) unless params[:source] == source
     %li.search= render 'shared/search_form'
