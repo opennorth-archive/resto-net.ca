@@ -5,10 +5,15 @@ class EstablishmentsController < ApplicationController
   respond_to :html, :json, :xml
 
   def index
-    q = params[:search]
-    s = Tire.search 'establishments' do query { string q } end
-    @establishments = s.results
-    respond_with @establishments
+    if params[:search]
+      q = params[:search]
+      s = Tire.search 'establishments' do query { string q } end
+      @establishments = s.results.select { |e| e.source == params[:source] }
+      respond_with @establishments
+    else
+      @establishments = Establishment.where(:source => params[:source])
+      respond_with @establishments
+    end
   end
 
   def show
