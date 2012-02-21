@@ -1,5 +1,4 @@
 Restonet::Application.routes.draw do
-  filter :source
   filter :locale
 
   root :to => 'pages#home'
