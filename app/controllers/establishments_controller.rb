@@ -8,7 +8,7 @@ class EstablishmentsController < ApplicationController
     if params[:search]
       q = params[:search]
       s = Tire.search 'establishments' do query { string q } end
-      @establishments = s.results.select { |e| e.source == params[:source] }
+      @establishments = s.results
       respond_with @establishments
     else
       @establishments = Establishment.where(:source => params[:source])
