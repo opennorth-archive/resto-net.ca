@@ -54,7 +54,3 @@ end
 
 require 'i18n_extensions'
 require 'string_extensions'
-require "#{Rails.root}/lib/routing_filters/source.rb"
-
-SOURCES = ['toronto', 'montreal']
-$source = 'montreal'
