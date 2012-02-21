@@ -13,11 +13,11 @@ module ApplicationHelper
 
   def render_establishment_partial(establishment)
     case establishment.source
-      when 'Toronto'
+      when 'toronto'
         render :partial => 'toronto'
-      when 'Montreal'
+      when 'montreal'
         render :partial => 'montreal'
-      when 'Vancouver'
+      when 'vancouver'
         render :partial => 'vancouver'
     end
   end
