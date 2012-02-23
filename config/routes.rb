@@ -1,18 +1,13 @@
-Restonet::Application.routes.draw do
-  require 'subdomain'
-
+RestoNet::Application.routes.draw do
   filter :locale
 
-  constraints(Subdomain) do
-    #root :to => 'pages#home'
-    match '/:locale' => 'pages#home'
-  end
+  match '/:locale', to: 'pages#home', constraints: lambda { |r| r.subdomain.present? && r.subdomain != 'www' }
 
-  root :to => 'pages#home'
+  root to: 'pages#home'
 
   resources :establishments, :only => [:index, :show]
 
-  match 'about' => 'pages#about'
-  match 'api' => 'pages#api'
+  match 'about', to: 'pages#about'
+  match 'api', to: 'pages#api'
 
 end

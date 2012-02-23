@@ -49,22 +49,4 @@ module ApplicationHelper
     }.to_json
   end
 
-  def remove_subdomain(domain)
-    domain.sub(/(montreal|toronto)\.(.*)$/, '\\2')
-  end
-
-  # http://railscasts.com/episodes/221-subdomains-in-rails-3
-  def with_subdomain(subdomain)
-    subdomain = (subdomain || "")
-    subdomain += "." unless subdomain.empty?
-    [subdomain, remove_subdomain(request.domain), request.port_string].join
-  end
-
-  def url_for(options = nil)
-    if options.kind_of?(Hash) && options.has_key?(:subdomain)
-      options[:host] = with_subdomain(options.delete(:subdomain))
-    end
-    super
-  end
-
 end

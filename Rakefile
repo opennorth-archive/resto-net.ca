@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Restonet::Application.load_tasks
+RestoNet::Application.load_tasks
