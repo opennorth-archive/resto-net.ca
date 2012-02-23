@@ -1,11 +1,12 @@
 .bundle
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
 *.swp
 *.swo
 *.swn
 *~
-db/*.sqlite3
-log/*.log
-tmp/**/*
 config/initializers/yelp.rb
 data/dinesafe.xml
 data/dinesafe.zip
