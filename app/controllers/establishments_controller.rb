@@ -11,7 +11,7 @@ class EstablishmentsController < ApplicationController
       @establishments = s.results.select { |e| e.source == request.subdomain }
       respond_with @establishments
     else
-      @establishments = Establishment.where(:source => params[:source])
+      @establishments = Establishment.where(:source => request.subdomain)
       respond_with @establishments
     end
   end
