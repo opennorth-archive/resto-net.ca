@@ -1,8 +1,7 @@
 %div.container#search
   %div.row
   -form_tag establishments_url, :method=> :get do
-    =label_tag :search, "Search for an establishment:"
     =text_field_tag :search, '', :id => 'search_text'
-    =submit_tag "Search"
+    =submit_tag I18n.t('menu.search')
   =link_to "Montreal", establishments_url(:source => "montreal") 
   =link_to "Toronto", establishments_url(:source => "toronto") 
