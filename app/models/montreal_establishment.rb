@@ -79,7 +79,7 @@ class MontrealEstablishment < Establishment
 private
 
   def set_source
-    self.source = 'Montreal'
+    self.source = 'montreal'
   end
 
   def fingerprint

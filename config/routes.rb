@@ -1,5 +1,12 @@
 Restonet::Application.routes.draw do
+  require 'subdomain'
+
   filter :locale
+
+  constraints(Subdomain) do
+    #root :to => 'pages#home'
+    match '/:locale' => 'pages#home'
+  end
 
   root :to => 'pages#home'
 

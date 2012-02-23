@@ -13,11 +13,11 @@ module ApplicationHelper
 
   def render_establishment_partial(establishment)
     case establishment.source
-      when 'Toronto'
+      when 'toronto'
         render :partial => 'toronto'
-      when 'Montreal'
+      when 'montreal'
         render :partial => 'montreal'
-      when 'Vancouver'
+      when 'vancouver'
         render :partial => 'vancouver'
     end
   end
@@ -48,4 +48,22 @@ module ApplicationHelper
       :latest_infraction => t(:latest_infraction)
     }.to_json
   end
+
+  def remove_subdomain(domain)
+    domain.sub(/(montreal|toronto)\.(.*)$/, '\\2')
+  end
+
+  def with_subdomain(subdomain)
+    subdomain = (subdomain || "")
+    subdomain += "." unless subdomain.empty?
+    [subdomain, remove_subdomain(request.domain), request.port_string].join
+  end
+
+  def url_for(options = nil)
+    if options.kind_of?(Hash) && options.has_key?(:subdomain)
+      options[:host] = with_subdomain(options.delete(:subdomain))
+    end
+    super
+  end
+
 end

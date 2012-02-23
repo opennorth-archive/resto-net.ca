@@ -77,7 +77,7 @@ class TorontoEstablishment < Establishment
 private
 
   def set_source
-    self.source = 'Toronto'
+    self.source = 'toronto'
   end
 
 end
