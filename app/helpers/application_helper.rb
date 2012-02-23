@@ -53,6 +53,7 @@ module ApplicationHelper
     domain.sub(/(montreal|toronto)\.(.*)$/, '\\2')
   end
 
+  # http://railscasts.com/episodes/221-subdomains-in-rails-3
   def with_subdomain(subdomain)
     subdomain = (subdomain || "")
     subdomain += "." unless subdomain.empty?
