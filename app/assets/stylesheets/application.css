@@ -13,6 +13,7 @@
  *= require 960
  *= require menu
  *= require main
+ *= require bootstrap.min
  *= require_self
  *= require_tree . 
 */
