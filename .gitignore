@@ -9,3 +9,4 @@ tmp/**/*
 config/initializers/yelp.rb
 data/dinesafe.xml
 data/dinesafe.zip
+.rvmrc
