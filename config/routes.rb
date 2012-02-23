@@ -1,4 +1,4 @@
-Restonet::Application.routes.draw do
+RestoNet::Application.routes.draw do
   require 'subdomain'
 
   filter :locale
