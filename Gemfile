@@ -28,7 +28,7 @@ gem 'bson_ext'
 
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
-  gem 'rspec-rails', '>= 2.0.0.rc' # Rake
+  gem 'rspec-rails', '~> 2.6'
 end
 
 # Gems used only for assets and not required
