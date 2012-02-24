@@ -11,6 +11,7 @@ class TorontoInspection < Inspection
   after_create :update_establishment_calculated_fields
 
   validates_presence_of :dinesafe_id
+  validates_numericality_of :amount
 
   validates_uniqueness_of :dinesafe_id
  

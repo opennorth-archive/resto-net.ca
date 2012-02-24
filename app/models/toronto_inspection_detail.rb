@@ -26,6 +26,8 @@ class TorontoInspectionDetail
 
   validates_inclusion_of :court_outcome, :in => ['Pending', 'Conviction - Suspended Sentence', 'Conviction - Ordered to Close by Court', 'Conviction - Fined', 'Charges Withdrawn', 'Charges Quashed'], :unless => Proc.new {|c| c.pass? || c.out_of_business?}, :allow_blank => true
 
+  validates_numericality_of :amount
+
   def update_establishment_calculated_fields
     toronto_inspection.update_calculated_fields
   end

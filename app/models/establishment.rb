@@ -46,4 +46,14 @@ class Establishment
     end
   end
 
+  def self.type(subdomain)
+    case subdomain
+      when 'toronto'
+        TorontoEstablishment
+      when 'montreal'
+        MontrealEstablishment
+      when 'vancouver'
+        VancouverEstablishment
+    end
+  end
 end

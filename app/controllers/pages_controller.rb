@@ -4,7 +4,9 @@ class PagesController < ApplicationController
 
   def home
     if request.subdomain
-      @establishments = Establishment.where(:source => request.subdomain)
+      @establishments = Establishment.where(:source => request.subdomain).geocoded
+      @inspections = Inspection.type(request.subdomain).sort(:inspection_date.desc).limit(10)
+      @highest_infractions = Establishment.type(request.subdomain).by_highest_inspections.limit(10)
     end
   end
 

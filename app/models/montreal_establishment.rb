@@ -17,6 +17,7 @@ class MontrealEstablishment < Establishment
   before_save :fingerprint
 
   scope :geocoded, where(:latitude => {:$ne => :nil}, :longitude => {:$ne => :nil})
+  scope :by_highest_inspections, sort(:total_fines.desc)
 
   def self.find_or_create_by_name_and_address_and_city(name, address, city, attributes = {})
     establishment = find_by_name_fingerprint_and_address_fingerprint_and_city_fingerprint( name.fingerprint, address.fingerprint, city.fingerprint )
