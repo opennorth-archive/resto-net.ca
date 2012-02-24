@@ -1,8 +1,4 @@
 module ApplicationHelper
-  def javascript(*args)
-    content_for :head, javascript_include_tag(*args)
-  end
-
   def title
     content_for?(:title) ? content_for(:title) : t(:app_title)
   end

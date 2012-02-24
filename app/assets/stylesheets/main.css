@@ -1,5 +1,5 @@
 body {
-  font-family: 'Droid Serif', serif;
+  font-family: serif;
 }
 
 h1, h2, h3 {
@@ -114,7 +114,7 @@ div.description {
 
 .column a {
   text-decoration: none;
-  font-family: 'Droid Sans', serif;
+  font-family: serif;
   color: #575757;
 }
 
