@@ -1,13 +1,14 @@
 RestoNet::Application.routes.draw do
   filter :locale
 
-  match '/', to: 'pages#home', constraints: lambda { |r| r.subdomain.present? && r.subdomain != 'www' }
-
-  root to: 'pages#home'
+  match '/', to: 'establishments#index', constraints: lambda { |r| r.subdomain.present? && r.subdomain != 'www' }
 
   resources :establishments, :only => [:index, :show]
 
+  match 'channel', to: 'pages#channel'
   match 'about', to: 'pages#about'
   match 'api', to: 'pages#api'
+
+  root to: 'pages#home'
 
 end

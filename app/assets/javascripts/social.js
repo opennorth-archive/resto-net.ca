@@ -5,7 +5,7 @@ window.fbAsyncInit = function() {
     cookie : true,
     oauth  : true,
     xfbml  : true,
-    channelUrl  : 'http://patinermontreal.ca/channel'
+    channelUrl  : 'http://resto-net.ca/channel'
   });
 };
 (function(d, s, id) {

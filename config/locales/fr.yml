@@ -9,9 +9,14 @@
 # by Serafim Junior Dos Santos Fagundes <serafim@cyb3r.ca>
 
 fr:
-  owner: "Proprietaire"
+  other_locale: en
+  other_language: English
+
   app_title: "Resto-Net.ca : Inspections des aliments à Montréal"
   app_sub_title: "Inspections sanitaires des établissements alimentaires montréalais"
+  facebook_locale: fr_CA
+
+  owner: "Proprietaire"
   infractions: "Infractions"
   total_infractions: "Infractions"
   inspection_date: "Date de l'infraction"
@@ -30,7 +35,6 @@ fr:
   type: "Type"
   tweet_establishment: "%{name} (%{address}) a été condamné à des amendes de salubrité totalisant %{amount}"
   tweet_infraction: "%{name} (%{address}) a été condamné à une amende de salubrité de %{amount} le %{date}"
-  facebook_locale: fr_CA
 
   values:
     montreal_inspection:

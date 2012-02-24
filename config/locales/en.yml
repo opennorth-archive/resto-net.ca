@@ -2,9 +2,14 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  owner: "Owner"
+  other_locale: fr
+  other_language: Français
+
   app_title: "Resto-Net.ca : Health inspections of Montreal establishments"
   app_sub_title: "An open database of Montreal's health inspections"
+  facebook_locale: en_US
+
+  owner: "Owner"
   infractions: "Infractions"
   total_infractions: "Total infractions"
   inspection_date: "Infraction date"
@@ -23,7 +28,6 @@ en:
   type: "Type"
   tweet_establishment: "%{name} (%{address}) was fined a total of %{amount}"
   tweet_infraction: "%{name} (%{address}) was fined %{amount} on %{date}"
-  facebook_locale: en_US
 
   values:
     montreal_inspection:

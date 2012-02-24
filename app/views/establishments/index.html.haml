@@ -1,3 +1,6 @@
+-form_tag establishments_url, :method=> :get do
+  =text_field_tag :search, '', :id => 'search_text'
+  =submit_tag I18n.t('menu.search')
 .grid_12
   %table.pretty
     %thead

@@ -1,11 +1,7 @@
 class PagesController < ApplicationController
   caches_page :home, :about, :api
 
-
   def home
-    if request.subdomain
-      @establishments = Establishment.where(:source => request.subdomain)
-    end
   end
 
   def about
@@ -14,6 +10,10 @@ class PagesController < ApplicationController
 
   def api
     render "api_#{I18n.locale}"
+  end
+
+  def channel
+    render layout: false
   end
 
 end
