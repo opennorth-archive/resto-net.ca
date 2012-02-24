@@ -7,6 +7,6 @@
       %li= link_to t('menu.english'), :locale => :en
     - else
       %li= link_to t('menu.french'), :locale => :fr
-    %li= link_to "Montreal", root_url(:subdomain => 'montreal')
-    %li= link_to "Toronto", root_url(:subdomain => 'toronto')
+    %li= link_to "Montreal", root_url(:host => 'montreal.resto-net.ca')
+    %li= link_to "Toronto", root_url(:host => 'toronto.resto-net.ca')
     %li.search= render 'shared/search_form'
