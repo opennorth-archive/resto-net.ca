@@ -5,15 +5,11 @@ class EstablishmentsController < ApplicationController
   respond_to :html, :json, :xml
 
   def index
-    if params[:search]
-      q = params[:search]
-      s = Tire.search 'establishments' do query { string q } end
-      @establishments = s.results.select { |e| e.source == request.subdomain }
-      respond_with @establishments
-    else
-      @establishments = Establishment.where(:source => request.subdomain)
-      respond_with @establishments
-    end
+    p request.subdomain
+    q = params[:search]
+    s = Tire.search 'establishments' do query { string q } end
+    @establishments = s.results.select { |e| e.source.downcase == request.subdomain }
+    respond_with @establishments
   end
 
   def show

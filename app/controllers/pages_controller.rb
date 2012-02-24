@@ -3,7 +3,9 @@ class PagesController < ApplicationController
 
 
   def home
-    
+    if request.subdomain
+      @establishments = Establishment.where(:source => request.subdomain)
+    end
   end
 
   def about
