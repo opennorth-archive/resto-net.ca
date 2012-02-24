@@ -5,26 +5,15 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# Models
+gem 'bson_ext'
 gem 'graticule'
-gem 'rest-client'
-gem 'yajl-ruby', :require => 'yajl'
+gem 'haml-rails'
+gem 'mongo_mapper'
+gem 'nokogiri'
+gem 'routing-filter'
+gem 'rdiscount'
 gem 'unicode_utils'
 gem 'tire'
-gem 'texticle', '~> 2.0', :require => 'texticle/rails'
-
-# Rake
-gem 'nokogiri'
-
-# Views
-gem 'haml-rails'
-gem 'rdiscount'
-
-# Routes
-gem 'routing-filter'
-
-gem 'mongo_mapper'
-gem 'bson_ext'
 
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
@@ -59,5 +48,3 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-
-
