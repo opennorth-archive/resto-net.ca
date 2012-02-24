@@ -9,12 +9,34 @@
 # by Serafim Junior Dos Santos Fagundes <serafim@cyb3r.ca>
 
 fr:
-  other_locale: en
-  other_language: English
+  layouts:
+    application:
+      other_locale: en
+      other_language: English
+      name: Resto-Net
+      url: http://resto-net.ca/
+      description: Vérifier les infractions des restaurants en matière de salubrité
+      author: Nord Ouvert
+      facebook_admins: "100002666906486"
+      facebook_locale: fr_CA
+      facebook_app_id: "277137665689429"
+      google_analytics: UA-17862637-2
+      subheader: Vérifier les infractions des restaurants en matière de salubrité
+      about: À propos
+      API: API
 
-  app_title: "Resto-Net.ca : Inspections des aliments à Montréal"
-  app_sub_title: "Inspections sanitaires des établissements alimentaires montréalais"
-  facebook_locale: fr_CA
+  pages:
+    index:
+      title: "Resto-Net - Inspections des aliments Canada - Sécurité alimentaire à Montréal, Toronto, Gatineau"
+    about:
+      title: "À propos de Resto-Net"
+    api:
+      title: "API Resto-Net"
+  establishments:
+    index:
+      title: ""
+    show:
+      title: ""
 
   owner: "Proprietaire"
   infractions: "Infractions"
@@ -166,16 +188,6 @@ fr:
     infractions_count_by_infraction_type: "Nombre d'infractions par type"
     infractions_amount_by_infraction_type: "Montant des infractions par type d'infraction"
     infraction_amounts: "Montant d'infractions"
-
-  menu:
-    home: "Accueil"
-    all_establishments: "Tous les établissements"
-    statistics: "Statistiques"
-    about: "À propos"
-    search: "Recherche"
-    api: "API"
-    english: "English"
-    french: "Francais"
 
   meta_description: "Inspections sanitaires des établissements alimentaires montréalais"
 

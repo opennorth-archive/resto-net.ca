@@ -11,59 +11,59 @@
   <link rel="dns-prefetch" href="//platform.twitter.com">
   <title><%= title %></title>
   <meta name="description" content="<%= meta_description %>">
-  <meta name="author" content="Open North">
+  <meta name="author" content="<%=t '.author' %>">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <meta name="application-name" content="Resto-Net">
+  <meta name="application-name" content="<%=t '.name' %>">
   <meta name="msapplication-tooltip" content="<%= meta_description %>">
-  <meta name="msapplication-starturl" content="http://resto-net.ca/?pinned=true">
+  <meta name="msapplication-starturl" content="<%=t '.url' %>/?pinned=true">
   <meta name="msapplication-navbutton-color" content="#ad1e23">
-  <meta property="og:title" content="Resto-Net">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://resto-net.ca/">
-  <meta property="og:image" content="http://resto-net.ca/assets/logo.gif">
-  <meta property="og:site_name" content="Resto-Net">
-  <meta property="og:locale" content="<%=t :facebook_locale %>">
-  <meta property="fb:app_id" content="277137665689429">
-  <meta property="fb:admins" content="100002666906486">
-  <meta property="og:description" content="<%= meta_description %>">
+  <meta property="og:title" content="<%= og_title %>">
+  <meta property="og:type" content="<%= og_type %>">
+  <meta property="og:url" content="<%= request.url %>">
+  <meta property="og:image" content="<%= og_image %>">
+  <meta property="og:site_name" content="<%=t '.name' %>">
+  <meta property="fb:admins" content="<%=t '.facebook_admins' %>">
+  <meta property="og:description" content="<%= og_description %>">
+  <meta property="og:locale" content="<%=t '.facebook_locale' %>">
+  <meta property="fb:app_id" content="<%=t '.facebook_app_id' %>">
   <%= stylesheet_link_tag 'application' %>
   <%= javascript_include_tag 'modernizr-2.5.3.min.js' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id="<%= locale %>" class="<%= "#{controller.controller_name}-#{controller.action_name}" %>">
 <div id="fb-root"></div>
 
 <div class="container">
   <header>
     <div id="language">
-      <%= link_to t(:other_language), locale: t(:other_locale) %>
+      <%= link_to t('.other_language'), locale: t('.other_locale') %>
     </div>
     <h1>
-      <%= link_to_unless_current image_tag('logo.gif', alt: 'Resto-Net'), root_path %>
-      <small>
-        <%= t :app_sub_title %>
-      </small>
+      <%= link_to_unless_current image_tag('logo.gif', alt: t('.name')), root_path %>
     </h1>
-    <div class="fb-like" data-href="http://resto-net.ca/" data-send="true" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+    <p>
+      <%=t '.subheader' %>
+    </p>
+    <div class="fb-like" data-href="<%=t '.url' %>" data-send="true" data-layout="button_count" data-width="100" data-show-faces="false"></div>
   </header>
 
   <%= yield %>
 
   <footer>
-    <%= link_to t('menu.api'), api_path %>
-    <%= link_to t('menu.about'), about_path %>
-    <%= link_to image_tag("open-data-montreal-#{locale}.png"), "http://montrealouvert.net/donnees-ouvertes-questions-frequemment-demandees/?lang=#{locale}" %>
+    <%= link_to t('.api'), api_path %>
+    <%= link_to t('.about'), about_path %>
+    <%= link_to image_tag("montrealouvert-#{locale}.png"), "http://montrealouvert.net/?lang=#{locale}" %>
   <footer>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 <script>window.jQuery || document.write("<%=j javascript_include_tag 'jquery.min.js' %>")</script>
-<script>var facebook_locale = "<%= t :facebook_locale %>"</script>
+<script>var facebook_locale = "<%=t :facebook_locale %>"</script>
 <%= javascript_include_tag 'application' %>
 
 <% if Rails.env.production? %>
 <script>
-window._gaq = [['_setAccount','UA-17862637-2'],['_trackPageview'],['_trackPageLoadTime']];
+window._gaq = [['_setAccount','<%=t '.google_analytics' %>'],['_trackPageview'],['_trackPageLoadTime']];
 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 g.src=('https:'==location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';
 s.parentNode.insertBefore(g,s)}(document,'script'));

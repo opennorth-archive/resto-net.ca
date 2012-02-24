@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-  caches_page :home, :about, :api
+  caches_page :index, :about, :api
 
-  def home
+  def index
   end
 
   def about

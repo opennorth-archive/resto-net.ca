@@ -2,12 +2,34 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  other_locale: fr
-  other_language: Français
+  layouts:
+    application:
+      other_locale: fr
+      other_language: Français
+      name: Resto-Net
+      url: http://resto-net.ca/
+      description: Check if a local restaurant had recently violated a health code
+      author: Open North
+      facebook_admins: "100002666906486"
+      facebook_locale: en_US
+      facebook_app_id: "277137665689429"
+      google_analytics: UA-17862637-2
+      subheader: Check if a local restaurant had recently violated a health code
+      about: About
+      api: API
 
-  app_title: "Resto-Net.ca : Health inspections of Montreal establishments"
-  app_sub_title: "An open database of Montreal's health inspections"
-  facebook_locale: en_US
+  pages:
+    index:
+      title: "Resto-Net - Restaurant Health Inspections Canada - Food Safety in Montreal, Toronto, Gatineau"
+    about:
+      title: "About Resto-Net"
+    api:
+      title: "Resto-Net API"
+  establishments:
+    index:
+      title: ""
+    show:
+      title: ""
 
   owner: "Owner"
   infractions: "Infractions"
@@ -163,16 +185,6 @@ en:
     infractions_count_by_infraction_type: "Infractions by infraction type"
     infractions_amount_by_infraction_type: "Infraction amount by infraction type"
     infraction_amounts: "Infraction amounts"
-
-  menu:
-    home: "Home"
-    all_establishments: "All establishments"
-    statistics: "Statistics"
-    about: "About"
-    search: "Search"
-    api: "API"
-    english: "English"
-    french: "Français"
 
   meta_description: "An open database of Montreal's health inspections"
 

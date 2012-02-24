@@ -9,6 +9,6 @@ RestoNet::Application.routes.draw do
   match 'about', to: 'pages#about'
   match 'api', to: 'pages#api'
 
-  root to: 'pages#home'
+  root to: 'pages#index'
 
 end

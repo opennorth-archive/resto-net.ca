@@ -1,7 +1,46 @@
 module ApplicationHelper
   def title
-    content_for?(:title) ? content_for(:title) : t(:app_title)
+    args = {}
+    if @establishments
+      # @todo
+    elsif @establishment
+      # @todo
+    end
+    t "#{controller.controller_name}.#{controller.action_name}.title", args
   end
+
+  # Open Graph tags
+  def og_title
+    if @establishments
+      # @todo
+    elsif @establishment
+      # @todo
+    elsif current_page?(controller: 'pages', action: 'index')
+      'Resto-Net'
+    else
+      title
+    end
+  end
+
+  def og_type
+    if @establishments
+      # @todo
+    elsif @establishment
+      # @todo
+    else
+      'website'
+    end
+  end
+
+  def og_image
+    root_url.chomp('/') + image_path('logo.gif')
+  end
+
+  def og_description
+    t "layouts.application.description"
+  end
+
+
 
   def meta_description
     content_for?(:meta_description) ? content_for(:meta_description) : t(:meta_description)
