@@ -49,4 +49,8 @@ module ApplicationHelper
     }.to_json
   end
 
+  def address(establishment)
+    establishment.street ? establishment.street : establishment.address
+  end
+
 end
