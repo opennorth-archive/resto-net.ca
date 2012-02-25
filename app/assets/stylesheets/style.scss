@@ -156,6 +156,7 @@ h1 {
   border: 1px solid #d1d1d1;
   @include box-shadow(0 2px 5px 0 #d1d1d1);
 }
+
 #search {
   text-align: center;
   margin: 0;
@@ -174,6 +175,19 @@ h1 {
   #search {
     zoom: 1;
     display: inline;
+  }
+}
+
+.list-box {
+  h2 {
+    padding: 0 10px;
+    background-color: $logo-color;
+    color: #fff;
+    font-size: 16px;
+  }
+  .inner {
+    border: 1px solid #bcbcbc;
+    border-top: none;
   }
 }
 

@@ -68,6 +68,14 @@ fr:
       subheader: Choisissez d'abord votre ville.
     city:
       title: Resto-Net - Inspections des aliments et Sécurité alimentaire à %{city}
+      latest_inspections: Dernières inspections
+      latest_fines: Dernières amendes
+      most_fines: Le plus d'amendes
+      highest_fines: Les plus fortes amendes
+      fines_count:
+        one: une amende
+        other: '%{count} amendes'
+      fines_total: "%{total} d'amendes"
     about:
       title: À propos de Resto-Net
     api:

@@ -6,6 +6,8 @@ class MontrealEstablishment < Establishment
   key :name_fingerprint, String
   key :address_fingerprint, String
   key :city_fingerprint, String
+  key :fines_count, Integer
+  key :fines_total, Float # interoperable with Toronto
 
   many :montreal_inspections, dependent: :destroy
 
@@ -14,7 +16,9 @@ class MontrealEstablishment < Establishment
   before_create :geocode
   before_save :fingerprint
 
-  scope :geocoded, where(latitude: {:$ne => :nil}, longitude: {:$ne => :nil})
+  def self.source
+    'montreal'
+  end
 
   # @note doesn't update attributes on existing records
   def self.find_or_create_by_name_and_address_and_city(name, address, city, attributes = {})
@@ -29,54 +33,7 @@ class MontrealEstablishment < Establishment
     }.merge(attributes))
   end
 
-  def geocoded?
-    latitude.present? && longitude.present?
-  end
-
-  def short_address
-    if geocoded? && street
-      street
-    else
-      address
-    end
-  end
-
-  def full_address
-    if geocoded? && street && locality
-      "#{street}, #{locality}"
-    else
-      "#{address}, #{city}"
-    end
-  end
-
-  def geocode
-    begin
-      location = Geocoder.locate "#{address}, #{city}"
-      %w(latitude longitude street region locality country postal_code).each do |attribute|
-        self[attribute] = location.send attribute
-        #String === value ? value.force_encoding('utf-8') : value # @todo why do we need force_encoding?
-        print '.'
-      end
-    rescue Graticule::CredentialsError # too many queries
-      print '~'
-      retry
-    rescue
-      Rails.logger.warn "Geocoding error for '#{name}' at '#{address}, #{city}': #{$!.message}"
-      print '!'
-    end
-  end
-
-  def update_calculated_fields
-    self.total_fines = montreal_inspections.sum(:amount)
-    self.judgments_span = montreal_inspections.maximum(:judgment_date) - montreal_inspections.minimum(:judgment_date)
-    save!
-  end
-
 private
-
-  def set_source
-    self.source = 'montreal'
-  end
 
   def fingerprint
     self.name_fingerprint = name.fingerprint if name_changed?

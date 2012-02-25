@@ -32,6 +32,57 @@ class Establishment
 
   scope :geocoded, where(:latitude.ne => nil, :longitude.ne => nil)
 
+  def self.has_fines?
+    column_names.include? 'fines_count'
+  end
+
+  def self.only_fines?
+    %w(montreal).include? source
+  end
+
+  def geocoded?
+    latitude.present? && longitude.present?
+  end
+
+  def geocodeable?
+    respond_to?(:address) && respond_to?(:city)
+  end
+
+  def short_address
+    if geocoded? && street
+      street
+    elsif geocodeable?
+      address
+    end
+  end
+
+  def full_address
+    if geocoded? && street && locality
+      "#{street}, #{locality}"
+    elsif geocodeable?
+      "#{address}, #{city}"
+    end
+  end
+
+  def geocode
+    if geocodeable?
+      begin
+        location = Geocoder.locate "#{address}, #{city}"
+        %w(latitude longitude street region locality country postal_code).each do |attribute|
+          self[attribute] = location.send attribute
+          #String === value ? value.force_encoding('utf-8') : value # @todo why do we need force_encoding?
+          print '.'
+        end
+      rescue Graticule::CredentialsError # too many queries
+        print '~'
+        retry
+      rescue
+        Rails.logger.warn "Geocoding error for '#{name}' at '#{address}, #{city}': #{$!.message}"
+        print '!'
+      end
+    end
+  end
+
   # @todo remove if not using elasticsearch
   def to_indexed_json
     self.to_json
@@ -50,6 +101,12 @@ class Establishment
     rescue
       []
     end
+  end
+
+private
+
+  def set_source
+    self.source = self.class.source
   end
 
 end

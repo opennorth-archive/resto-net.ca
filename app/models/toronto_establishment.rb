@@ -4,76 +4,25 @@ class TorontoEstablishment < Establishment
   key :address, String
   key :establishment_type, String
   key :minimum_inspections_per_year, Integer
-  key :total_fines, Float
+  key :fines_count, Integer
+  key :fines_total, Float # @todo increment from details/inspection
 
-  many :toronto_inspections, :dependent => :destroy
+  many :toronto_inspections, dependent: :destroy
+
   before_create :geocode
 
   validates_presence_of :address, :city, :establishment_type, :dinesafe_id, :minimum_inspections_per_year
   validates_uniqueness_of :dinesafe_id
-  validates_numericality_of :minimum_inspections_per_year, :only_integer => true, :greater_than => 0, :allow_blank => true
+  validates_numericality_of :minimum_inspections_per_year, only_integer: true, greater_than: 0, allow_blank: true
 
-  scope :geocoded, where(:latitude => {:$ne => :nil}, :longitude => {:$ne => :nil})
+  def self.source
+    'toronto'
+  end
 
   def self.find_or_create_by_dinesafe_id(dinesafe_id, attributes = {})
-    establishment = find_by_dinesafe_id( dinesafe_id )
-
-    if establishment
-      establishment
-    else
-      create!({
-        :dinesafe_id => dinesafe_id
-      }.merge(attributes))
-    end
-  end
-
-  def short_address
-    if geocoded? && street
-      street
-    else
-      address
-    end
-  end
-
-  def full_address
-    if geocoded? && street && locality
-      "#{street}, #{locality}"
-    else
-      "#{address}, #{city}"
-    end
-  end
-
-  def geocode
-    @@geocoder ||= Graticule.service(:google).new 'ABQIAAAACjg5EelPDHaItWLh83iDnxSTO_huFvQjFKOycbqUllPdGQkbfRRbpq18tH_FX8TyWWBPGwtlKiXNdA'
-
-    begin
-      location = @@geocoder.locate "#{address}, #{city}"
-      %w(latitude longitude street region locality country postal_code).each do |attr|
-        value = location.send(attr)
-        self[attr] = value.is_a?(String) ? value.force_encoding('utf-8') : value
-      end
-      print '*'
-      location
-    rescue
-      Rails.logger.warn "Geocoding error for '#{name}' @ '#{address}, #{city}': #{$!.message}"
-      print '!'
-      nil
-    end
-  end
-
-  def geocoded?
-    latitude.present? && longitude.present?
-  end
-
-  def update_calculated_fields
-    self.total_fines = toronto_inspections.sum(:total_fines)
-    save!
-  end
-
-private
-
-  def set_source
-    self.source = 'toronto'
+    find_by_dinesafe_id(dinesafe_id) || create!({
+      dinesafe_id: dinesafe_id
+    }.merge(attributes))
   end
 
 end

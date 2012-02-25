@@ -65,6 +65,10 @@ en:
       latest_fines: Latest fines
       most_fines: Most fines
       highest_fines: Highest fines
+      fines_count:
+        one: one fine
+        other: '%{count} fines'
+      fines_total: '%{total} in fines'
     about:
       title: About Resto-Net
     api:

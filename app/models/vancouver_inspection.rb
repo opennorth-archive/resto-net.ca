@@ -7,7 +7,11 @@ class VancouverInspection < Inspection
   key :general_comments, String
   key :closing_comments, String
   
-  many :vancouver_inspection_details
   belongs_to :vancouver_establishment
+  many :vancouver_inspection_details
+
+  def establishment
+    vancouver_establishment
+  end
 
 end

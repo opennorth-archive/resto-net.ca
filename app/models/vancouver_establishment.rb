@@ -5,11 +5,11 @@ class VancouverEstablishment < Establishment
   key :owner_name, String
   key :operator_name, String
   key :capacity, Integer
-  
-private
 
-  def set_source
-    self.source = 'vancouver'
+  many :vancouver_inspections, dependent: :destroy
+
+  def self.source
+    'vancouver'
   end
 
 end
