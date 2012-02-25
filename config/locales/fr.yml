@@ -9,6 +9,31 @@
 # by Serafim Junior Dos Santos Fagundes <serafim@cyb3r.ca>
 
 fr:
+  search:
+    label: Trouvez un restaurant
+    placeholder: Indiquez le nom ou l'adresse du restaurant
+    submit: Rechercher
+    help: "Par exemple:"
+    example1: Hong Kong
+    example2: 1023 Saint-Laurent
+
+  social:
+    twitter: "Suivre %{name}"
+
+  network:
+    opennorth_url: http://nordouvert.ca/
+    opennorth: Nord Ouvert
+    citizenbudget_url: http://budgetcitoyen.com/
+    citizenbudget: Budget Citoyen
+    mamairie_url: http://mamairie.ca/
+    mamairie: Ma Mairie
+    patinermontreal_url: http://patinermontreal.ca/
+    patinermontreal: Patiner Montréal
+    represent_url: http://represent.opennorth.ca/
+    represent: Represent
+    restonet_url: http://resto-net.ca/
+    restonet: Resto-Net
+
   layouts:
     application:
       other_locale: en

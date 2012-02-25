@@ -1,5 +1,4 @@
 class TorontoEstablishment < Establishment
-  
   key :dinesafe_id, Integer
   key :city, String
   key :address, String
@@ -8,13 +7,10 @@ class TorontoEstablishment < Establishment
   key :total_fines, Float
 
   many :toronto_inspections, :dependent => :destroy
-
   before_create :geocode
 
   validates_presence_of :address, :city, :establishment_type, :dinesafe_id, :minimum_inspections_per_year
-
   validates_uniqueness_of :dinesafe_id
-
   validates_numericality_of :minimum_inspections_per_year, :only_integer => true, :greater_than => 0, :allow_blank => true
 
   scope :geocoded, where(:latitude => {:$ne => :nil}, :longitude => {:$ne => :nil})

@@ -2,6 +2,31 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  search:
+    label: Find a restaurant
+    placeholder: Search for a restaurant by name or location
+    submit: Search
+    help: "For example:"
+    example1: Hong Kong
+    example2: 1023 Saint-Laurent
+
+  social:
+    twitter: "Follow %{name}"
+
+  network:
+    opennorth_url: http://opennorth.ca/
+    opennorth: Open North
+    citizenbudget_url: http://citizenbudget.com/
+    citizenbudget: Citizen Budget
+    mamairie_url: http://mamairie.ca/
+    mamairie: Ma Mairie
+    patinermontreal_url: http://patinermontreal.ca/
+    patinermontreal: Patiner Montreal
+    represent_url: http://represent.opennorth.ca/
+    represent: Represent
+    restonet_url: http://resto-net.ca/
+    restonet: Resto-Net
+
   layouts:
     application:
       other_locale: fr
@@ -14,7 +39,8 @@ en:
       facebook_locale: en_US
       facebook_app_id: "277137665689429"
       google_analytics: UA-17862637-2
-      subheader: Check if a local restaurant had recently violated a health code
+      header: Avoid food poisoning.
+      subheader: Choose your city to start.
       about: About
       api: API
 

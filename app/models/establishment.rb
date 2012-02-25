@@ -13,20 +13,22 @@ class Establishment
   key :country, String
   key :postal_code, String
   timestamps!
-  
+
+  Establishment.ensure_index :name
+
+  mapping do
+    indexes :id, index: :not_analyzed
+    indexes :source, index: :not_analyzed
+    indexes :name, analyzer: 'snowball'
+    # @todo add any other fields for display
+    # @todo read about analyzers, boost
+  end
+
   validates_presence_of :source, :name
 
   before_validation :set_source
 
   scope :geocoded, where(:latitude.ne => nil, :longitude.ne => nil)
-
-  Establishment.ensure_index :name
-
-  def self.make_index
-    tire.mapping do
-      indexes :name, :type => 'string'
-    end
-  end
 
   def to_indexed_json
     self.to_json

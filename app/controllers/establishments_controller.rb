@@ -1,11 +1,10 @@
 class EstablishmentsController < ApplicationController
-  caches_action :index, :cache_path => Proc.new{ |c| c.params }
+  caches_action :index, :cache_path => proc{ params.slice :q }
   caches_page :show
 
   respond_to :html, :json, :xml
 
   def index
-    p request.subdomain
     q = params[:search]
     s = Tire.search 'establishments' do query { string q } end
     @establishments = s.results.select { |e| e.source.downcase == request.subdomain }
@@ -13,7 +12,7 @@ class EstablishmentsController < ApplicationController
   end
 
   def show
-    @establishment = Establishment.find(params['id'])
+    @establishment = Establishment.find params[:id]
     respond_with @establishment
   end
 

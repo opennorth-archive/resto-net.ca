@@ -33,32 +33,62 @@
 <body id="<%= locale %>" class="<%= "#{controller.controller_name}-#{controller.action_name}" %>">
 <div id="fb-root"></div>
 
-<div class="container">
+<div class="container root">
   <header>
+    <h1>
+      <%= link_to_unless_current image_tag('logo.png', alt: t('.name'), size: '275x64'), root_path %>
+    </h1>
+    <p>
+      <strong><%=t '.header' %></strong>
+      <%=t '.subheader' %>
+    </p>
     <div id="language">
       <%= link_to t('.other_language'), locale: t('.other_locale') %>
     </div>
-    <h1>
-      <%= link_to_unless_current image_tag('logo.gif', alt: t('.name')), root_path %>
-    </h1>
-    <p>
-      <%=t '.subheader' %>
-    </p>
-    <div class="fb-like" data-href="<%=t '.url' %>" data-send="true" data-layout="button_count" data-width="100" data-show-faces="false"></div>
   </header>
 
   <%= yield %>
-
-  <footer>
-    <%= link_to t('.api'), api_path %>
-    <%= link_to t('.about'), about_path %>
-    <%= link_to image_tag("montrealouvert-#{locale}.png"), "http://montrealouvert.net/?lang=#{locale}" %>
-  <footer>
 </div>
+
+<div class="fb-like" data-href="<%=t '.url' %>" data-send="true" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+
+<footer>
+  <div class="container band">
+    <div class="row">
+      <div class="span3">
+        <%= link_to image_tag('logo-footer.png', alt: t('.name'), size: '225x64'), root_path %>
+        <%= link_to t('social.twitter', name: 'Resto-Net'), 'http://twitter.com/resto_net', 'class' => 'twitter-follow-button', 'data-lang' => locale, 'data-show-count' => 'false', 'data-width' => '130px' %>
+      </div>
+      <div class="span9">
+        <ul class="unstyled">
+          <li><%= link_to t('.about'), about_path %></li>
+          <li><%= link_to t('.api'), api_path %></li>
+        </ul>
+        <hr>
+        <%= form_tag establishments_path, method: :get, class: 'form-inline' do %>
+          <h2><%=t 'search.label' %></h2>
+          <%= text_field_tag :q, params[:q], placeholder: t('search.placeholder'), class: 'input-xlarge' %>
+          <%= button_tag class: 'btn btn-primary' do %>
+            <i class="icon-search icon-white"></i>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div id="network">
+    <div class="container">
+      <ul class="unstyled">
+        <% %w(opennorth citizenbudget represent mamairie patinermontreal).each_with_index do |site,index| %>
+          <li class="<%= site %>"><a href="<%=t "network.#{site}_url" %>"><%=t "network.#{site}" %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 <script>window.jQuery || document.write("<%=j javascript_include_tag 'jquery.min.js' %>")</script>
-<script>var facebook_locale = "<%=t :facebook_locale %>"</script>
+<script>var facebook_locale = "<%=t '.facebook_locale' %>"</script>
 <%= javascript_include_tag 'application' %>
 
 <% if Rails.env.production? %>

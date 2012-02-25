@@ -1,5 +1,4 @@
 class VancouverInspection < Inspection
-
   key :inspector, String
   key :follow_up_required, Boolean
   key :reason, String
@@ -9,8 +8,6 @@ class VancouverInspection < Inspection
   key :closing_comments, String
   
   many :vancouver_inspection_details
-
   belongs_to :vancouver_establishment
-
 
 end

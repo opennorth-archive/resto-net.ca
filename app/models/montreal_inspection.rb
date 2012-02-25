@@ -1,5 +1,4 @@
 class MontrealInspection < Inspection
-  
   key :description, String
   key :judgment_date, Date
   key :amount, Float

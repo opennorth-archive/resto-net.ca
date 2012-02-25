@@ -1,5 +1,4 @@
 class VancouverEstablishment < Establishment
-
   key :address, String
   key :establishment_type, String
   key :vch_id, String

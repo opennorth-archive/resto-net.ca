@@ -1,5 +1,4 @@
 class MontrealEstablishment < Establishment
-  
   key :address, String
   key :city, String
   key :establishment_type, String
