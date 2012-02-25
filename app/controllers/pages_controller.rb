@@ -4,6 +4,9 @@ class PagesController < ApplicationController
   def index
   end
 
+  def city
+  end
+
   def about
     render "about_#{I18n.locale}"
   end

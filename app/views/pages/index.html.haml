@@ -1,3 +1,13 @@
 #map
-  = link_to 'Montreal', root_url(subdomain: 'montreal'), id: 'montreal'
+  = link_to t(:montreal), root_url(subdomain: 'montreal'), id: 'montreal'
   = link_to 'Toronto', root_url(subdomain: 'toronto'), id: 'toronto'
+
+%form#twitter.well
+  =t 'social.twitter_text_pre'
+  %input.input-medium
+  =t 'social.twitter_text_post'
+  %button.btn.btn-large
+    = image_tag 'twitter-icon.png', alt: '', size: '22x15'
+    =t 'social.twitter_submit'
+
+.fb-like(data-href="#{t '.url'}" data-send="true" data-layout="standard" data-width="940" data-show-faces="false")

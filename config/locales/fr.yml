@@ -9,6 +9,8 @@
 # by Serafim Junior Dos Santos Fagundes <serafim@cyb3r.ca>
 
 fr:
+  montreal: Montréal
+
   search:
     label: Trouvez un restaurant
     placeholder: Indiquez le nom ou l'adresse du restaurant
@@ -19,6 +21,9 @@ fr:
 
   social:
     twitter: "Suivre %{name}"
+    twitter_text_pre: « Hé @resto_net, svp ajouter la ville de
+    twitter_text_post: ". #restonext »"
+    twitter_submit: Votez via Twitter
 
   network:
     opennorth_url: http://nordouvert.ca/
@@ -46,17 +51,18 @@ fr:
       facebook_locale: fr_CA
       facebook_app_id: "277137665689429"
       google_analytics: UA-17862637-2
-      subheader: Vérifier les infractions des restaurants en matière de salubrité
+      header: Évitez les intoxications alimentaires.
+      subheader: Choisissez d'abord votre ville.
       about: À propos
-      API: API
+      api: API
 
   pages:
     index:
-      title: "Resto-Net - Inspections des aliments Canada - Sécurité alimentaire à Montréal, Toronto, Gatineau"
+      title: Resto-Net - Inspections des aliments Canada - Sécurité alimentaire à Montréal, Toronto, Gatineau
     about:
-      title: "À propos de Resto-Net"
+      title: À propos de Resto-Net
     api:
-      title: "API Resto-Net"
+      title: API Resto-Net
   establishments:
     index:
       title: ""

@@ -40,6 +40,16 @@ module ApplicationHelper
     t "layouts.application.description"
   end
 
+  def current?(path)
+    request.path == path.sub(%r{\b(en|fr)\b}, '')
+  end
+
+  # Overrides default method to handle locales.
+  # @note +options+ must be a string.
+  def link_to_unless_current(name, options = {}, html_options = {}, &block)
+    link_to_unless current?(options), name, options, html_options, &block
+  end
+
 
 
   def meta_description

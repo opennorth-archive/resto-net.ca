@@ -2,6 +2,8 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  montreal: Montreal
+
   search:
     label: Find a restaurant
     placeholder: Search for a restaurant by name or location
@@ -12,6 +14,9 @@ en:
 
   social:
     twitter: "Follow %{name}"
+    twitter_text_pre: “Hey @resto_net, please make
+    twitter_text_post: "your next city. #restonext”"
+    twitter_submit: Vote via Twitter
 
   network:
     opennorth_url: http://opennorth.ca/
@@ -46,11 +51,11 @@ en:
 
   pages:
     index:
-      title: "Resto-Net - Restaurant Health Inspections Canada - Food Safety in Montreal, Toronto, Gatineau"
+      title: Resto-Net - Restaurant Health Inspections Canada - Food Safety in Montreal, Toronto, Gatineau
     about:
-      title: "About Resto-Net"
+      title: About Resto-Net
     api:
-      title: "Resto-Net API"
+      title: Resto-Net API
   establishments:
     index:
       title: ""
