@@ -6,7 +6,7 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'bson_ext' # for mongo_mapper
-gem 'graticule'
+gem 'graticule', '~> 2.2.0'
 gem 'haml-rails'
 gem 'mongo_mapper'
 gem 'nokogiri'

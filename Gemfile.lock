@@ -173,7 +173,7 @@ PLATFORMS
 DEPENDENCIES
   bson_ext
   coffee-rails (~> 3.2.1)
-  graticule
+  graticule (~> 2.2.0)
   haml-rails
   jquery-rails
   mongo_mapper

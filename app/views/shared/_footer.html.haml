@@ -1,0 +1,18 @@
+.container.inner
+  .row
+    .span3
+      = link_to image_tag('logo-footer.png', alt: t(:name), size: '225x64'), root_url(subdomain: false)
+      = link_to t('social.twitter', name: 'Resto-Net'), 'http://twitter.com/resto_net', 'class' => 'twitter-follow-button', 'data-lang' => locale, 'data-show-count' => 'false', 'data-width' => '130px'
+    .span9
+      %ul.unstyled
+        %li
+          = link_to t('.about'), about_path
+        %li
+          = link_to t('.api'), api_path
+      %hr
+      = form_tag establishments_path, method: :get, class: 'form-inline' do
+        %h2
+          =t 'search.label'
+        = text_field_tag :q, params[:q], placeholder: t('search.placeholder'), class: 'input-xlarge'
+        = button_tag class: 'btn btn-primary' do
+          %i.icon-search.icon-white

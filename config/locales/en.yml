@@ -2,7 +2,13 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  en: English
+  fr: Français
+  name: Resto-Net
+  url: http://resto-net.ca/
+
   montreal: Montreal
+  toronto: Toronto
 
   search:
     label: Find a restaurant
@@ -13,7 +19,7 @@ en:
     example2: 1023 Saint-Laurent
 
   social:
-    twitter: "Follow %{name}"
+    twitter: Follow %{name}
     twitter_text_pre: “Hey @resto_net, please make
     twitter_text_post: "your next city. #restonext”"
     twitter_submit: Vote via Twitter
@@ -34,24 +40,31 @@ en:
 
   layouts:
     application:
-      other_locale: fr
-      other_language: Français
-      name: Resto-Net
-      url: http://resto-net.ca/
       description: Check if a local restaurant had recently violated a health code
       author: Open North
       facebook_admins: "100002666906486"
       facebook_locale: en_US
       facebook_app_id: "277137665689429"
       google_analytics: UA-17862637-2
-      header: Avoid food poisoning.
-      subheader: Choose your city to start.
+
+  shared:
+    header:
+      subheader: Restaurant health inspections
+    footer:
       about: About
       api: API
 
   pages:
     index:
       title: Resto-Net - Restaurant Health Inspections Canada - Food Safety in Montreal, Toronto, Gatineau
+      header: Avoid food poisoning.
+      subheader: Choose your city to start.
+    city:
+      title: Resto-Net - Restaurant Health Inspections and Food Safety in %{city}
+      latest_inspections: Latest inspections
+      latest_fines: Latest fines
+      most_fines: Most fines
+      highest_fines: Highest fines
     about:
       title: About Resto-Net
     api:

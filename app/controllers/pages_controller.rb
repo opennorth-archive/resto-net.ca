@@ -5,6 +5,10 @@ class PagesController < ApplicationController
   end
 
   def city
+    @latest_inspections = []
+    @latest_fines = []
+    @most_fines = []
+    @highest_fines = []
   end
 
   def about

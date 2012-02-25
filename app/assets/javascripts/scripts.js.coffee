@@ -1,9 +1,9 @@
 I18n =
   en:
-    tweet_text: 'Hey @resto_net, please make %{city} your next city. #restonext'
+    tweet_text: 'Hey @resto_net, please make %{city} your next city. #restonext cc @opennorth'
     tweet_related: 'opennorth'
   fr:
-    tweet_text: 'Hé @resto_net, svp ajouter la ville de %{city}. #restonext'
+    tweet_text: 'Hé @resto_net, svp ajouter la ville de %{city}. #restonext cc @opennorth'
     tweet_related: 'nordouvert'
 
 t = (string, args = {}) ->

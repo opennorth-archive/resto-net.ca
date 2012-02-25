@@ -6,29 +6,31 @@ class MontrealEstablishment < Establishment
   key :name_fingerprint, String
   key :address_fingerprint, String
   key :city_fingerprint, String
-  key :total_fines, Float 
 
-  many :montreal_inspections, :dependent => :destroy
+  many :montreal_inspections, dependent: :destroy
 
   validates_presence_of :address, :city, :establishment_type, :owner_name
 
   before_create :geocode
   before_save :fingerprint
 
-  scope :geocoded, where(:latitude => {:$ne => :nil}, :longitude => {:$ne => :nil})
+  scope :geocoded, where(latitude: {:$ne => :nil}, longitude: {:$ne => :nil})
 
+  # @note doesn't update attributes on existing records
   def self.find_or_create_by_name_and_address_and_city(name, address, city, attributes = {})
-    establishment = find_by_name_fingerprint_and_address_fingerprint_and_city_fingerprint( name.fingerprint, address.fingerprint, city.fingerprint )
+    find_by_name_fingerprint_and_address_fingerprint_and_city_fingerprint(
+      name.fingerprint,
+      address.fingerprint,
+      city.fingerprint
+    ) || create!({
+      name: name,
+      address: address,
+      city: city,
+    }.merge(attributes))
+  end
 
-    if establishment
-      establishment
-    else
-      create!({
-        :name => name,
-        :address => address,
-        :city => city,
-      }.merge(attributes))
-    end
+  def geocoded?
+    latitude.present? && longitude.present?
   end
 
   def short_address
@@ -48,25 +50,20 @@ class MontrealEstablishment < Establishment
   end
 
   def geocode
-    @@geocoder ||= Graticule.service(:google).new 'ABQIAAAACjg5EelPDHaItWLh83iDnxSTO_huFvQjFKOycbqUllPdGQkbfRRbpq18tH_FX8TyWWBPGwtlKiXNdA'
-
     begin
-      location = @@geocoder.locate "#{address}, #{city}"
-      %w(latitude longitude street region locality country postal_code).each do |attr|
-        value = location.send(attr)
-        self[attr] = value.is_a?(String) ? value.force_encoding('utf-8') : value
-        print '*'
+      location = Geocoder.locate "#{address}, #{city}"
+      %w(latitude longitude street region locality country postal_code).each do |attribute|
+        self[attribute] = location.send attribute
+        #String === value ? value.force_encoding('utf-8') : value # @todo why do we need force_encoding?
+        print '.'
       end
-      location
+    rescue Graticule::CredentialsError # too many queries
+      print '~'
+      retry
     rescue
-      Rails.logger.warn "Geocoding error for '#{name}' @ '#{address}, #{city}': #{$!.message}"
+      Rails.logger.warn "Geocoding error for '#{name}' at '#{address}, #{city}': #{$!.message}"
       print '!'
-      nil
     end
-  end
-
-  def geocoded?
-    latitude.present? && longitude.present?
   end
 
   def update_calculated_fields

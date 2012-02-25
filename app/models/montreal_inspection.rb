@@ -5,12 +5,21 @@ class MontrealInspection < Inspection
   
   belongs_to :montreal_establishment
 
-  after_create :update_establishment_calculated_fields
+  validates_presence_of :description, :judgment_date, :amount
+  validates_numericality_of :amount, only_integer: true
 
-  validates_presence_of :amount, :judgment_date, :description
-  validates_numericality_of :amount, :only_integer => true
+  after_create :increment_counter_cache
+  after_destroy :decrement_counter_cache
 
-  delegate :owner_name, :to => :montreal_establishment
+private
+
+  def increment_counter_cache
+    
+  end
+
+  def decrement_counter_cache
+    
+  end
 
   def update_establishment_calculated_fields
     self.montreal_establishment.update_calculated_fields

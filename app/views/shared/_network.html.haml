@@ -1,0 +1,6 @@
+#network
+  .container
+    %ul.unstyled
+      - %w(opennorth citizenbudget represent mamairie patinermontreal).each_with_index do |site,index|
+        %li(class="#{site}")
+          = link_to t("network.#{site}"), t("network.#{site}_url")

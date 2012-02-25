@@ -9,7 +9,13 @@
 # by Serafim Junior Dos Santos Fagundes <serafim@cyb3r.ca>
 
 fr:
+  en: English
+  fr: Français
+  name: Resto-Net
+  url: http://resto-net.ca/
+
   montreal: Montréal
+  toronto: Toronto
 
   search:
     label: Trouvez un restaurant
@@ -41,24 +47,27 @@ fr:
 
   layouts:
     application:
-      other_locale: en
-      other_language: English
-      name: Resto-Net
-      url: http://resto-net.ca/
       description: Vérifier les infractions des restaurants en matière de salubrité
       author: Nord Ouvert
       facebook_admins: "100002666906486"
       facebook_locale: fr_CA
       facebook_app_id: "277137665689429"
       google_analytics: UA-17862637-2
-      header: Évitez les intoxications alimentaires.
-      subheader: Choisissez d'abord votre ville.
+
+  shared:
+    header:
+      subheader: Inspections des aliments
+    footer:
       about: À propos
       api: API
 
   pages:
     index:
       title: Resto-Net - Inspections des aliments Canada - Sécurité alimentaire à Montréal, Toronto, Gatineau
+      header: Évitez les intoxications alimentaires.
+      subheader: Choisissez d'abord votre ville.
+    city:
+      title: Resto-Net - Inspections des aliments et Sécurité alimentaire à %{city}
     about:
       title: À propos de Resto-Net
     api:

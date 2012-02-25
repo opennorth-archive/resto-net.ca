@@ -1,7 +1,10 @@
 module ApplicationHelper
   def title
+    # @todo about, api
     args = {}
-    if @establishments
+    if with_subdomain?
+      args[:city] = t request.subdomain
+    elsif @establishments
       # @todo
     elsif @establishment
       # @todo
@@ -11,6 +14,7 @@ module ApplicationHelper
 
   # Open Graph tags
   def og_title
+    # @todo pages#city, about, api
     if @establishments
       # @todo
     elsif @establishment
@@ -23,6 +27,7 @@ module ApplicationHelper
   end
 
   def og_type
+    # @todo pages#city, about, api
     if @establishments
       # @todo
     elsif @establishment
@@ -36,18 +41,24 @@ module ApplicationHelper
     root_url.chomp('/') + image_path('logo.gif')
   end
 
+  # @todo more descriptive
   def og_description
     t "layouts.application.description"
   end
 
-  def current?(path)
-    request.path == path.sub(%r{\b(en|fr)\b}, '')
+  def with_subdomain?
+    request.subdomain.present? && request.subdomain != 'www'
+  end
+
+  # @returns [Boolean] whether the current path is the root path
+  def root?
+    !with_subdomain? && request.path == root_path(locale: false)
   end
 
   # Overrides default method to handle locales.
   # @note +options+ must be a string.
-  def link_to_unless_current(name, options = {}, html_options = {}, &block)
-    link_to_unless current?(options), name, options, html_options, &block
+  def link_to_unless_root(name, options = {}, html_options = {}, &block)
+    link_to_unless root?, name, options, html_options, &block
   end
 
 

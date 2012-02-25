@@ -1,13 +1,29 @@
-#map
-  = link_to t(:montreal), root_url(subdomain: 'montreal'), id: 'montreal'
-  = link_to 'Toronto', root_url(subdomain: 'toronto'), id: 'toronto'
+- content_for :content do
+  .container.root
+    %header
+      %h1
+        = link_to_unless_root image_tag('logo.png', alt: t(:name), size: '275x64'), root_path
+      %p
+        %strong
+          =t '.header'
+        =t '.subheader'
+      #language
+        = link_to_unless locale == :en, t(:en), locale: :en
+        |
+        = link_to_unless locale == :fr, t(:fr), locale: :fr
+    #map
+      = link_to t(:montreal), root_url(subdomain: 'montreal'), id: 'montreal'
+      = link_to 'Toronto', root_url(subdomain: 'toronto'), id: 'toronto'
 
-%form#twitter.well
-  =t 'social.twitter_text_pre'
-  %input.input-medium
-  =t 'social.twitter_text_post'
-  %button.btn.btn-large
-    = image_tag 'twitter-icon.png', alt: '', size: '22x15'
-    =t 'social.twitter_submit'
+    %form#twitter.well
+      =t 'social.twitter_text_pre'
+      %input.input-medium
+      =t 'social.twitter_text_post'
+      %button.btn.btn-large
+        = image_tag 'twitter-icon.png', alt: '', size: '22x15'
+        =t 'social.twitter_submit'
 
-.fb-like(data-href="#{t '.url'}" data-send="true" data-layout="standard" data-width="940" data-show-faces="false")
+    .fb-like(data-href="#{t :url}" data-send="true" data-layout="standard" data-width="940" data-show-faces="false")
+
+  %footer
+    = render 'shared/network'

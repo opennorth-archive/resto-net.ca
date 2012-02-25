@@ -1,0 +1,11 @@
+%header
+  %h1
+    = link_to_unless_root image_tag('logo.png', alt: t(:name), size: '275x64'), root_url(subdomain: false)
+  %p
+    %strong
+      =t request.subdomain
+    =t '.subheader'
+  #language
+    = link_to_unless locale == :en, t(:en), locale: :en
+    |
+    = link_to_unless locale == :fr, t(:fr), locale: :fr
