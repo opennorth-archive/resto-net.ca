@@ -70,7 +70,6 @@ class Establishment
         location = Geocoder.locate "#{address}, #{city}"
         %w(latitude longitude street region locality country postal_code).each do |attribute|
           self[attribute] = location.send attribute
-          #String === value ? value.force_encoding('utf-8') : value # @todo why do we need force_encoding?
           print '.'
         end
       rescue Graticule::CredentialsError # too many queries

@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  helper_method :subdomains
 
   before_filter :set_locale
 
@@ -8,4 +9,8 @@ class ApplicationController < ActionController::Base
     cookies[:locale] = I18n.locale unless cookies[:locale] == I18n.locale
   end
       
+  def subdomains
+    %w(edmonton gatineau montreal ottawa toronto vancouver)
+  end
+
 end

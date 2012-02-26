@@ -22,7 +22,10 @@
                 %strong
                   = link_to inspection.name, establishment_path(inspection.establishment)
                 /@todo
-            /@todo add read more
+            .more
+              = link_to establishments_path, class: 'btn large default' do # @todo hook this up
+                Learn more
+                %span▶
     - if @boxes[:latest_fines]
       .span4
         .list-box
@@ -36,7 +39,10 @@
                 =l inspection.date, format: :short
                 —
                 = number_to_currency inspection.amount
-            /@todo add read more
+            .more
+              = link_to establishments_path, class: 'btn large default' do # @todo hook this up
+                Learn more
+                %span▶
     - if @boxes[:most_fines]
       .span4
         .list-box
@@ -48,7 +54,10 @@
                 %strong
                   = link_to establishment.name, establishment_path(establishment)
                 =t '.fines_count', count: establishment.fines_count
-            /@todo add read more
+            .more
+              = link_to establishments_path, class: 'btn large default' do # @todo hook this up
+                Learn more
+                %span▶
     - if @boxes[:highest_fines]
       .span4
         .list-box
@@ -60,7 +69,10 @@
                 %strong
                   = link_to establishment.name, establishment_path(establishment)
                 =t '.fines_total', total: number_to_currency(establishment.fines_total)
-            /@todo add read more
+            .more
+              = link_to establishments_path, class: 'btn large default' do # @todo hook this up
+                Learn more
+                %span▶
     /- if @spaces.nonzero?
     /  %div(class="span#{3 * @spaces}")
     /    .list-box
@@ -68,4 +80,4 @@
     /        /@todo local campaign
     /      .inner
     /        /@todo local campaign
-    /@todo add map
+    /@todo add geolocated map

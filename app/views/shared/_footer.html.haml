@@ -5,10 +5,9 @@
       = link_to t('social.twitter', name: 'Resto-Net'), 'http://twitter.com/resto_net', 'class' => 'twitter-follow-button', 'data-lang' => locale, 'data-show-count' => 'false', 'data-width' => '130px'
     .span9
       %ul.unstyled
-        %li
-          = link_to t('.about'), about_path
-        %li
-          = link_to t('.api'), api_path
+        %li= link_to t('.change_city'), root_url(subdomain: false)
+        %li= link_to t('.about'), about_path
+        %li= link_to t('.api'), api_path
       %hr
       = form_tag establishments_path, method: :get, class: 'form-inline' do
         %h2

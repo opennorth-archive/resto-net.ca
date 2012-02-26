@@ -3,7 +3,7 @@
     = link_to_unless_root image_tag('logo.png', alt: t(:name), size: '275x64'), root_url(subdomain: false)
   %p
     %strong
-      =t request.subdomain
+      = link_to_unless_city_root t(request.subdomain), root_path
     =t '.subheader'
   #language
     = link_to_unless locale == :en, t(:en), locale: :en

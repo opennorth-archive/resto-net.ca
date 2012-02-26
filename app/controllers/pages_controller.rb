@@ -35,10 +35,6 @@ class PagesController < ApplicationController
 
 private
 
-  def subdomains
-    %w(montreal) # @todo
-  end
-
   def establishments
     "#{request.subdomain.capitalize}Establishment".constantize
   end

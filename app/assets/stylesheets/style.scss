@@ -80,6 +80,12 @@ header {
     display: block;
     padding-bottom: 0.5em;
     color: $logo-color;
+    a {
+      color: $logo-color;
+      &:hover {
+        color: lighten($logo-color, 20%);
+      }
+    }
   }
 }
 h1 {
@@ -234,10 +240,26 @@ h1 {
   }
 }
 
+.more {
+  text-align: right;
+  a {
+    color: #000;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  span {
+    position: relative;
+    top: -1px;
+    padding-left: 1em;
+    font-size: 0.5em;
+  }
+}
+
 // establishments#show ---------------------------------------------------------
 
 #banner {
-  margin: 1em 0;
+  margin: 1em 0 2em;
   padding: 1em;
   background-color: #fffbd7;
   color: #333;

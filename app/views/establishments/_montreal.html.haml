@@ -41,7 +41,7 @@
 - if @establishment.geocoded?
   - content_for :footer do
     :javascript
-      var latlng = new L.LatLng(#{@establishment.latitude}, #{@establishment.longitude});
+      var latlng = new L.LatLng(#{@establishment.latitude}, #{@establishment.longitude})
 
 /@todo inspections
 /= render :partial => 'inspections/montreal_inspection', :collection => @establishment.montreal_inspections

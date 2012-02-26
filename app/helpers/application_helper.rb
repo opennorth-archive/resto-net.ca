@@ -3,11 +3,12 @@ module ApplicationHelper
     # @todo about, api
     args = {}
     if with_subdomain?
-      args[:city] = t request.subdomain
-    elsif @establishments
-      # @todo
+      args[:city] = t request.subdomain, default: request.subdomain.capitalize
+    end
+    if @establishments
+      args[:q] = params[:q]
     elsif @establishment
-      # @todo
+      args[:name] = @establishment.name
     end
     t "#{controller.controller_name}.#{controller.action_name}.title", args
   end
@@ -18,7 +19,7 @@ module ApplicationHelper
     if @establishments
       # @todo
     elsif @establishment
-      # @todo
+      @establishment.name
     elsif current_page?(controller: 'pages', action: 'index')
       'Resto-Net'
     else
@@ -55,12 +56,18 @@ module ApplicationHelper
     !with_subdomain? && request.path == root_path(locale: false)
   end
 
-  # Overrides default method to handle locales.
-  # @note +options+ must be a string.
+  # @returns [Boolean] whether the current path is a city root path
+  def city_root?
+    with_subdomain? && request.path == root_path(locale: false)
+  end
+
   def link_to_unless_root(name, options = {}, html_options = {}, &block)
     link_to_unless root?, name, options, html_options, &block
   end
 
+  def link_to_unless_city_root(name, options = {}, html_options = {}, &block)
+    link_to_unless city_root?, name, options, html_options, &block
+  end
 
 
   # @todo past this point

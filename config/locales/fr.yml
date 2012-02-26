@@ -15,7 +15,6 @@ fr:
   url: http://resto-net.ca/
 
   montreal: Montréal
-  toronto: Toronto
 
   search:
     label: Trouvez un restaurant
@@ -60,6 +59,7 @@ fr:
     footer:
       about: À propos
       api: API
+      change_city: Changer de ville
 
   pages:
     index:
@@ -84,7 +84,7 @@ fr:
     index:
       title: ""
     show:
-      title: ""
+      title: Resto-Net - Rapports d'inspections pour %{name} à %{city}
     montreal:
       tweet: Tweeter
       tweet_text: "%{name} (%{address}) a été condamné à des amendes de salubrité totalisant %{amount}"

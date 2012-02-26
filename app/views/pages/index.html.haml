@@ -12,7 +12,7 @@
         |
         = link_to_unless locale == :fr, t(:fr), locale: :fr
     #canada
-      - %w(edmonton gatineau montreal ottawa toronto vancouver).each do |city|
+      - subdomains.each do |city|
         = link_to t(city, default: city.capitalize), root_url(subdomain: city), id: city
 
     %form#twitter.well
