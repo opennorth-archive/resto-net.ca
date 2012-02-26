@@ -43,7 +43,7 @@ module ApplicationHelper
 
   # @todo more descriptive
   def og_description
-    t "layouts.application.description"
+    t 'layouts.application.description'
   end
 
   def with_subdomain?
@@ -63,19 +63,10 @@ module ApplicationHelper
 
 
 
-  def meta_description
-    content_for?(:meta_description) ? content_for(:meta_description) : t(:meta_description)
-  end
+  # @todo past this point
 
-  def render_establishment_partial(establishment)
-    case establishment.source
-      when 'toronto'
-        render :partial => 'toronto'
-      when 'montreal'
-        render :partial => 'montreal'
-      when 'vancouver'
-        render :partial => 'vancouver'
-    end
+  def meta_description
+    content_for?(:meta_description) ? content_for(:meta_description) : og_description
   end
 
   # icons from http://code.google.com/p/google-maps-icons/

@@ -1,19 +1,2 @@
-- if @establishment.geocoded?
-  :javascript
-    // @todo Switch to Leaflet
-    //$(function() {
-    //  var latlng = new google.maps.LatLng(#{@establishment.latitude}, #{@establishment.longitude});
-    //  var map = new google.maps.Map(document.getElementById("map_canvas"), {
-    //    zoom: 15,
-    //    center: latlng,
-    //    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    //    mapTypeControl: false
-    //  });
-    //  var marker = new google.maps.Marker({
-    //    position: latlng,
-    //    title:"#{@establishment.name}",
-    //    map: map
-    //  });
-    //});
-
-= render_establishment_partial(@establishment)
+/@todo remove this
+= render partial: @establishment.source

@@ -9,6 +9,8 @@ class Inspection
   validates_presence_of :inspection_date
 
   before_create :denormalize
+  after_create :increment_counter_cache
+  after_destroy :decrement_counter_cache
 
   def date
     inspection_date
@@ -20,4 +22,13 @@ private
     self.source = establishment.source
     self.name = establishment.name
   end
+
+  def increment_counter_cache
+    establishment.increment(fines_count: 1, fines_total: amount) if respond_to? :amount
+  end
+
+  def decrement_counter_cache
+    establishment.decrement(fines_count: 1, fines_total: amount) if respond_to? :amount
+  end
+
 end

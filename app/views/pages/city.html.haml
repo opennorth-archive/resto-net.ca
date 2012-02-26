@@ -1,5 +1,6 @@
 .band
   .container
+    /@todo add clear, descriptive text, integrate violation reporting from template
     = form_tag establishments_path, method: :get, id: 'search', class: 'form-inline' do
       %p
         = label_tag :q, t('search.label')
@@ -9,7 +10,7 @@
           =t 'search.submit'
 
 .container
-  .row
+  #boxes.row
     - if @boxes[:latest_inspections]
       .span3
         .list-box
@@ -19,10 +20,11 @@
             - @boxes[:latest_inspections].each do |inspection|
               .item
                 %strong
-                  = link_to inspection.name, inspection.establishment
+                  = link_to inspection.name, establishment_path(inspection.establishment)
                 /@todo
+            /@todo add read more
     - if @boxes[:latest_fines]
-      .span3
+      .span4
         .list-box
           %h2
             =t '.latest_fines'
@@ -30,12 +32,13 @@
             - @boxes[:latest_fines].each do |inspection|
               .item
                 %strong
-                  = link_to inspection.name, inspection.establishment
-                = number_to_currency inspection.amount
+                  = link_to inspection.name, establishment_path(inspection.establishment)
+                =l inspection.date, format: :short
                 —
-                =l inspection.date
+                = number_to_currency inspection.amount
+            /@todo add read more
     - if @boxes[:most_fines]
-      .span3
+      .span4
         .list-box
           %h2
             =t '.most_fines'
@@ -45,8 +48,9 @@
                 %strong
                   = link_to establishment.name, establishment_path(establishment)
                 =t '.fines_count', count: establishment.fines_count
+            /@todo add read more
     - if @boxes[:highest_fines]
-      .span3
+      .span4
         .list-box
           %h2
             =t '.highest_fines'
@@ -55,11 +59,13 @@
               .item
                 %strong
                   = link_to establishment.name, establishment_path(establishment)
-              =t '.fines_total', total: number_to_currency(establishment.fines_total)
-    - if @spaces.nonzero?
-      %div(class="span#{3 * @spaces}")
-        .list-box
-          %h2
-            /@todo local campaign
-          .inner
-            /@todo local campaign
+                =t '.fines_total', total: number_to_currency(establishment.fines_total)
+            /@todo add read more
+    /- if @spaces.nonzero?
+    /  %div(class="span#{3 * @spaces}")
+    /    .list-box
+    /      %h2
+    /        /@todo local campaign
+    /      .inner
+    /        /@todo local campaign
+    /@todo add map

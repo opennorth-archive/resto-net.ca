@@ -11,9 +11,9 @@
         = link_to_unless locale == :en, t(:en), locale: :en
         |
         = link_to_unless locale == :fr, t(:fr), locale: :fr
-    #map
-      = link_to t(:montreal), root_url(subdomain: 'montreal'), id: 'montreal'
-      = link_to 'Toronto', root_url(subdomain: 'toronto'), id: 'toronto'
+    #canada
+      - %w(edmonton gatineau montreal ottawa toronto vancouver).each do |city|
+        = link_to t(city, default: city.capitalize), root_url(subdomain: city), id: city
 
     %form#twitter.well
       =t 'social.twitter_text_pre'

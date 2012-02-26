@@ -85,6 +85,11 @@ fr:
       title: ""
     show:
       title: ""
+    montreal:
+      tweet: Tweeter
+      tweet_text: "%{name} (%{address}) a été condamné à des amendes de salubrité totalisant %{amount}"
+      summary: avec %{count} amendes totalisant %{total}
+      owned_by: Détenue par
 
   owner: "Proprietaire"
   infractions: "Infractions"
@@ -229,20 +234,10 @@ fr:
         "Usine de produits marins": "Usine de produits marins"
         "Usine produit autre": "Usine produit autre"
 
-  charts:
-    days_between_infraction_and_judgment: "Nombre de jours entre infraction et jugement"
-    infractions_count_by_establishment_type: "Nombre d'infractions par type d'établissement"
-    infractions_amount_by_establishment_type: "Valeur d'infractions par type d'établissement"
-    infractions_count_by_infraction_type: "Nombre d'infractions par type"
-    infractions_amount_by_infraction_type: "Montant des infractions par type d'infraction"
-    infraction_amounts: "Montant d'infractions"
-
-  meta_description: "Inspections sanitaires des établissements alimentaires montréalais"
-
   date:
     formats:
       default: "%e %b %Y"
-      short: "%y-%m-%d"
+      short: "%e %b"
       long: "%d %B %Y"
     day_names: [dimanche, lundi, mardi, mercredi, jeudi, vendredi, samedi]
     abbr_day_names: [dim, lun, mar, mer, jeu, ven, sam]

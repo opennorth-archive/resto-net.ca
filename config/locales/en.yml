@@ -63,12 +63,12 @@ en:
       title: Resto-Net - Restaurant Health Inspections and Food Safety in %{city}
       latest_inspections: Latest inspections
       latest_fines: Latest fines
-      most_fines: Most fines
-      highest_fines: Highest fines
+      most_fines: Most all-time fines
+      highest_fines: Highest all-time fines
       fines_count:
         one: one fine
         other: '%{count} fines'
-      fines_total: '%{total} in fines'
+      fines_total: fined %{total}
     about:
       title: About Resto-Net
     api:
@@ -78,6 +78,11 @@ en:
       title: ""
     show:
       title: ""
+    montreal:
+      tweet: Tweet
+      tweet_text: "%{name} (%{address}) was fined a total of %{amount}"
+      summary: This %{type} was fined %{count} times totaling %{total}
+      owned_by: Owned by
 
   owner: "Owner"
   infractions: "Infractions"
@@ -226,19 +231,10 @@ en:
         "Usine de produits marins": "Seafood processing plant"
         "Usine produit autre": "Food processing plant - Other"
 
-  charts:
-    days_between_infraction_and_judgment: "Days between infraction and judgment"
-    infractions_count_by_establishment_type: "Infractions by establishment type"
-    infractions_amount_by_establishment_type: "Infraction amount by establishment type"
-    infractions_count_by_infraction_type: "Infractions by infraction type"
-    infractions_amount_by_infraction_type: "Infraction amount by infraction type"
-    infraction_amounts: "Infraction amounts"
-
-  meta_description: "An open database of Montreal's health inspections"
-
   date:
     formats:
       default: "%b %e, %Y"
+      short: "%b %e"
 
   number:
     currency:

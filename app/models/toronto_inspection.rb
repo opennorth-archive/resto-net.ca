@@ -1,7 +1,6 @@
 class TorontoInspection < Inspection
   key :dinesafe_id, Integer
   key :amount, Float # @todo increment from details
-  timestamps!
   
   belongs_to :toronto_establishment
   many :toronto_inspection_details
@@ -15,7 +14,7 @@ class TorontoInspection < Inspection
 
   def self.find_or_create_by_dinesafe_id(dinesafe_id, attributes = {})
     find_by_dinesafe_id(dinesafe_id) || create!({
-      :dinesafe_id => dinesafe_id
+      dinesafe_id: dinesafe_id,
     }.merge(attributes))
   end
 

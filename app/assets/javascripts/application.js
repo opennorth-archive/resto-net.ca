@@ -11,4 +11,5 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require social
+//= require leaflet
 //= require scripts
