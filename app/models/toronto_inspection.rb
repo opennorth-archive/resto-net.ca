@@ -6,6 +6,7 @@ class TorontoInspection < Inspection
   many :toronto_inspection_details
 
   validates_presence_of :dinesafe_id
+  validates_numericality_of :amount, allow_blank: true # @todo check 0, fractions
   validates_uniqueness_of :dinesafe_id
  
   def establishment

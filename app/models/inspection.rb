@@ -8,7 +8,7 @@ class Inspection
 
   validates_presence_of :inspection_date
 
-  before_create :denormalize
+  before_save :denormalize
   after_create :increment_counter_cache
   after_destroy :decrement_counter_cache
 

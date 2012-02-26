@@ -4,16 +4,17 @@ class PagesController < ApplicationController
   def index
   end
 
+  # @note don't need to filter by source, as class filters by city already
   def city
     if subdomains.include? request.subdomain
       @boxes = {}
       unless establishments.only_fines?
-        @boxes[:latest_inspections] = inspections.where(source: request.subdomain).sort(:updated_at.desc).limit(10)
+        @boxes[:latest_inspections] = inspections.sort(:inspection_date.desc).limit(10)
       end
       if establishments.has_fines?
-        @boxes[:latest_fines]  = inspections.where(source: request.subdomain).sort(:updated_at.desc).limit(10)
-        @boxes[:most_fines]    = establishments.where(source: request.subdomain).sort(:fines_count.desc).limit(10)
-        @boxes[:highest_fines] = establishments.where(source: request.subdomain).sort(:fines_total.desc).limit(10)
+        @boxes[:latest_fines]  = inspections.sort(:inspection_date.desc).limit(10)
+        @boxes[:most_fines]    = establishments.sort(:fines_count.desc).limit(10)
+        @boxes[:highest_fines] = establishments.sort(:fines_total.desc).limit(10)
       end
       @spaces = 4 - @boxes.size
     else

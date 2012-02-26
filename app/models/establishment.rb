@@ -26,9 +26,9 @@ class Establishment
     # @todo read about analyzers, boost
   end
 
-  validates_presence_of :source, :name
+  validates_presence_of :name
 
-  before_validation :set_source
+  before_save :set_source
 
   scope :geocoded, where(:latitude.ne => nil, :longitude.ne => nil)
 
