@@ -1,12 +1,12 @@
 class TorontoInspection < Inspection
-  key :dinesafe_id, Integer
-  key :amount, Float # @todo increment from details
+  key :dinesafe_id, Integer # inspection ID
+  key :amount, Float
   
   belongs_to :toronto_establishment
   many :toronto_inspection_details
 
   validates_presence_of :dinesafe_id
-  validates_numericality_of :amount, allow_blank: true # @todo check 0, fractions
+  validates_numericality_of :amount, allow_blank: true
   validates_uniqueness_of :dinesafe_id
  
   def establishment

@@ -162,7 +162,7 @@ h1 {
   left: 45px;
   top: 255px;
 }
-#twitter {
+.twitter-box {
   font: italic 1.5em/1em Georgia, Times, serif;
   vertical-align: middle;
   line-height: 40px;
@@ -170,6 +170,9 @@ h1 {
     margin-left: 0.5em;
     color: #007493;
     vertical-align: top;
+  }
+  .twitter-share-button {
+    vertical-align: middle;
   }
 }
 
@@ -258,6 +261,12 @@ h1 {
 
 // establishments#show ---------------------------------------------------------
 
+.establishments-show {
+  .twitter-box {
+    font-size: 1.15em;
+  }
+}
+
 #banner {
   margin: 1em 0 2em;
   padding: 1em;
@@ -286,6 +295,9 @@ h1 {
     @include box-shadow(1px 2px 2px rgba(0, 0, 0, 0.75));
     @include gradient(#9C3, #693);
   }
+}
+#fr #banner button {
+  font-size: 20px;
 }
 
 #map {
@@ -351,6 +363,21 @@ footer {
       line-height: 1em;
     }
   }
+}
+
+.social {
+  display: inline-block;
+  height: 16px;
+  padding-left: 21px;
+  background: transparent url(/assets/sprites.png) no-repeat 0 0;
+}
+.twitter {
+  padding-left: 21px;
+  background-position: 0 0;
+}
+.facebook {
+  padding-left: 13px;
+  background-position: 0 -16px;
 }
 
 #network {

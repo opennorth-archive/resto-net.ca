@@ -1,13 +1,3 @@
-# French translations for Ruby on Rails
-# by Christian Lescuyer (christian@flyingcoders.com)
-# contributors:
-#  - Sebastien Grosjean - ZenCocoon.com
-#  - Bruno Michel - http://github.com/nono
-#  - Tsutomu Kuroda - http://github.com/kuroda (t-kuroda@oiax.jp)
-#
-# French Canadian adjustments
-# by Serafim Junior Dos Santos Fagundes <serafim@cyb3r.ca>
-
 fr:
   en: English
   fr: Français
@@ -16,9 +6,34 @@ fr:
 
   montreal: Montréal
 
+  "Aliments naturels": Aliments naturels
+  "Boucherie-épicerie": Boucherie-épicerie
+  "Boulangerie": Boulangerie
+  "Brasserie": Brasserie
+  "Cafétéria": Cafétéria
+  "Casse-croûte": Casse-croûte
+  "Centre d'accueil": Centre d’accueil
+  "Charcuterie": Charcuterie
+  "Distributeur en gros de produits mixtes": Distributeur en gros
+  "Garderie": Garderie
+  "Local de préparation": Local de préparation
+  "Poissonnerie": Poissonnerie
+  "Produits à base de protéines végétales": Produits à base de protéines végétales
+  "Pâtisserie": Pâtisserie
+  "Restaurant": Restaurant
+  "Restaurant mets pour emporter": Restaurant mets pour emporter
+  "Restaurant service rapide": Restaurant service rapide
+  "Supermarché": Supermarché
+  "Traiteur": Traiteur
+  "Usine de produits marins": Usine de produits marins
+  "Usine produit autre": Usine produit autre
+  "Épicerie": Épicerie
+  "Épicerie avec préparation": Épicerie avec préparation
+  "Événements spéciaux": Événements spéciaux
+
   search:
     label: Trouvez un restaurant
-    placeholder: Indiquez le nom ou l'adresse du restaurant
+    placeholder: Indiquez le nom ou l’adresse du restaurant
     submit: Rechercher
     help: "Par exemple:"
     example1: Hong Kong
@@ -57,25 +72,29 @@ fr:
     header:
       subheader: Inspections des aliments
     footer:
+      change_city: Changer de ville
       about: À propos
       api: API
-      change_city: Changer de ville
+      twitter: Twitter
+      twitter_url: http://twitter.com/resto_net
+      facebook: Facebook
+      facebook_url: http://www.facebook.com/pages/Resto-Net/329006463817897
 
   pages:
     index:
       title: Resto-Net - Inspections des aliments Canada - Sécurité alimentaire à Montréal, Toronto, Gatineau
       header: Évitez les intoxications alimentaires.
-      subheader: Choisissez d'abord votre ville.
+      subheader: Choisissez d’abord votre ville.
     city:
       title: Resto-Net - Inspections des aliments et Sécurité alimentaire à %{city}
       latest_inspections: Dernières inspections
       latest_fines: Dernières amendes
-      most_fines: Le plus d'amendes
+      most_fines: Le plus d’amendes
       highest_fines: Les plus fortes amendes
       fines_count:
         one: une amende
-        other: '%{count} amendes'
-      fines_total: "%{total} d'amendes"
+        other: "%{count} amendes"
+      fines_total: "%{total} d’amendes"
     about:
       title: À propos de Resto-Net
     api:
@@ -84,31 +103,18 @@ fr:
     index:
       title: ""
     show:
-      title: Resto-Net - Rapports d'inspections pour %{name} à %{city}
+      title: Resto-Net - Rapports d’inspections pour %{name} à %{city}
     montreal:
+      banner_header: Demandez la publication des rapports d’inspections des restaurants
+      banner_body: Au Québec, les rapports d’inspections ne sont pas publiés. Il est alors impossible de vous indiquer si un restaurant a satisfait à son inspection ou s’il a reçu un avertissement. Seules les amendes sont publiées, dans un délai d’une moyenne d’un an. Il est donc probable que vous ayez mangé dans des restaurants qui ont récemment reçu des avertissements ou des amendes sans le savoir!
+      banner_call_to_action: Aidez-nous à changer la situation.
+      banner_button: Soumettez une demande
       tweet: Tweeter
-      tweet_text: "%{name} (%{address}) a été condamné à des amendes de salubrité totalisant %{amount}"
-      summary: avec %{count} amendes totalisant %{total}
+      tweet_text: "%{name} (%{address}) a été condamné à des amendes totalisant %{amount}"
+      tweet_related: nordouvert
+      summary: « Cet établissement a été condamné à %{count} amendes totalisant %{total}. »
       owned_by: Détenue par
 
-  owner: "Proprietaire"
-  infractions: "Infractions"
-  total_infractions: "Infractions"
-  inspection_date: "Date de l'infraction"
-  judgment_date: "Date du jugement"
-  amount: "Amende"
-  description: "Nature de l'infraction"
-  latest_infractions: "Dernières amendes"
-  most_infractions: "Le plus d'amendes"
-  highest_infractions: "Les plus fortes amendes"
-  in_infractions: "d'amendes"
-  name: "Nom"
-  address: "Adresse"
-  infraction_count: "Quantité d'infractions"
-  infraction_amount: "Amendes"
-  latest_infraction: "Dernière infraction"
-  type: "Type"
-  tweet_establishment: "%{name} (%{address}) a été condamné à des amendes de salubrité totalisant %{amount}"
   tweet_infraction: "%{name} (%{address}) a été condamné à une amende de salubrité de %{amount} le %{date}"
 
   values:
@@ -157,274 +163,204 @@ fr:
         "Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière.": "Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière."
         "Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net.": "Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net."
         "Toute personne tenue de se munir d'un permis ou de s'enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l'espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d'où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l'entreposeur, les nom et adresse de l'entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l'estampille dans le cas des viandes et aliments carnés en provenance d'un exploitant autorisé.": "Toute personne tenue de se munir d'un permis ou de s'enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l'espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d'où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l'entreposeur, les nom et adresse de l'entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l'estampille dans le cas des viandes et aliments carnés en provenance d'un exploitant autorisé."
-    toronto_establishment:
-      establishment_type:
-        "Boucherie-épicerie": "Boucherie-Épicerie"
-        "Boucherie-Épicerie": "Boucherie-Épicerie"
-        "Boucherie-Épicerie - établissement fermé": "Boucherie-Épicerie - établissement fermé"
-        "Boucherie-Épicerie - établissement vendu": "Boucherie-Épicerie - établissement vendu"
-        "Boulangerie": "Boulangerie"
-        "Boulangerie - établissement fermé": "Boulangerie - établissement fermé"
-        "Boulangerie - établissement vendu": "Boulangerie - établissement vendu"
-        "Brasserie": "Brasserie"
-        "Cafétéria": "Cafétéria"
-        "Casse-croûte": "Casse-croûte"
-        "Centre d'accueil": "Centre d'accueil"
-        "Charcuterie": "Charcuterie"
-        "Distributeur en gros de produits mixtes": "Distributeur en gros de produits mixtes"
-        "Épicerie": "Épicerie"
-        "Épicerie avec préparation": "Épicerie avec préparation"
-        "Épicerie avec préparation - établissement fermé": "Épicerie avec préparation - établissement fermé"
-        "Épicerie avec préparation - établissement vendu": "Épicerie avec préparation - établissement vendu"
-        "Événements spéciaux": "Événements spéciaux"
-        "Événements spéciaux sur l'île Notre-Dame": "Événements spéciaux sur l'île Notre-Dame"
-        "Garderie": "Garderie"
-        "Inconnue": "Inconnue"
-        "Local de préparation": "Local de préparation"
-        "Pâtisserie": "Pâtisserie"
-        "Poissonnerie": "Poissonnerie"
-        "Produits à base de protéines végétales": "Produits à base de protéines végétales"
-        "Restaurant": "Restaurant"
-        "Restaurant service rapide":  "Restaurant service rapide"
-        "Restaaurant service rapide": "Restaurant service rapide"
-        "Restaurant mets à emporter":    "Restaurant mets pour emporter"
-        "Restaurant mets pour emporter": "Restaurant mets pour emporter"
-        "Restaurant - établissement vendu": "Restaurant - établissement vendu"
-        "Restaurant - établissement fermé": "Restaurant - établissement fermé"
-        "Supermarché": "Supermarché"
-        "Traiteur": "Traiteur"
-        "Usine de produits marins": "Usine de produits marins"
-        "Usine produit autre": "Usine produit autre"
-    montreal_establishment:
-      establishment_type:
-        "Boucherie-épicerie": "Boucherie-Épicerie"
-        "Boucherie-Épicerie": "Boucherie-Épicerie"
-        "Boucherie-Épicerie - établissement fermé": "Boucherie-Épicerie - établissement fermé"
-        "Boucherie-Épicerie - établissement vendu": "Boucherie-Épicerie - établissement vendu"
-        "Boulangerie": "Boulangerie"
-        "Boulangerie - établissement fermé": "Boulangerie - établissement fermé"
-        "Boulangerie - établissement vendu": "Boulangerie - établissement vendu"
-        "Brasserie": "Brasserie"
-        "Cafétéria": "Cafétéria"
-        "Casse-croûte": "Casse-croûte"
-        "Centre d'accueil": "Centre d'accueil"
-        "Charcuterie": "Charcuterie"
-        "Distributeur en gros de produits mixtes": "Distributeur en gros de produits mixtes"
-        "Épicerie": "Épicerie"
-        "Épicerie avec préparation": "Épicerie avec préparation"
-        "Épicerie avec préparation - établissement fermé": "Épicerie avec préparation - établissement fermé"
-        "Épicerie avec préparation - établissement vendu": "Épicerie avec préparation - établissement vendu"
-        "Événements spéciaux": "Événements spéciaux"
-        "Événements spéciaux sur l'île Notre-Dame": "Événements spéciaux sur l'île Notre-Dame"
-        "Garderie": "Garderie"
-        "Inconnue": "Inconnue"
-        "Local de préparation": "Local de préparation"
-        "Pâtisserie": "Pâtisserie"
-        "Poissonnerie": "Poissonnerie"
-        "Produits à base de protéines végétales": "Produits à base de protéines végétales"
-        "Restaurant": "Restaurant"
-        "Restaurant service rapide":  "Restaurant service rapide"
-        "Restaaurant service rapide": "Restaurant service rapide"
-        "Restaurant mets à emporter":    "Restaurant mets pour emporter"
-        "Restaurant mets pour emporter": "Restaurant mets pour emporter"
-        "Restaurant - établissement vendu": "Restaurant - établissement vendu"
-        "Restaurant - établissement fermé": "Restaurant - établissement fermé"
-        "Supermarché": "Supermarché"
-        "Traiteur": "Traiteur"
-        "Usine de produits marins": "Usine de produits marins"
-        "Usine produit autre": "Usine produit autre"
+
 
   date:
+    abbr_day_names:
+    - dim
+    - lun
+    - mar
+    - mer
+    - jeu
+    - ven
+    - sam
+    abbr_month_names:
+    - 
+    - jan.
+    - fév.
+    - mar.
+    - avr.
+    - mai
+    - juin
+    - juil.
+    - août
+    - sept.
+    - oct.
+    - nov.
+    - déc.
+    day_names:
+    - dimanche
+    - lundi
+    - mardi
+    - mercredi
+    - jeudi
+    - vendredi
+    - samedi
     formats:
-      default: "%e %b %Y"
-      short: "%e %b"
-      long: "%d %B %Y"
-    day_names: [dimanche, lundi, mardi, mercredi, jeudi, vendredi, samedi]
-    abbr_day_names: [dim, lun, mar, mer, jeu, ven, sam]
-    month_names: [~, janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
-    abbr_month_names: [~, jan., fév., mar., avr., mai, juin, juil., août, sept., oct., nov., déc.]
+      default: "%e %b %Y" #! '%Y-%m-%d'
+      long: ! '%d %B %Y'
+      short: "%e %b" #! '%y-%m-%d'
+    month_names:
+    - 
+    - janvier
+    - février
+    - mars
+    - avril
+    - mai
+    - juin
+    - juillet
+    - août
+    - septembre
+    - octobre
+    - novembre
+    - décembre
     order:
-      - :year
-      - :month
-      - :day
-
-  time:
-    formats:
-      default: "%H:%M:%S"
-      short: "%H:%M"
-      long: "%A %d %B %Y %H:%M"
-    am: 'am'
-    pm: 'pm'
-
+    - :year
+    - :month
+    - :day
   datetime:
     distance_in_words:
-      half_a_minute: "une demi-minute"
-      less_than_x_seconds:
-        zero:  "moins d'une seconde"
-        one:   "moins d'une seconde"
-        other: "moins de %{count} secondes"
-      x_seconds:
-        one:   "1 seconde"
-        other: "%{count} secondes"
-      less_than_x_minutes:
-        zero:  "moins d'une minute"
-        one:   "moins d'une minute"
-        other: "moins de %{count} minutes"
-      x_minutes:
-        one:   "1 minute"
-        other: "%{count} minutes"
       about_x_hours:
-        one:   "environ une heure"
-        other: "environ %{count} heures"
-      x_days:
-        one:   "1 jour"
-        other: "%{count} jours"
+        one: environ une heure
+        other: environ %{count} heures
       about_x_months:
-        one:   "environ un mois"
-        other: "environ %{count} mois"
-      x_months:
-        one:   "1 mois"
-        other: "%{count} mois"
+        one: environ un mois
+        other: environ %{count} mois
       about_x_years:
-        one:   "environ un an"
-        other: "environ %{count} ans"
-      over_x_years:
-        one:   "plus d'un an"
-        other: "plus de %{count} ans"
+        one: environ un an
+        other: environ %{count} ans
       almost_x_years:
-        one:   "presqu'un an"
-        other: "presque %{count} ans"
+        one: presqu'un an
+        other: presque %{count} ans
+      half_a_minute: une demi-minute
+      less_than_x_minutes:
+        one: moins d'une minute
+        other: moins de %{count} minutes
+        zero: moins d'une minute
+      less_than_x_seconds:
+        one: moins d'une seconde
+        other: moins de %{count} secondes
+        zero: moins d'une seconde
+      over_x_years:
+        one: plus d'un an
+        other: plus de %{count} ans
+      x_days:
+        one: 1 jour
+        other: ! '%{count} jours'
+      x_minutes:
+        one: 1 minute
+        other: ! '%{count} minutes'
+      x_months:
+        one: 1 mois
+        other: ! '%{count} mois'
+      x_seconds:
+        one: 1 seconde
+        other: ! '%{count} secondes'
     prompts:
-      year:   "Année"
-      month:  "Mois"
-      day:    "Jour"
-      hour:   "Heure"
-      minute: "Minute"
-      second: "Seconde"
-
+      day: Jour
+      hour: Heure
+      minute: Minute
+      month: Mois
+      second: Seconde
+      year: Année
+  errors:
+    format: Le %{attribute} %{message}
+    messages:
+      accepted: doit être accepté(e)
+      blank: doit être rempli(e)
+      confirmation: ne concorde pas avec la confirmation
+      empty: doit être rempli(e)
+      equal_to: doit être égal à %{count}
+      even: doit être pair
+      exclusion: n'est pas disponible
+      greater_than: doit être supérieur à %{count}
+      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      inclusion: n'est pas inclus(e) dans la liste
+      invalid: n'est pas valide
+      less_than: doit être inférieur à %{count}
+      less_than_or_equal_to: doit être inférieur ou égal à %{count}
+      not_a_number: n'est pas un nombre
+      not_an_integer: doit être un nombre entier
+      odd: doit être impair
+      record_invalid: ! 'La validation a échoué : %{errors}'
+      taken: n'est pas disponible
+      too_long:
+        one: est trop long (pas plus d'un caractère)
+        other: est trop long (pas plus de %{count} caractères)
+      too_short:
+        one: est trop court (au moins un caractère)
+        other: est trop court (au moins %{count} caractères)
+      wrong_length:
+        one: ne fait pas la bonne longueur (doit comporter un seul caractère)
+        other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
+    template:
+      body: ! 'Veuillez vérifier les champs suivants : '
+      header:
+        one: ! 'Impossible d''enregistrer ce %{model} : 1 erreur'
+        other: ! 'Impossible d''enregistrer ce %{model} : %{count} erreurs'
+  helpers:
+    select:
+      prompt: Veuillez sélectionner
+    submit:
+      create: Créer un %{model}
+      submit: Enregistrer ce %{model}
+      update: Modifier ce %{model}
   number:
-    format:
-      separator: ","
-      delimiter: " "
-      precision: 3
-      significant: false
-      strip_insignificant_zeros: false
     currency:
       format:
-        format: "%n %u"
-        unit: "$"
-        separator: ","
-        delimiter: " "
-        precision: 0
+        delimiter: ! ' '
+        format: ! '%n %u'
+        precision: 0 #2
+        separator: ! ','
         significant: false
         strip_insignificant_zeros: false
-    percentage:
-      format:
-        delimiter: ""
-    precision:
-      format:
-        delimiter: ""
+        unit: $
+    format:
+      delimiter: ! ' '
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
     human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: Milliard
+          million: Million
+          quadrillion: Million de milliards
+          thousand: Millier
+          trillion: Mille milliard
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 2
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
-            one:   "Octet"
-            other: "Octets"
-          kb: "ko"
-          mb: "Mo"
-          gb: "Go"
-          tb: "To"
-      decimal_units:
-        format: "%n %u"
-        units:
-          unit: ""
-          thousand: "Millier"
-          million: "Million"
-          billion: "Milliard"
-          trillion: "Mille milliard"
-          quadrillion: "Million de milliards"
-
+            one: Octet
+            other: Octets
+          gb: Go
+          kb: ko
+          mb: Mo
+          tb: To
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
   support:
     array:
-      words_connector: ", "
-      two_words_connector: " et "
-      last_word_connector: " et "
-    select:
-      prompt: "Veuillez sélectionner"
-
-  helpers:
-    select:
-      prompt: "Veuillez sélectionner"
-    submit:
-      create: "Créer un %{model}"
-      update: "Modifier ce %{model}"
-      submit: "Enregistrer ce %{model}"
-
-  errors:
-    template: &errors_template
-      header:
-        one:   "Impossible d'enregistrer ce %{model} : 1 erreur"
-        other: "Impossible d'enregistrer ce %{model} : %{count} erreurs"
-      body: "Veuillez vérifier les champs suivants : "
-
-  attributes:
-    created_at: "Créé le"
-    updated_at: "Modifié le"
-
-  errors:
-    format: "Le %{attribute} %{message}"
-    messages: &errors_messages
-      inclusion: "n'est pas inclus(e) dans la liste"
-      exclusion: "n'est pas disponible"
-      invalid: "n'est pas valide"
-      confirmation: "ne concorde pas avec la confirmation"
-      accepted: "doit être accepté(e)"
-      empty: "doit être rempli(e)"
-      blank: "doit être rempli(e)"
-      too_long: "est trop long (pas plus de %{count} caractères)"
-      too_short: "est trop court (au moins %{count} caractères)"
-      wrong_length: "ne fait pas la bonne longueur (doit comporter %{count} caractères)"
-      not_a_number: "n'est pas un nombre"
-      not_an_integer: "doit être un nombre entier"
-      greater_than: "doit être supérieur à %{count}"
-      greater_than_or_equal_to: "doit être supérieur ou égal à %{count}"
-      equal_to: "doit être égal à %{count}"
-      less_than: "doit être inférieur à %{count}"
-      less_than_or_equal_to: "doit être inférieur ou égal à %{count}"
-      odd: "doit être impair"
-      even: "doit être pair"
-
-  activerecord:
-    errors:
-      messages:
-        taken: "n'est pas disponible"
-        record_invalid: "La validation a échoué : %{errors}"
-        <<: *errors_messages
-      template:
-        <<: *errors_template
-      full_messages:
-        format: "%{attribute} %{message}"
-    models:
-      establishment: Établissement
-      owner: Propriétaire
-      infraction: Infraction
-    attributes:
-      establishment:
-        name: nom
-        address: adresse
-        establishment_type: type
-        owner: propriétaire
-      owner:
-        name: nom
-      infraction:
-        establishment: établissement
-        description: description
-        amount: montant
-        inspection_date: date infraction
-        judgment_date: date jugement
+      last_word_connector: ! ' et '
+      two_words_connector: ! ' et '
+      words_connector: ! ', '
+  time:
+    am: am
+    formats:
+      default: ! '%H:%M:%S'
+      long: ! '%A %d %B %Y %H:%M'
+      short: ! '%H:%M'
+    pm: pm

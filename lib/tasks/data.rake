@@ -1,9 +1,7 @@
 namespace :data do
-  require 'montreal_importer'
-  require 'toronto_importer'
-  require 'vancouver_importer'
-
   namespace :vancouver do
+    require 'vancouver_importer'
+
     desc 'Clear data'
     task clear: :environment do
       VancouverEstablishment.destroy_all
@@ -17,10 +15,17 @@ namespace :data do
   end
 
   namespace :toronto do
+    require 'toronto_importer'
+
     desc 'Clear data'
     task clear: :environment do
       TorontoEstablishment.destroy_all
       TorontoInspection.destroy_all
+    end
+
+    desc 'Download XML'
+    task download: :environment do
+      TorontoImporter.download
     end
 
     desc 'Download XML and import all data'
@@ -31,6 +36,8 @@ namespace :data do
   end
 
   namespace :montreal do
+    require 'montreal_importer'
+
     desc 'Clear data'
     task clear: :environment do
       MontrealEstablishment.destroy_all

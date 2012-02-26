@@ -5,7 +5,7 @@ class TorontoEstablishment < Establishment
   key :establishment_type, String
   key :minimum_inspections_per_year, Integer
   key :fines_count, Integer
-  key :fines_total, Float # @todo increment from details/inspection
+  key :fines_total, Float
 
   many :toronto_inspections, dependent: :destroy
 

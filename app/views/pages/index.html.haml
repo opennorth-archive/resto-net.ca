@@ -15,7 +15,7 @@
       - subdomains.each do |city|
         = link_to t(city, default: city.capitalize), root_url(subdomain: city), id: city
 
-    %form#twitter.well
+    %form.twitter-box.well
       =t 'social.twitter_text_pre'
       %input.input-medium
       =t 'social.twitter_text_post'

@@ -17,20 +17,15 @@ class Establishment
   ensure_index :source
   ensure_index :name
 
-  # @todo remove if not using elasticsearch
-  mapping do
-    indexes :id, index: :not_analyzed
-    indexes :source, index: :not_analyzed
-    indexes :name, analyzer: 'snowball'
-    # @todo add any other fields for display
-    # @todo read about analyzers, boost
-  end
-
   validates_presence_of :name
 
   before_save :set_source
 
   scope :geocoded, where(:latitude.ne => nil, :longitude.ne => nil)
+
+  def self.source
+    raise NotImplementedError
+  end
 
   def self.has_fines?
     column_names.include? 'fines_count'
@@ -80,11 +75,6 @@ class Establishment
         print '!'
       end
     end
-  end
-
-  # @todo remove if not using elasticsearch
-  def to_indexed_json
-    self.to_json
   end
 
   # @todo use yellow pages api?

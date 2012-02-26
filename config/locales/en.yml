@@ -1,6 +1,3 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
   en: English
   fr: Français
@@ -8,6 +5,31 @@ en:
   url: http://resto-net.ca/
 
   montreal: Montreal
+
+  "Aliments naturels": Natural foods
+  "Boucherie-épicerie": Butcher-grocer
+  "Boulangerie": Bakery
+  "Brasserie": Brewery
+  "Cafétéria": Cafeteria
+  "Casse-croûte": Snack shack
+  "Centre d'accueil": Welcome center
+  "Charcuterie": Deli
+  "Distributeur en gros de produits mixtes": Wholesaler
+  "Garderie": Daycare
+  "Local de préparation": Preparation area
+  "Poissonnerie": Fish store
+  "Produits à base de protéines végétales": Vegetable protein products
+  "Pâtisserie": Pastry shop
+  "Restaurant": Restaurant
+  "Restaurant mets pour emporter": Take-out restaurant
+  "Restaurant service rapide": Fast food restaurant
+  "Supermarché": Supermarket
+  "Traiteur": Caterer
+  "Usine de produits marins": Seafood processing plant
+  "Usine produit autre": Food processing plant
+  "Épicerie": Grocery store
+  "Épicerie avec préparation": Grocery store with prepared foods
+  "Événements spéciaux": Special events
 
   search:
     label: Find a restaurant
@@ -50,9 +72,13 @@ en:
     header:
       subheader: Restaurant health inspections
     footer:
+      change_city: Change City
       about: About
       api: API
-      change_city: Change City
+      twitter: Twitter
+      twitter_url: http://twitter.com/resto_net
+      facebook: Facebook
+      facebook_url: http://www.facebook.com/pages/Resto-Net/329006463817897
 
   pages:
     index:
@@ -67,7 +93,7 @@ en:
       highest_fines: Highest all-time fines
       fines_count:
         one: one fine
-        other: '%{count} fines'
+        other: "%{count} fines"
       fines_total: fined %{total}
     about:
       title: About Resto-Net
@@ -79,29 +105,16 @@ en:
     show:
       title: Resto-Net - Inspection reports for %{name} in %{city}
     montreal:
+      banner_header: Request the publication of restaurant health inspection reports
+      banner_body: In Québec, restaurant health inspection reports aren’t published, so it’s impossible to let you know whether a restaurant passed inspection or received a warning. Only fines are published, on average one year after the infraction or offence. It’s therefore likely that you’ve eaten in restaurants that recently received warnings or fines without knowing!
+      banner_call_to_action: You can help us make this valuable information available.
+      banner_button: Send a request
       tweet: Tweet
       tweet_text: "%{name} (%{address}) was fined a total of %{amount}"
-      summary: This %{type} was fined %{count} times totaling %{total}
+      tweet_related: opennorth
+      summary: “This %{type} was fined %{count} times totaling %{total}.”
       owned_by: Owned by
 
-  owner: "Owner"
-  infractions: "Infractions"
-  total_infractions: "Total infractions"
-  inspection_date: "Infraction date"
-  judgment_date: "Judgment date"
-  amount: "Amount"
-  description: "Description"
-  latest_infractions: "Latest Infractions"
-  most_infractions: "Most Infractions"
-  highest_infractions: "Highest Infractions"
-  in_infractions: "in infractions"
-  name: "Name"
-  address: "Address"
-  infraction_count: "Infraction count"
-  infraction_amount: "Infraction amount"
-  latest_infraction: "Latest infraction"
-  type: "Type"
-  tweet_establishment: "%{name} (%{address}) was fined a total of %{amount}"
   tweet_infraction: "%{name} (%{address}) was fined %{amount} on %{date}"
 
   values:
@@ -154,82 +167,6 @@ en:
         "Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière.": "Operating a dairy plant without holding a valid permit"
         "Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net.": "Any product packaged for sale must bear in indelible, clearly legible and conspicuous on the container, packaging or envelope that contains the necessary entries to reveal the nature, status, composition, use, the exact quantity, origin and toute unique product, the name and address of the manufacturer, preparer, conditioner, packager, supplier or distributor and the place of manufacture, preparation or product packaging. The list of ingredients must appear in descending order of importance. The indication of weight doit account for the loss that normally undergo the product after packaging and be expressed in net weight."
         "Toute personne tenue de se munir d'un permis ou de s'enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l'espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d'où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l'entreposeur, les nom et adresse de l'entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l'estampille dans le cas des viandes et aliments carnés en provenance d'un exploitant autorisé.": "Any person required to obtain a license or registration under the Act must keep registers and vouchers for his operations and keep them available for inspection. These registers and vouchers must indicate: the nature and quantity of products purchaseded or received, the date of purchase or receipt and, in the case of live marine bivalve molluscs and for each lot, the species, date of collection or harvesting area or sector of a zone from which the lot; the name and address of the supplier and, in the case of the warehouseman, the nameand address of the depositor and the number corresponding to the same batch of stored products with reference to the number of the stamp in the case of meat and meat products from an authorized operator."
-    toronto_establishment:
-      establishment_type:
-        "Boucherie-épicerie": "Butcher-Grocer"
-        "Boucherie-Épicerie": "Butcher-Grocer"
-        "Boucherie-Épicerie - établissement fermé": "Butcher-Grocer (closed)"
-        "Boucherie-Épicerie - établissement vendu": "Butcher-Grocer (sold)"
-        "Boulangerie": "Bakery"
-        "Boulangerie - établissement fermé": "Bakery (closed)"
-        "Boulangerie - établissement vendu": "Bakery (sold)"
-        "Brasserie": "Brewery"
-        "Cafétéria": "Cafeteria"
-        "Casse-croûte": "Snack shack"
-        "Centre d'accueil": "Welcome center"
-        "Charcuterie": "Delicatessen"
-        "Distributeur en gros de produits mixtes": "Wholesale distributor of various products"
-        "Épicerie": "Grocery store"
-        "Épicerie avec préparation": "Grocery store with prepared foods"
-        "Épicerie avec préparation - établissement fermé": "Grocery store with prepared foods (closed)"
-        "Épicerie avec préparation - établissement vendu": "Grocery store with prepared foods (sold)"
-        "Événements spéciaux": "Special events"
-        "Événements spéciaux sur l'île Notre-Dame": "Special events on Notre-Dame Island"
-        "Garderie": "Daycare"
-        "Inconnue": "Unknown"
-        "Local de préparation": "Preparation area"
-        "Pâtisserie": "Pastry shop"
-        "Poissonnerie": "Fish store"
-        "Produits à base de protéines végétales": "Vegetable protein products"
-        "Restaurant": "Restaurant"
-        "Restaurant service rapide":  "Fast food restaurant"
-        "Restaaurant service rapide": "Fast food restaurant"
-        "Restaurant mets à emporter":    "Take-out restaurant"
-        "Restaurant mets pour emporter": "Take-out restaurant"
-        "Restaurant - établissement fermé": "Restaurant (closed)"
-        "Restaurant - établissement vendu": "Restaurant (sold)"
-        "Supermarché": "Supermarket"
-        "Traiteur": "Caterer"
-        "Usine de produits marins": "Seafood processing plant"
-        "Usine produit autre": "Food processing plant - Other"
-    montreal_establishment:
-      establishment_type:
-        "Boucherie-épicerie": "Butcher-Grocer"
-        "Boucherie-Épicerie": "Butcher-Grocer"
-        "Boucherie-Épicerie - établissement fermé": "Butcher-Grocer (closed)"
-        "Boucherie-Épicerie - établissement vendu": "Butcher-Grocer (sold)"
-        "Boulangerie": "Bakery"
-        "Boulangerie - établissement fermé": "Bakery (closed)"
-        "Boulangerie - établissement vendu": "Bakery (sold)"
-        "Brasserie": "Brewery"
-        "Cafétéria": "Cafeteria"
-        "Casse-croûte": "Snack shack"
-        "Centre d'accueil": "Welcome center"
-        "Charcuterie": "Delicatessen"
-        "Distributeur en gros de produits mixtes": "Wholesale distributor of various products"
-        "Épicerie": "Grocery store"
-        "Épicerie avec préparation": "Grocery store with prepared foods"
-        "Épicerie avec préparation - établissement fermé": "Grocery store with prepared foods (closed)"
-        "Épicerie avec préparation - établissement vendu": "Grocery store with prepared foods (sold)"
-        "Événements spéciaux": "Special events"
-        "Événements spéciaux sur l'île Notre-Dame": "Special events on Notre-Dame Island"
-        "Garderie": "Daycare"
-        "Inconnue": "Unknown"
-        "Local de préparation": "Preparation area"
-        "Pâtisserie": "Pastry shop"
-        "Poissonnerie": "Fish store"
-        "Produits à base de protéines végétales": "Vegetable protein products"
-        "Restaurant": "Restaurant"
-        "Restaurant service rapide":  "Fast food restaurant"
-        "Restaaurant service rapide": "Fast food restaurant"
-        "Restaurant mets à emporter":    "Take-out restaurant"
-        "Restaurant mets pour emporter": "Take-out restaurant"
-        "Restaurant - établissement fermé": "Restaurant (closed)"
-        "Restaurant - établissement vendu": "Restaurant (sold)"
-        "Supermarché": "Supermarket"
-        "Traiteur": "Caterer"
-        "Usine de produits marins": "Seafood processing plant"
-        "Usine produit autre": "Food processing plant - Other"
 
   date:
     formats:
@@ -239,7 +176,4 @@ en:
   number:
     currency:
       format:
-        unit: "$"
         precision: 0
-        significant: false
-        strip_insignificant_zeros: false
