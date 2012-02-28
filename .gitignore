@@ -13,13 +13,15 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-.sass-cache/
+
+config/initializers/yelp.rb
+data/dinesafe.zip
+.rvmrc
+
+# Global
+.sass-cache
 .DS_Store
 *.swp
 *.swo
 *.swn
 *~
-config/initializers/yelp.rb
-data/dinesafe.xml
-data/dinesafe.zip
-.rvmrc

@@ -7,9 +7,18 @@
       %ul.unstyled
         %li= link_to t('.change_city'), root_url(subdomain: false)
         %li= link_to t('.about'), about_path
-        %li= link_to t('.api'), api_path
-        %li= link_to t('.twitter'), t('.twitter_url'), class: 'social twitter'
-        %li= link_to t('.facebook'), t('.facebook_url'), class: 'social facebook'
+        %li
+          = link_to api_path do
+            %i.icon-cog
+            =t '.api'
+        %li
+          = link_to t('.twitter_url') do
+            %i.icon-social.twitter
+            =t '.twitter'
+        %li
+          = link_to t('.facebook_url') do
+            %i.icon-social.facebook
+            =t '.facebook'
       %hr
       = form_tag establishments_path, method: :get, class: 'form-inline' do
         %h2

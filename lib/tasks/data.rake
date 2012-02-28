@@ -62,5 +62,29 @@ namespace :data do
     task update: :environment do
       MontrealImporter.new(Date.today.year).scan(:remote)
     end
+
+    desc 'Find untranslated strings'
+    task totranslate: :environment do
+      %w(en fr).each do |language|
+        puts "\n\n#{language}.establishment_type"
+        strings = MontrealEstablishment.fields(:establishment_type).map(&:establishment_type).uniq
+        puts strings.select{
+          |x| I18n.t(x, locale: language, default: '').empty?
+        }.sort
+
+        puts "\n\n#{language}.description"
+        strings = MontrealInspection.fields(:description).map(&:description).uniq
+        puts strings.select{|x|
+          I18n.t(:regulations, locale: language)[x.to_sym].blank?
+        }.sort
+
+        %w(long short).map(&:to_sym).each do |length|
+          puts "\n\n#{language}.description.#{length}"
+          puts strings.select{
+            |x| I18n.t(:regulations, locale: language)[x.to_sym].present? && I18n.t(:regulations, locale: language)[x.to_sym][length].blank?
+          }.sort
+        end
+      end
+    end
   end
 end

@@ -5,6 +5,7 @@
     %strong
       = link_to_unless_city_root t(request.subdomain), root_path
     =t '.subheader'
+    .fb-like(data-href="#{t :url}" data-send="false" data-layout="button_count" data-show-faces="false" data-width="102px")
   #language
     = link_to_unless locale == :en, t(:en), locale: :en
     |

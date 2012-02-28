@@ -36,7 +36,7 @@
               .item
                 %strong
                   = link_to inspection.name, establishment_path(inspection.establishment)
-                =l inspection.date, format: :short
+                =l inspection.inspection_date
                 —
                 = number_to_currency inspection.amount
             .more

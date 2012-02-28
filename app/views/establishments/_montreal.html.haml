@@ -28,7 +28,6 @@
       .twitter-box
         =t '.summary', type: t(@establishment.establishment_type).downcase, count: @establishment.fines_count, total: number_to_currency(@establishment.fines_total)
         = link_to t('.tweet'), 'http://twitter.com/share', 'class' => 'twitter-share-button', 'data-lang' => locale, 'data-count' => 'none', 'data-size' => 'large', 'data-via' => 'resto_net', 'data-related' => t('.tweet_related'), 'data-text' => t('.tweet_text', name: @establishment.name, address: @establishment.short_address, amount: number_to_currency(@establishment.fines_total))
-        /@todo I18n.translate_attribute @establishment, :establishment_type
     .span4
       #map
       %p

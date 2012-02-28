@@ -62,5 +62,4 @@ module RestoNet
   end
 end
 
-require 'i18n_extensions'
 require 'string_extensions'

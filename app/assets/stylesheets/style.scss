@@ -87,6 +87,11 @@ header {
       }
     }
   }
+  .fb-like {
+    position: absolute;
+    right: 0;
+    top: 36px;
+  }
 }
 h1 {
   float: left;
@@ -117,7 +122,11 @@ h1 {
       margin-top: 1px;
     }
   }
+  .twitter-box {
+    padding: 9px 19px;
+  }
 }
+
 #canada {
   height: 425px;
   a {
@@ -162,6 +171,7 @@ h1 {
   left: 45px;
   top: 255px;
 }
+
 .twitter-box {
   font: italic 1.5em/1em Georgia, Times, serif;
   vertical-align: middle;
@@ -270,9 +280,9 @@ h1 {
 #banner {
   margin: 1em 0 2em;
   padding: 1em;
-  background-color: #fffbd7;
+  background-color: #ffd;
   color: #333;
-  border: 2px solid #ffd45a;
+  border: 2px solid #dd0;
   @include box-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
   .span8 {
     width: 584px;
@@ -293,7 +303,11 @@ h1 {
     text-transform: uppercase;
     @include border-radius(5px);
     @include box-shadow(1px 2px 2px rgba(0, 0, 0, 0.75));
-    @include gradient(#9C3, #693);
+    @include gradient(lighten(#693, 20%), #693);
+    &:hover {
+      background-position: 0 -15px;
+      @include transition(background-position 0.1s linear);
+    }
   }
 }
 #fr #banner button {
@@ -365,19 +379,14 @@ footer {
   }
 }
 
-.social {
-  display: inline-block;
-  height: 16px;
-  padding-left: 21px;
-  background: transparent url(/assets/sprites.png) no-repeat 0 0;
+.icon-social {
+  background-image: url(/assets/sprites.png);
 }
 .twitter {
-  padding-left: 21px;
   background-position: 0 0;
 }
 .facebook {
-  padding-left: 13px;
-  background-position: 0 -16px;
+  background-position: 0 -14px;
 }
 
 #network {
