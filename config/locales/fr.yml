@@ -6,11 +6,17 @@ fr:
 
   montreal: Montréal
 
+  latest_inspections: Dernières inspections
+  latest_fines: Dernières amendes
+  name: En ordre alphabétique
+  fines_count: Le plus d’amendes
+  fines_total: Les plus fortes amendes
+
   search:
     label: Trouvez un restaurant
     placeholder: Indiquez le nom ou l’adresse du restaurant
     submit: Rechercher
-    help: "Par exemple:"
+    help: "Par exemple :"
     example1: Hong Kong
     example2: 1023 Saint-Laurent
 
@@ -62,11 +68,7 @@ fr:
       subheader: Choisissez d’abord votre ville.
     city:
       title: Resto-Net - Inspections des aliments et Sécurité alimentaire à %{city}
-      latest_inspections: Dernières inspections
     montreal:
-      latest_fines: Dernières amendes
-      most_fines: Le plus d’amendes
-      highest_fines: Les plus fortes amendes
       next: Prochain ›
     about:
       title: À propos de Resto-Net
@@ -88,12 +90,14 @@ fr:
         other: « Cet établissement a été condamné à <b>%{count} amendes</b> totalisant <b>%{total}</b>. »
       tweet: Tweeter
       tweet_text: "%{name} (%{address}) a été condamné à des amendes totalisant %{amount}"
+      tweet_text_detail: "%{name} (%{address}) a été condamné à une amende de %{amount} le %{date}"
       tweet_related: nordouvert
       inspections: Historique d’inspections
       inspection: Condamné <span>%{span}</span> plus tard à une amende de <span>%{amount}</span>
-      failure: "Infraction:"
-
-  tweet_infraction: "%{name} (%{address}) a été condamné à une amende de salubrité de %{amount} le %{date}" # @todo
+      failure: "Infraction :"
+  inspections:
+    index:
+      title: ""
 
   date:
     abbr_day_names:

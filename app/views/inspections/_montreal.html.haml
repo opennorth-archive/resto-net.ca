@@ -1,0 +1,21 @@
+%h2=t :latest_fines
+.row
+  .span5
+    %table.wide
+      - @inspections.each do |inspection|
+        %tr
+          %td
+            =l inspection.inspection_date
+          %td
+            = link_to inspection.name, establishment_path(inspection.establishment)
+          %td.item-value
+            = number_to_currency inspection.amount
+  .span7#facets
+    .well
+      /@todo selected facet has dark grey bg and triangle on left
+      %ul.unstyled
+        - regulations.each do |_,x|
+          %li
+            = regulation x, inspections_path(q: x[:citation].slug), 'data-placement' => 'left'
+
+/@todo pagination

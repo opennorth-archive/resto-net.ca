@@ -1,19 +1,18 @@
-- content_for :meta_description, t(:tweet_infraction,
-    :name => @establishment.name,
-    :address => @establishment.short_address,
-    :amount => number_to_currency(@establishment.montreal_inspections.first.amount),
-    :date => l(@establishment.montreal_inspections.first.judgment_date))
+/@todo
+/- content_for :meta_description, t(:tweet_infraction,
+/    :name => @establishment.name,
+/    :address => @establishment.short_address,
+/    :amount => number_to_currency(@establishment.montreal_inspections.first.amount),
+/    :date => l(@establishment.montreal_inspections.first.judgment_date))
 
 .container
   #banner
     .row
       .span12
-        %h2
-          =t '.banner_header'
+        %h2=t '.banner_header'
     .row
       .span8
-        %p
-          =t '.banner_body'
+        %p=t '.banner_body'
         %p
           %strong=t '.banner_call_to_action'
       .span4
@@ -25,9 +24,10 @@
         %small
           =t '.owned_by'
           = @establishment.owner_name
+
       .twitter-box
         =t('.summary', type: t(@establishment.establishment_type).downcase, count: @establishment.fines_count, total: number_to_currency(@establishment.fines_total)).html_safe
-        = link_to t('.tweet'), 'http://twitter.com/share', 'class' => 'twitter-share-button', 'data-lang' => locale, 'data-count' => 'none', 'data-size' => 'large', 'data-via' => 'resto_net', 'data-related' => t('.tweet_related'), 'data-text' => t('.tweet_text', name: @establishment.name, address: @establishment.short_address, amount: number_to_currency(@establishment.fines_total))
+        = tweet_button t('.tweet_text', name: @establishment.name, address: @establishment.short_address, amount: number_to_currency(@establishment.fines_total)), 'data-size' => 'large'
 
       %h3=t '.inspections'
       - last_year = nil
@@ -45,24 +45,18 @@
                 .day= inspection.inspection_date.strftime '%e'
               .details
                 %p
-                  %b=t '.failure'
-                  = link_to inspection.contravention[:short], '#', 'rel' => 'popover', 'data-title' => inspection.contravention[:article], 'data-content' => inspection.contravention[:long]
+                  %strong
+                    %i.icon-exclamation-sign
+                    =t '.failure'
+                  = regulation inspection.regulation, '#'
                 %p.summary
                   =t('.inspection', amount: number_to_currency(inspection.amount), span: distance_of_time_in_words(inspection.inspection_date, inspection.judgment_date)).html_safe
+                  = tweet_button t('.tweet_text_detail', name: @establishment.name, address: @establishment.short_address, amount: inspection.amount, date: inspection.judgment_date)
 
     .span4
       #mini-map
       %p
         = @establishment.full_address
-
-/@todo tweet
-
-/@todo yelp reviews
-/%h2 Reviews from Yelp.com
-/-unless @establishment.reviews.empty?
-/  = render :partial => 'review', :collection => @establishment.reviews
-/-else
-/  %p No reviews could be found.  Check back later!
 
 - if @establishment.geocoded?
   - content_for :footer do

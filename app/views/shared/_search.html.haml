@@ -1,0 +1,10 @@
+.band
+  .container
+    /@todo add clear, descriptive text, integrate violation reporting from template
+    = form_tag establishments_path, method: :get, id: 'search', class: 'form-inline' do
+      %p
+        = label_tag :q, t('search.label')
+        = text_field_tag :q, params[:q], placeholder: t('search.placeholder'), class: 'input-xlarge'
+        = button_tag class: 'btn btn-primary' do
+          %i.icon-search.icon-white
+          =t 'search.submit'

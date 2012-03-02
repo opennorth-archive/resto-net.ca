@@ -6,6 +6,12 @@ en:
 
   montreal: Montreal
 
+  latest_inspections: Latest inspections
+  latest_fines: Latest fines
+  name: In alphabetical order
+  fines_count: Most all-time fines
+  fines_total: Highest total all-time fines
+
   search:
     label: Find a restaurant
     placeholder: Search for a restaurant by name or location
@@ -62,11 +68,7 @@ en:
       subheader: Choose your city to start.
     city:
       title: Resto-Net - Restaurant Health Inspections and Food Safety in %{city}
-      latest_inspections: Latest inspections
     montreal:
-      latest_fines: Latest fines
-      most_fines: Most all-time fines
-      highest_fines: Highest total all-time fines
       next: Next ›
     about:
       title: About Resto-Net
@@ -88,12 +90,14 @@ en:
         other: “This %{type} was fined <b>%{count} times</b> totaling <b>%{total}</b>.”
       tweet: Tweet
       tweet_text: "%{name} (%{address}) was fined a total of %{amount}"
+      tweet_text_detail: "%{name} (%{address}) was fined %{amount} on %{date}"
       tweet_related: opennorth
       inspections: Inspection History
       inspection: Fined <span>%{span}</span> later for <span>%{amount}</span>
-      failure: "Failure:"
-
-  tweet_infraction: "%{name} (%{address}) was fined %{amount} on %{date}" # @todo
+      failure: "Fail:"
+  inspections:
+    index:
+      title: ""
 
   date:
     formats:

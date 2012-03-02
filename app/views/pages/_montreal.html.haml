@@ -1,50 +1,39 @@
-- if @boxes[:latest_fines]
-  .span4
-    .list-box
-      %h2
-        =t '.latest_fines'
-      .inner
-        %table
-          - @boxes[:latest_fines].each do |inspection|
-            %tr
-              %td
-                =l inspection.inspection_date, format: :short
-              %td
-                = link_to inspection.short_name, establishment_path(inspection.establishment)
-              %td.item-value
-                = number_to_currency inspection.amount
-        = link_to t('.next'), establishments_path # @todo hook this up
-- if @boxes[:fines_count]
-  .span4#fines_count
-    .list-box
-      %h2
-        =t '.most_fines'
-      .inner
-        %table
-          - @boxes[:fines_count].each do |establishment|
-            %tr
-              %td
-                = link_to establishment.short_name, establishment_path(establishment)
-              %td.item-chart
-                .item-fill
-                  .item-bar(class="bar#{establishment.fines_count * 10 / @maxima[:fines_count]}")
-                    .item-number
-                      = establishment.fines_count
-        = link_to t('.next'), establishments_path # @todo hook this up
-- if @boxes[:fines_total]
-  .span4#fines_total
-    .list-box
-      %h2
-        =t '.highest_fines'
-      .inner
-        %table
-          - @boxes[:fines_total].each do |establishment|
-            %tr
-              %td
-                = link_to establishment.short_name, establishment_path(establishment)
-              %td.item-chart
-                .item-fill
-                  .item-bar(class="bar#{establishment.fines_total.to_i * 10 / @maxima[:fines_total]}")
-                    .item-number
-                      = number_to_human establishment.fines_total, precision: 0
-        = link_to t('.next'), establishments_path # @todo hook this up
+.span4
+  .list-box
+    %h2=t :latest_fines
+    .inner
+      %table.wide
+        - @fines.each do |inspection|
+          %tr
+            %td=l inspection.inspection_date, format: :short
+            %td= link_to inspection.short_name, establishment_path(inspection.establishment)
+            %td.item-value= number_to_currency inspection.amount
+      = link_to t('.next'), inspections_path
+.span4
+  .list-box
+    %h2=t :fines_count
+    .inner
+      %table.wide
+        - @fines_count.each do |establishment|
+          %tr
+            %td= link_to establishment.short_name, establishment_path(establishment)
+            %td.item-chart
+              .item-fill
+                .item-bar(class="bar#{establishment.fines_count * 10 / @max_fine_count}")
+                  .item-number
+                    = establishment.fines_count
+      = link_to t('.next'), establishments_path(order: 'fines_count')
+.span4
+  .list-box
+    %h2=t :fines_total
+    .inner
+      %table.wide
+        - @fines_total.each do |establishment|
+          %tr
+            %td= link_to establishment.short_name, establishment_path(establishment)
+            %td.item-chart
+              .item-fill
+                .item-bar(class="bar#{establishment.fines_total.to_i * 10 / @max_fine_total}")
+                  .item-number
+                    = number_to_human establishment.fines_total, precision: 0
+      = link_to t('.next'), establishments_path(order: 'fines_total')

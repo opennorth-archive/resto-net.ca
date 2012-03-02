@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_filter :requires_subdomain, only: :city
   caches_page :index, :about, :api
 
   def index
@@ -6,22 +7,15 @@ class PagesController < ApplicationController
 
   # @note don't need to filter by source, as class filters by city already
   def city
-    if subdomains.include? request.subdomain
-      @boxes = {}
-      @maxima = {}
-      unless establishments.only_fines?
-        @boxes[:latest_inspections] = inspections.sort(:inspection_date.desc).limit(10)
-      end
-      if establishments.has_fines?
-        @boxes[:latest_fines] = inspections.sort(:inspection_date.desc).limit(10)
-        @boxes[:fines_count]  = establishments.sort(:fines_count.desc).limit(10)
-        @boxes[:fines_total]  = establishments.sort(:fines_total.desc).limit(10)
-        @maxima[:fines_count] = @boxes[:fines_count].first.fines_count
-        @maxima[:fines_total] = @boxes[:fines_total].first.fines_total.to_i
-      end
-      @spaces = 4 - @boxes.size
-    else
-      raise ActionController::RoutingError.new('Not Found') # @todo
+    unless establishments.only_fines?
+      @inspections = inspections.sort(:inspection_date.desc).limit(10)
+    end
+    if establishments.has_fines?
+      @fines          = inspections.fined.sort(:inspection_date.desc).limit(10)
+      @fines_count    = establishments.sort(:fines_count.desc).limit(10)
+      @fines_total    = establishments.sort(:fines_total.desc).limit(10)
+      @max_fine_count = @fines_count.first.fines_count
+      @max_fine_total = @fines_total.first.fines_total.to_i
     end
   end
 
@@ -37,13 +31,4 @@ class PagesController < ApplicationController
     render layout: false
   end
 
-private
-
-  def establishments
-    "#{request.subdomain.capitalize}Establishment".constantize
-  end
-
-  def inspections
-    "#{request.subdomain.capitalize}Inspection".constantize
-  end
 end

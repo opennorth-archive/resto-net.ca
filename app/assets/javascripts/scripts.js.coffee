@@ -1,3 +1,9 @@
+$.fn.popover.Constructor.prototype.setContent = ->
+    $tip = @tip()
+    $tip.find('.popover-title').html @getTitle()
+    $tip.find('.popover-content').html @getContent()
+    $tip.removeClass 'fade top bottom left right in'
+
 I18n =
   en:
     tweet_text: 'Hey @resto_net, please make %{city} your next city. cc @opennorth'
@@ -13,7 +19,8 @@ t = (string, args = {}) ->
   string
 
 $ ->
-  $('a[rel=popover]').popover()
+  $('a[rel=popover]').popover
+    template: '<div class="popover"><div class="arrow"></div><div class="popover-inner"><blockquote><p class="popover-content"></p><small class="popover-title"></small></blockquote></div></div>'
 
   $('#twitter').submit (e) ->
     city = $('#twitter input').val()

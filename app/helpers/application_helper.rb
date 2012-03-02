@@ -9,6 +9,8 @@ module ApplicationHelper
       args[:q] = params[:q]
     elsif @establishment
       args[:name] = @establishment.name
+    elsif @inspections
+      # @todo
     end
     t "#{controller.controller_name}.#{controller.action_name}.title", args
   end
@@ -20,6 +22,8 @@ module ApplicationHelper
       # @todo
     elsif @establishment
       @establishment.name
+    elsif @inspections
+      # @todo
     elsif current_page?(controller: 'pages', action: 'index')
       'Resto-Net'
     else
@@ -32,6 +36,8 @@ module ApplicationHelper
     if @establishments
       # @todo
     elsif @establishment
+      # @todo
+    elsif @inspections
       # @todo
     else
       'website'
@@ -69,6 +75,19 @@ module ApplicationHelper
     link_to_unless city_root?, name, options, html_options, &block
   end
 
+  def tweet_button(text, options = {})
+    link_to t('.tweet'), 'http://twitter.com/share', {'class' => 'twitter-share-button', 'data-lang' => locale, 'data-count' => 'none', 'data-via' => 'resto_net', 'data-related' => t('.tweet_related'), 'data-text' => text}.merge(options)
+  end
+
+  def regulations
+    t(:regulations).reject{|_,x| x[:exclude]}.sort_by{|_,x| x[:short]}
+  end
+
+  def regulation(regulation, options = {}, html_options = {})
+    link_to regulation[:short], options, {'rel' => 'popover', 'data-title' => regulation[:article], 'data-content' => regulation[:long]}.merge(html_options)
+  end
+
+
 
   # @todo past this point
 
@@ -94,17 +113,6 @@ module ApplicationHelper
         },
       }
     end.to_json
-  end
-
-  def map_translations_json
-    {
-      :total_infractions => t(:total_infractions),
-      :latest_infraction => t(:latest_infraction)
-    }.to_json
-  end
-
-  def address(establishment)
-    establishment.street ? establishment.street : establishment.address
   end
 
 end

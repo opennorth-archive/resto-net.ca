@@ -1,18 +1,31 @@
 class EstablishmentsController < ApplicationController
-  caches_action :index, :cache_path => proc{ params.slice :q }
+  before_filter :requires_subdomain
   caches_page :show
+  caches_action :index, :cache_path => proc{ params.slice :q }
 
   respond_to :html, :json, :xml
 
   def index
-    q = params[:search]
-    s = Tire.search 'establishments' do query { string q } end
-    @establishments = s.results.select { |e| e.source.downcase == request.subdomain }
+    case params[:order]
+    when 'fines_count', 'fines_total'
+      @attribute = params[:order].to_sym
+      @direction = :desc
+    else
+      @attribute = :name
+      @direction = :asc
+    end
+    @establishments = establishments.sort(@attribute.send(@direction)).limit(50) # @todo paginate
+    @maximum = @establishments.first[@attribute].to_i
     respond_with @establishments
+
+    # @todo search
+    #q = params[:search]
+    #s = Tire.search 'establishments' do query { string q } end
+    #@establishments = s.results.select { |e| e.source.downcase == request.subdomain }
   end
 
   def show
-    @establishment = Establishment.find params[:id]
+    @establishment = establishments.find params[:id]
     respond_with @establishment
   end
 

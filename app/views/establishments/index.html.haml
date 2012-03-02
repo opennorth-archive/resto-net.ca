@@ -1,19 +1,21 @@
-= form_tag establishments_path, method: :get, class: 'form-search' do
-  = label_tag :q, t('search.label')
-  = text_field_tag :q, params[:q], placeholder: t('search.placeholder'), class: 'input-medium search-query'
-  = submit_tag t('search.submit'), class: 'btn'
-  %p.help-block
-    %strong
-      =t 'search.help'
-      = link_to t('search.example1'), establishments_path(q: t('search.example1'))
+= render 'shared/search'
+.container
+  %h2=t @attribute
+  .row
+    - @establishments.each_slice(25).each_with_index do |slice,i|
+      .span6
+        %table.wide
+          - slice.each_with_index do |establishment,j|
+            %tr
+              %td.index
+                = i * 25 + j + 1 # @todo change with pagination
+              %td
+                = link_to establishment.name, establishment_path(establishment)
+              - unless @attribute == :name
+                %td.item-chart
+                  .item-fill
+                    .item-bar(class="bar#{establishment[@attribute].to_i * 10 / @maximum}")
+                      .item-number
+                        = number_to_human establishment[@attribute], precision: 0
 
-%table.pretty
-  %thead
-    %tr
-      %th= t :name
-      %th= t :address
-  %tbody
-    - @establishments.each do |establishment|
-      %tr[establishment]
-        %td= link_to establishment.name, establishment_path(establishment)
-        %td= address(establishment)
+  /@todo paginate

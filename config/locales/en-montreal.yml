@@ -1,4 +1,4 @@
-# http://www2.publicationsduquebec.gouv.qc.ca/dynamicSearch/telecharge.php?type=2&file=/P_29/P29.html
+# http://www2.publicationsduquebec.gouv.qc.ca/dynamicSearch/telecharge.php?type=2&file=/P_29/P29_A.html
 # http://www2.publicationsduquebec.gouv.qc.ca/dynamicSearch/telecharge.php?type=3&file=/P_29/P29R1_A.HTM
 en:
   "Aliments naturels": Natural foods
@@ -69,13 +69,14 @@ en:
       article: Food Products Act, article 3.1
       citation: LRQ c. P-29 a. 3.1
 
-    # @note occurs once with typo
+    # @note occurs once with typos
     ? L'exploitant doit empêcher que l'aménagement des installations, l'exécution des opérations de préparation, de conditionnement ou de transformation des produits, leur entreposage ou l'exécution de toute autre opération ou l'utilisation du matériel soient susceptiibles d'affecter la salubrité des produits ou les conditions sanitaire de l'exploitantion.
     :
-      long: ''
-      short: ''
-      article: Regulation respecting food, article 3.1
-      citation: LRQ c. P-29 r.1 a. 3.1
+      long: Every person operating a packing-house, an establishment, premises or a vehicle where products are prepared, conditioned, processed, packaged, stored, unloaded, received, given for promotional purposes, offered for sale or sold, or where products are stored to be sold, used to furnish services for remuneration or given for promotional purposes, and every operator of premises where animals whose products are intended for human consumption are found or where animals are slaughtered, shall maintain the packing-house, establishment, premises, places, vehicle and equipment clean. The operator shall avoid any plant layout or design, any preparation, conditioning or processing procedure, any storing of products or any other operation or any use of equipment that is likely to affect the wholesomeness of the products or the cleanliness of the premises.
+      short: Keep things clean
+      article: Food Products Act, article 3.1
+      citation: LRQ c. P-29 a. 3.1
+      exclude: true
 
     ? La classe de couleur inscrite sur le petit contenant de sirop d'érable doit correspondre à la classe de couleur du sirop qu'il contient telle que déterminée au moyen d'un spectrophotomètre conformément au tableau B de l'annexe 8.B.
     :

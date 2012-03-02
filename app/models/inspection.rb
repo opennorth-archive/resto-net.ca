@@ -21,11 +21,6 @@ class Inspection
     name.gsub(/\b(Boulangerie|Restaurant) | Inc\.\z/, '')
   end
 
-  # @note override this method if necessary
-  def date
-    inspection_date
-  end
-
 private
 
   def denormalize
