@@ -63,9 +63,11 @@ fr:
     city:
       title: Resto-Net - Inspections des aliments et Sécurité alimentaire à %{city}
       latest_inspections: Dernières inspections
+    montreal:
       latest_fines: Dernières amendes
       most_fines: Le plus d’amendes
       highest_fines: Les plus fortes amendes
+      next: Prochain ›
     about:
       title: À propos de Resto-Net
     api:
@@ -80,11 +82,16 @@ fr:
       banner_body: Au Québec, les rapports d’inspections ne sont pas publiés. Il est alors impossible de vous indiquer si un restaurant a satisfait à son inspection ou s’il a reçu un avertissement. Seules les amendes sont publiées, dans un délai d’une moyenne d’un an. Il est donc probable que vous ayez mangé dans des restaurants qui ont récemment reçu des avertissements ou des amendes sans le savoir!
       banner_call_to_action: Aidez-nous à changer la situation.
       banner_button: Soumettez une demande
+      owned_by: Détenue par
+      summary:
+        one: « Cet établissement a été condamné à une amende de %{total}. »
+        other: « Cet établissement a été condamné à <b>%{count} amendes</b> totalisant <b>%{total}</b>. »
       tweet: Tweeter
       tweet_text: "%{name} (%{address}) a été condamné à des amendes totalisant %{amount}"
       tweet_related: nordouvert
-      summary: « Cet établissement a été condamné à %{count} amendes totalisant %{total}. »
-      owned_by: Détenue par
+      inspections: Historique d’inspections
+      inspection: Condamné <span>%{span}</span> plus tard à une amende de <span>%{amount}</span>
+      failure: "Infraction:"
 
   tweet_infraction: "%{name} (%{address}) a été condamné à une amende de salubrité de %{amount} le %{date}" # @todo
 
@@ -121,8 +128,9 @@ fr:
     - samedi
     formats:
       default: "%e %b %Y" #! '%Y-%m-%d'
-      long: ! '%d %B %Y'
+      long: "%e %B %Y" #! '%d %B %Y'
       short: "%e %b" #! '%y-%m-%d'
+      month: "%b"
     month_names:
     - 
     - janvier
@@ -147,14 +155,14 @@ fr:
         one: environ une heure
         other: environ %{count} heures
       about_x_months:
-        one: environ un mois
-        other: environ %{count} mois
+        one: 1 mois
+        other: "%{count} mois"
       about_x_years:
-        one: environ un an
-        other: environ %{count} ans
+        one: 1 an
+        other: "%{count} ans"
       almost_x_years:
-        one: presqu'un an
-        other: presque %{count} ans
+        one: 1 an
+        other: "%{count} ans"
       half_a_minute: une demi-minute
       less_than_x_minutes:
         one: moins d'une minute
@@ -165,8 +173,8 @@ fr:
         other: moins de %{count} secondes
         zero: moins d'une seconde
       over_x_years:
-        one: plus d'un an
-        other: plus de %{count} ans
+        one: 1 an
+        other: "%{count} ans"
       x_days:
         one: 1 jour
         other: ! '%{count} jours'

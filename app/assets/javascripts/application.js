@@ -12,4 +12,5 @@
 //
 //= require social
 //= require leaflet
+//= require bootstrap.min
 //= require scripts

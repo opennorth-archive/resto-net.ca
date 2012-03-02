@@ -26,20 +26,36 @@
           =t '.owned_by'
           = @establishment.owner_name
       .twitter-box
-        =t '.summary', type: t(@establishment.establishment_type).downcase, count: @establishment.fines_count, total: number_to_currency(@establishment.fines_total)
+        =t('.summary', type: t(@establishment.establishment_type).downcase, count: @establishment.fines_count, total: number_to_currency(@establishment.fines_total)).html_safe
         = link_to t('.tweet'), 'http://twitter.com/share', 'class' => 'twitter-share-button', 'data-lang' => locale, 'data-count' => 'none', 'data-size' => 'large', 'data-via' => 'resto_net', 'data-related' => t('.tweet_related'), 'data-text' => t('.tweet_text', name: @establishment.name, address: @establishment.short_address, amount: number_to_currency(@establishment.fines_total))
+
+      %h3=t '.inspections'
+      - last_year = nil
+      - @establishment.inspections.sort(:inspection_date.desc).group_by{|x| x.inspection_date.year}.each do |year,inspections|
+        - if last_year && last_year - 1 > year
+          .ellipsis ⋮
+        - last_year = year
+        %h4
+          %span= year
+        %ul.unstyled
+          - inspections.each do |inspection|
+            %li
+              .date
+                .month=l inspection.inspection_date, format: :month
+                .day= inspection.inspection_date.strftime '%e'
+              .details
+                %p
+                  %b=t '.failure'
+                  = link_to inspection.contravention[:short], '#', 'rel' => 'popover', 'data-title' => inspection.contravention[:article], 'data-content' => inspection.contravention[:long]
+                %p.summary
+                  =t('.inspection', amount: number_to_currency(inspection.amount), span: distance_of_time_in_words(inspection.inspection_date, inspection.judgment_date)).html_safe
+
     .span4
-      #map
+      #mini-map
       %p
         = @establishment.full_address
 
-- if @establishment.geocoded?
-  - content_for :footer do
-    :javascript
-      var latlng = new L.LatLng(#{@establishment.latitude}, #{@establishment.longitude})
-
-/@todo inspections
-/= render :partial => 'inspections/montreal_inspection', :collection => @establishment.montreal_inspections
+/@todo tweet
 
 /@todo yelp reviews
 /%h2 Reviews from Yelp.com
@@ -47,3 +63,8 @@
 /  = render :partial => 'review', :collection => @establishment.reviews
 /-else
 /  %p No reviews could be found.  Check back later!
+
+- if @establishment.geocoded?
+  - content_for :footer do
+    :javascript
+      var latlng = new L.LatLng(#{@establishment.latitude}, #{@establishment.longitude})

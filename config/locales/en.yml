@@ -63,9 +63,11 @@ en:
     city:
       title: Resto-Net - Restaurant Health Inspections and Food Safety in %{city}
       latest_inspections: Latest inspections
+    montreal:
       latest_fines: Latest fines
       most_fines: Most all-time fines
       highest_fines: Highest total all-time fines
+      next: Next ›
     about:
       title: About Resto-Net
     api:
@@ -80,11 +82,16 @@ en:
       banner_body: In Québec, restaurant health inspection reports aren’t published, so it’s impossible to let you know whether a restaurant passed inspection or received a warning. Only fines are published, on average one year after the infraction or offence. It’s therefore likely that you’ve eaten in restaurants that recently received warnings or fines without knowing!
       banner_call_to_action: Help us make this valuable information available.
       banner_button: Send a request
+      owned_by: Owned by
+      summary:
+        one: “This %{type} was fined once for %{total}.”
+        other: “This %{type} was fined <b>%{count} times</b> totaling <b>%{total}</b>.”
       tweet: Tweet
       tweet_text: "%{name} (%{address}) was fined a total of %{amount}"
       tweet_related: opennorth
-      summary: “This %{type} was fined %{count} times totaling %{total}.”
-      owned_by: Owned by
+      inspections: Inspection History
+      inspection: Fined <span>%{span}</span> later for <span>%{amount}</span>
+      failure: "Failure:"
 
   tweet_infraction: "%{name} (%{address}) was fined %{amount} on %{date}" # @todo
 
@@ -92,7 +99,28 @@ en:
     formats:
       default: "%b %e, %Y"
       short: "%b %e"
-
+      long: "%B %e, %Y"
+      month: "%b"
+  datetime:
+    distance_in_words:
+      about_x_months:
+        one: 1 month
+        other: "%{count} months"
+      about_x_years:
+        one: 1 year
+        other: "%{count} years"
+      almost_x_years:
+        one: 1 year
+        other: "%{count} years"
+      over_x_years:
+        one: 1 year
+        other: "%{count} years"
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
   number:
     currency:
       format:

@@ -16,6 +16,10 @@ class MontrealEstablishment < Establishment
   before_create :geocode
   before_save :fingerprint
 
+  def inspections
+    montreal_inspections
+  end
+
   def self.source
     'montreal'
   end

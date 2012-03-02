@@ -104,16 +104,19 @@ h1 {
 // pages#index -----------------------------------------------------------------
 
 .pages-index {
-  header {
-    width: 650px;
-    margin: 0 auto;
+  #language {
+    top: 20px;
   }
   .root {
     padding-top: 20px;
     background: transparent url(/assets/map.gif) no-repeat 0 0;
   }
-  #language {
-    top: 20px;
+  header {
+    width: 650px;
+    margin: 0 auto;
+  }
+  .twitter-box {
+    padding: 9px 19px;
   }
   #network {
     height: 32px;
@@ -121,9 +124,6 @@ h1 {
     ul {
       margin-top: 1px;
     }
-  }
-  .twitter-box {
-    padding: 9px 19px;
   }
 }
 
@@ -245,37 +245,32 @@ h1 {
   td {
     padding-bottom: 1em;
   }
-  .item-value {
-    text-align: right;
-  }
-  .item-chart {
-    width: 30%;
-  }
-  .item-fill {
-    float: right;
-    width: 100%;
-    margin: 2px 0;
-    background-color: #f5f5f5;
-    line-height: 14px;
-    @include border-radius(7px);
-  }
-  .item-bar {
-    float: right;
-    background-color: #ddd;
-    text-align: right;
-    @include border-radius(7px);
-  }
-  .item-number {
-    padding-right: 5px;
-    color: #444;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.66);
-  }
-  a {
-    color: #000;
-    &:hover {
-      color: lighten(#000, 30%);
-    }
-  }
+}
+
+.item-value {
+  text-align: right;
+}
+.item-chart {
+  width: 30%;
+}
+.item-fill {
+  float: right;
+  width: 100%;
+  margin: 2px 0;
+  background-color: #f5f5f5;
+  line-height: 14px;
+  @include border-radius(7px);
+}
+.item-bar {
+  float: right;
+  background-color: #ddd;
+  text-align: right;
+  @include border-radius(7px);
+}
+.item-number {
+  padding-right: 5px;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.66);
 }
 
 .bar10 { width: 100%; }
@@ -288,22 +283,6 @@ h1 {
 .bar3 { min-width: 37%; }
 .bar2 { min-width: 28%; }
 .bar1 { min-width: 19%; }
-
-.more {
-  text-align: right;
-  a {
-    color: #000;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  span {
-    position: relative;
-    top: -1px;
-    padding-left: 1em;
-    font-size: 0.5em;
-  }
-}
 
 // establishments#show ---------------------------------------------------------
 
@@ -350,7 +329,7 @@ h1 {
   font-size: 20px;
 }
 
-#map {
+#mini-map {
   width: 100%;
   height: 240px;
   margin-bottom: 1em;
@@ -360,17 +339,90 @@ h1 {
   .span8 {
     h2 {
       margin-bottom: 13px;
+      line-height: 1em;
     }
     small {
       display: block;
       font-size: 11px;
       line-height: 1em;
     }
+    h4 {
+      clear: left;
+      margin-bottom: 1em;
+      padding-top: 1em;
+      border-bottom: 1px solid #ddd;
+      font-size: 18px;
+      line-height: 0;
+      text-align: center;
+      span {
+        padding: 0 0.5em;
+        background-color: #fff;
+      }
+    }
+    li {
+      clear: left;
+    }
+    p {
+      span {
+        display: inline-block;
+        margin-top: -4px;
+        padding: 12px 10px;
+        background-color: #fff;
+        font-weight: bold;
+        line-height: 0;
+        @include border-radius(20px);
+      }
+    }
+  }
+  .twitter-box {
+    margin-bottom: 13px;
+  }
+  .date {
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .month {
+    font-size: 16px;
+    line-height: 1em;
+  }
+  .day {
+    font-size: 24px;
+    line-height: 1em;
+  }
+  .details {
+    float: left;
+    width: 550px;
+    padding: 10px;
+    border-bottom: 3px solid #fff;
+    background-color: #eee;
+  }
+  .summary {
+    margin-bottom: -6px;
+    vertical-align: top;
   }
   .span4 {
     color: #999;
     text-align: center;
   }
+}
+.lt-ie8 {
+  .establishments-show .span12 span {
+    zoom: 1;
+    display: inline;
+  }
+}
+.ellipsis {
+  clear: left;
+  color: #ccc;
+  padding: 13px 0;
+  font-size: 36px;
+  text-align: center;
 }
 
 // Footer ----------------------------------------------------------------------

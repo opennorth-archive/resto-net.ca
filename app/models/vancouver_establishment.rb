@@ -8,6 +8,10 @@ class VancouverEstablishment < Establishment
 
   many :vancouver_inspections, dependent: :destroy
 
+  def inspections
+    vancouver_inspections
+  end
+
   def self.source
     'vancouver'
   end

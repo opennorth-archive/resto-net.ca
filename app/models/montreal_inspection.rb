@@ -16,4 +16,8 @@ class MontrealInspection < Inspection
     judgment_date
   end
 
+  def contravention
+    @contravention ||= I18n.t(:regulations)[description.to_sym]
+  end
+
 end

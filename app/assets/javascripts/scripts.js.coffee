@@ -13,6 +13,8 @@ t = (string, args = {}) ->
   string
 
 $ ->
+  $('a[rel=popover]').popover()
+
   $('#twitter').submit (e) ->
     city = $('#twitter input').val()
     if city isnt '' and city isnt 'my city'
@@ -20,7 +22,7 @@ $ ->
     e.preventDefault()
 
   if latlng?
-    map = new L.Map 'map',
+    map = new L.Map 'mini-map',
       center: latlng
       zoom: 16
       layers: [

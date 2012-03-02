@@ -23,6 +23,10 @@ class Establishment
 
   scope :geocoded, where(:latitude.ne => nil, :longitude.ne => nil)
 
+  def inspections
+    raise NotImplementedError
+  end
+
   def self.source
     raise NotImplementedError
   end
@@ -49,17 +53,13 @@ class Establishment
   end
 
   def short_address
-    if geocoded? && street
-      street
-    elsif geocodeable?
+    if geocodeable?
       address
     end
   end
 
   def full_address
-    if geocoded? && street && locality
-      "#{street}, #{locality}"
-    elsif geocodeable?
+    if geocodeable?
       "#{address}, #{city}"
     end
   end

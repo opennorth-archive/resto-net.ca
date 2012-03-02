@@ -15,6 +15,10 @@ class TorontoEstablishment < Establishment
   validates_numericality_of :minimum_inspections_per_year, only_integer: true, greater_than: 0, allow_blank: true
   validates_uniqueness_of :dinesafe_id
 
+  def inspections
+    toronto_inspections
+  end
+
   def self.source
     'toronto'
   end
