@@ -16,6 +16,11 @@ class Inspection
     raise NotImplementedError
   end
 
+  # @see Establishment#short_name
+  def short_name
+    name.gsub(/\b(Boulangerie|Restaurant) | Inc\.\z/, '')
+  end
+
   # @note override this method if necessary
   def date
     inspection_date

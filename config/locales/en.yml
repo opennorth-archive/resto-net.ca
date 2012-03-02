@@ -66,10 +66,6 @@ en:
       latest_fines: Latest fines
       most_fines: Most all-time fines
       highest_fines: Highest total all-time fines
-      fines_count:
-        one: one fine
-        other: "%{count} fines"
-      fines_total: fined %{total}
     about:
       title: About Resto-Net
     api:
@@ -101,3 +97,17 @@ en:
     currency:
       format:
         precision: 0
+    human:
+      decimal_units:
+        format: ! '%n%u'
+        units:
+          billion: B
+          million: M
+          quadrillion: Q
+          thousand: k
+          trillion: T
+          unit: ''
+      format:
+        delimiter: ''
+        significant: false
+        strip_insignificant_zeros: true

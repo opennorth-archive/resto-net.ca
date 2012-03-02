@@ -18,6 +18,7 @@ $ ->
     if city isnt '' and city isnt 'my city'
       window.open("http://twitter.com/share?url=#{encodeURIComponent 'http://resto-net.ca/'}&text=#{encodeURIComponent t('tweet_text', city: city)}&related=resto_net,#{t 'tweet_related'}&lang=#{locale}", 'intent', 'width=550,height=450');
     e.preventDefault()
+
   if latlng?
     map = new L.Map 'map',
       center: latlng

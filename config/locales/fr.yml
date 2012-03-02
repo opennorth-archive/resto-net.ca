@@ -66,10 +66,6 @@ fr:
       latest_fines: Dernières amendes
       most_fines: Le plus d’amendes
       highest_fines: Les plus fortes amendes
-      fines_count:
-        one: une amende
-        other: "%{count} amendes"
-      fines_total: "%{total} d’amendes"
     about:
       title: À propos de Resto-Net
     api:
@@ -250,13 +246,13 @@ fr:
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: ! '%n%u'
         units:
-          billion: Milliard
-          million: Million
-          quadrillion: Million de milliards
-          thousand: Millier
-          trillion: Mille milliard
+          billion: G
+          million: M
+          quadrillion: Q
+          thousand: k
+          trillion: T
           unit: ''
       format:
         delimiter: ''

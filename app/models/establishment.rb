@@ -35,6 +35,11 @@ class Establishment
     %w(montreal).include? source
   end
 
+  # @see Inspection#short_name
+  def short_name
+    name.gsub(/\b(Boulangerie|Restaurant) | Inc\.\z/, '')
+  end
+
   def geocoded?
     latitude.present? && longitude.present?
   end
