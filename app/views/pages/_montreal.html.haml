@@ -27,7 +27,7 @@
                 = link_to establishment.short_name, establishment_path(establishment)
               %td.item-chart
                 .item-fill
-                  .item-bar(class="bar#{establishment.fines_count * 10 / @maxima[:fines_count]}")
+                  .item-bar(class="bar#{establishment.try(:fines_count) * 10 / @maxima[:fines_count]}")
                     .item-number
                       = establishment.fines_count
         = link_to t('.next'), establishments_path # @todo hook this up
