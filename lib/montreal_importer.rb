@@ -21,6 +21,7 @@ class MontrealImporter
         establishment_type: xml.at_xpath('categorie').text.strip, 
         owner_name: get_name(xml, 'proprietaire'))
       inspection = establishment.montreal_inspections.build(
+        name: get_name(xml, 'etablissement'),
         description: xml.at_xpath('description').text.strip,
         inspection_date: get_date(xml, 'date_infraction'),
         judgment_date: get_date(xml, 'date_jugement'),
