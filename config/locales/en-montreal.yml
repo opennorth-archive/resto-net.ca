@@ -30,42 +30,42 @@ en:
     ? Dans les locaux où s'effectue la découpe, le hachage et la préparation des viandes, la température doit être d'au plus 10ºC.
     :
       long: In rooms for the cutting up, mincing and preparation of meat, the temperature must not exceed 10ºC.
-      short: Cut up, mince and prepare meat at under 10ºC
+      short: Cutting up, mincing or preparing meat at over 10ºC
       article: Regulation respecting food, article 6.3.3.6 # 6.3.3.3.b
       citation: LRQ c. P-29 r.1 a. 6.3.3.6 # 6.3.3.3.b
 
     ? Dans un local ou véhicule utilisé pour la préparation de produits; les planchers doivent être non absorbants, lavables, sans fissures et exempts de bran de scie, de carton, de sel ou de toute matière sèche ou humide.
     :
       long: On premises or in a vehicle used for product preparation; the floors must be nonabsorbent, washable, free of cracks and sawdust, cardboard, salt or any other dry or moist material.
-      short: Floors are nonabsorbent, washable, free of cracks and sawdust, cardboard or salt
+      short: Floors are not nonabsorbent, washable and free of cracks and sawdust, cardboard or salt
       article: Regulation respecting food, article 2.1.5
       citation: LRQ c. P-29 r.1 a. 2.1.5
 
     ? Dans un local ou véhicule utilisé pour la préparation de produits; les portes, murs et plafonds doivent être lavables, lisses, non en état ou en voie de putréfaction et exempts d'aspérités ou d'écailles.
     :
       long: On premises or in a vehicle used for product preparation; the doors, walls and ceilings must be washable, smooth, not rotten or in the process of rotting and free of bumps or peeling.
-      short: Doors, walls and ceilings are washable, smooth and free of bumps, peeling or rot
+      short: Doors, walls and ceilings are not washable, smooth and free of bumps, peeling or rot
       article: Regulation respecting food, article 2.1.5
       citation: LRQ c. P-29 r.1 a. 2.1.5
 
     ? Dans un local, une aire ou un véhicule utilisé pour la préparation des produits personne ne peut y faire usage de tabac.
     :
       long: On the premises and in an area or vehicle used for product preparation no person may use tobacco.
-      short: No smoking
+      short: Smoking
       article: Regulation respecting food, article 2.2.3
       citation: LRQ c. P-29 r.1 a. 2.2.3
 
     ? Il est interdit d'entraver le travail d'une personne autorisée dans l'exercice de ses fonctions, de l'induire en erreur ou de tenter de le faire, de négliger ou de refuser de lui obéir. Cette personne doit, sur demande, s'identifier et exhiber un certificat, signé par le ministre, attestant sa qualité.
     :
       long: It is forbidden to hinder the work of an authorized person in the exercise of his duties, to mislead him or to attempt to do so, or to neglect or refuse to obey him. Such person must, on request, identify himself and exhibit a certificate, signed by the Minister, attesting his authority.
-      short: Don't hinder a health inspection
+      short: Hindering a health inspection
       article: Food Products Act, article 36
       citation: LRQ c. P-29 a. 36
 
     ? L'exploitant d'une conserverie ou d'un établissement, d'un lieu ou d'un véhicule où l'on prépare, conditionne, transforme, emballe, entrepose, débarque, reçoit, donne à des fins promotionnelles, met en vente ou vend des produits ou détient des produits en vue de la vente ou de la fourniture de services moyennant rémunération ou du don à des fins promotionnelles, doit maintenir la conserverie, l'établissement, le lieu, les locaux, le véhicule et le matériel propres. Cet exploitant doit empêcher que l'aménagement des installations, l'exécution des opérations de préparation, de conditionnement ou de transformation des produits, leur entreposage ou l'exécution de toute autre opération ou l'utilisation du matériel soient susceptibles d'affecter la salubrité des produits ou les conditions sanitaires de l'exploitation.
     :
       long: Every person operating a packing-house, an establishment, premises or a vehicle where products are prepared, conditioned, processed, packaged, stored, unloaded, received, given for promotional purposes, offered for sale or sold, or where products are stored to be sold, used to furnish services for remuneration or given for promotional purposes, and every operator of premises where animals whose products are intended for human consumption are found or where animals are slaughtered, shall maintain the packing-house, establishment, premises, places, vehicle and equipment clean. The operator shall avoid any plant layout or design, any preparation, conditioning or processing procedure, any storing of products or any other operation or any use of equipment that is likely to affect the wholesomeness of the products or the cleanliness of the premises.
-      short: Keep things clean
+      short: Cleanliness
       article: Food Products Act, article 3.1
       citation: LRQ c. P-29 a. 3.1
 
@@ -73,7 +73,7 @@ en:
     ? L'exploitant doit empêcher que l'aménagement des installations, l'exécution des opérations de préparation, de conditionnement ou de transformation des produits, leur entreposage ou l'exécution de toute autre opération ou l'utilisation du matériel soient susceptiibles d'affecter la salubrité des produits ou les conditions sanitaire de l'exploitantion.
     :
       long: Every person operating a packing-house, an establishment, premises or a vehicle where products are prepared, conditioned, processed, packaged, stored, unloaded, received, given for promotional purposes, offered for sale or sold, or where products are stored to be sold, used to furnish services for remuneration or given for promotional purposes, and every operator of premises where animals whose products are intended for human consumption are found or where animals are slaughtered, shall maintain the packing-house, establishment, premises, places, vehicle and equipment clean. The operator shall avoid any plant layout or design, any preparation, conditioning or processing procedure, any storing of products or any other operation or any use of equipment that is likely to affect the wholesomeness of the products or the cleanliness of the premises.
-      short: Keep things clean
+      short: Cleanliness
       article: Food Products Act, article 3.1
       citation: LRQ c. P-29 a. 3.1
       exclude: true
@@ -81,139 +81,139 @@ en:
     ? La classe de couleur inscrite sur le petit contenant de sirop d'érable doit correspondre à la classe de couleur du sirop qu'il contient telle que déterminée au moyen d'un spectrophotomètre conformément au tableau B de l'annexe 8.B.
     :
       long: The colour grade indicated on the small maple syrup container must be the same as the colour of the syrup it contains as determined with a spectrophotometer in conformity with Table B of Schedule 8.B.
-      short: Use correct maple syrup color grade
+      short: Incorrect maple syrup color grade
       article: Regulation respecting food, article 8.7.2
       citation: LRQ c. P-29 r.1 a. 8.7.2
 
     ? La viande hachée doit être exempte de toute trace d'additifs. Le boeuf ou le veau haché doit être exempt de viande de porc.
     :
       long: Minced meat must be free from any additives. Minced beef and veal must be free from pork meat.
-      short: Minced meat is free of additives and minced beef and veal are free of pork
+      short: Minced meat is not free of additives, and minced beef or veal are not free of pork
       article: Regulation respecting food, article 6.4.1.20
       citation: LRQ c. P-29 r.1 a. 6.4.1.20
 
     ? ! 'Le lieu ou le véhicule doit être aéré, ventilé et disposer: d''eau potable courante chaude et froide;  d''un appareil distributeur de savon liquide ou en poudre. La température de l''eau chaude doit être d''au moins 60ºC. Le local, l''aire ou le véhicule utilisé pour la préparation des produits doit, en plus, disposer d''un évier, de serviettes individuelles jetables et être muni d''un système de récupération ou d''évacuation des eaux usées.'
     :
       long: ! 'The premises or vehicle must be ventilated and must have: hot and cold running drinking water; a device that distributes liquid or powdered soap. The temperature of the hot water must be at least 60ºC. The premises, area or vehicle used for product preparation must also be equipped with a sink, disposable individual towels and a waste water recovery or drainage system.'
-      short: Premises have ventilation and handwashing facilities
+      short: Premises do not have ventilation and handwashing facilities
       article: Regulation respecting food, article 2.1.3
       citation: LRQ c. P-29 r.1 a. 2.1.3
 
     ? Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d'animaux y compris les insectes et les rongeurs ou de leurs excréments.
     :
       long: The premises or vehicle must be free of contaminants, pollutants, any species of animal including insects and rodents or their excrements.
-      short: No contaminants, pollutants, animals like rats or bugs or their excrements
+      short: Contaminants, pollutants, animals like rats or bugs or their excrements
       article: Regulation respecting food, article 2.1.2
       citation: LRQ c. P-29 r.1 a. 2.1.2
 
     ? Le produit altérable à la chaleur à l'exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu'à sa livraison au consommateur, sauf pendant le temps requis pour l'application d'un procédé de fabrication ou d'un traitement reconnu en industrie alimentaire et qui exige une plus haute température.
     :
       long: Products subject to deterioration by heat except for fresh whole fruits and vegetables must be cooled without delay and kept at a constant internal and surrounding temperature not exceeding 4ºC until delivered to the consumer, except during the time needed for processing or treatment requiring a higher temperature and recognized by the food industry.
-      short: Store heat-sensitive food except for fresh whole fruits and veggies at under 4ºC
+      short: Storing heat-sensitive food except for fresh whole fruits and veggies at over 4ºC
       article: Regulation respecting food, article 1.4.1
       citation: LRQ c. P-29 r.1 a. 1.4.1
 
     ? Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d'au moins 60°C jusqu'à sa livraison.
     :
       long: A perishable product sold hot or served hot to the consumer must be kept at a internal temperature of at least 60ºC until its delivery.
-      short: Keep perishable items sold or served hot at over 60ºC
+      short: Not keeping perisable items sold or served hot at over 60ºC
       article: Regulation respecting food, article 1.4.1
       citation: LRQ c. P-29 r.1 a. 1.4.1
 
     ? Le sirop d'érable en petits contenants doit être conforme aux conditions suivantes: a) provenir exclusivement de la sève d'érable ou d'un autre produit de l'érable; b) être propre, sain et comestible; c) être exempt d'odeur ou de goût désagréable ou étranger à l'érable; d) être exempt de goût de bourgeon relié à la présence d'acides aminés; e) être exempt de fermentation et de moisi; f) être exempt de substances organiques visqueuses ou filantes résultant d'une transformation microbiologique; g) avoir une teneur minimale en extraits secs solubles de 66 pourcent à 20ºC mesurée au moyen d'un réfractomètre; h) être d'une catégorie déterminée selon l'annexe 8.A; et i) être de l'une des classes de couleur prescrite au tableau A de l'annexe 8.B.
     :
       long: ! 'The maple syrup in small containers must meet the following conditions: a) be produced exclusively from maple sap or another maple product; b) be clean, wholesome and edible; c) be free from any objectionable odours or taste, or a taste unrelated to maple; d) be free from sprout taste related to the presence of amino-acids; e) be free from fermentation and mould; f) be free from viscous or ropy organic substances caused by a microbiological process; g) have a minimum content in dry soluble extracts of 66% at 20ºC measured by a refractometer; h) be of a category determined in Schedule 8.A; and i) be of one of the colour grades prescribed in Table A of Schedule 8.B.'
-      short: Maple syrup is pure, clean, wholesome, edible and unspoiled
+      short: Maple syrup is not pure, clean, wholesome, edible and unspoiled
       article: Regulation respecting food, article 8.4.1
       citation: LRQ c. P-29 r.1 a. 8.4.1
 
     ? Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l'entreposage, au transport, à l'étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.
     :
       long: The premises, vehicles, equipment, material and utensils used for the preparation, packaging, storage, transport, labelling and servicing of the products, along with all other installations and sanitary areas, must be clean.
-      short: Keep things clean
+      short: Cleanliness
       article: Regulation respecting food, article 2.2.1
       citation: LRQ c. P-29 r.1 a. 2.2.1
 
     ? Les oeufs placés dans des cartons alvéolés peuvent être offerts en vente en dehors de leur boîte ou de leur caisse à l'établissement du détaillant, si les inscriptions prescrites par l'article 5.4.3 sont inscrites, en caractères indélébiles, sur un écriteau placé près des cartons alvéolés. Les cartons mis à la disposition des consommateurs pour le transport des oeufs doivent être neufs et porter, en caractères indélébiles, les inscriptions prescrites par l'article 5.4.3 ou ne porter aucune inscription.
     :
       long: In the retailer's establishment, eggs placed in honeycomb cartons may be offered for sale outside their box or their case, if the inscriptions prescribed by section 5.4.3 are inscribed in indelible letters on a sign adjacent to the honeycomb cartons. The cartons made available to consumers for the transport of eggs must be new and must bear the inscriptions prescribed by section 5.4.3 in indelible letters, or have no inscription.
-      short: Label egg cartons properly
+      short: Labeling egg cartons improperly
       article: Regulation respecting food, article 5.4.6
       citation: LRQ c. P-29 r.1 a. 5.4.6
 
     ? Les personnes affectées à la préparation des produits, au lavage ou au nettoyage du matériel et de l'équipement doivent ne porter aucun vernis à ongles, ni montres, bagues, boucles d'oreilles ou autres bijoux.
     :
       long: Persons who prepare products, wash or clean material and equipment must refrain from wearing nail polish, watches, rings, earrings or other jewellery.
-      short: Don't wear nail polish, watches or jewelry
+      short: Wearing nail polish, watches or jewelry
       article: Regulation respecting food, article 2.2.3
       citation: LRQ c. P-29 r.1 a. 2.2.3
 
     ? ! 'Les personnes affectées à la préparation des produits, au lavage ou au nettoyage du matériel et de l''équipement doivent: porter un bonnet ou une résille propre qui recouvre entièrement les cheveux; porter un couvre-barbe propre qui recouvre entièrement la barbe.'
     :
       long: ! 'Persons who prepare products, wash or clean material and equipment must: wear a hat or a clean hairnet that completely covers the hair; wear a clean beard-covering that completely covers the beard.'
-      short: Wear hats or hairnets and beard covers
+      short: Not wearing hats or hairnets and beard covers
       article: Regulation respecting food, article 2.2.3
       citation: LRQ c. P-29 r.1 a. 2.2.3
 
     ? Les produits marins ne doivent être exposés en dehors de l'installation frigorifique que le temps nécessaire aux opérations de préparation et de coupe. Les produits marins offerts à la vente en détail doivent être placés dans un comptoir réfrigéré à une température qui n'excède pas 4ºC et les produits marins congelés doivent être placés dans un comptoir réfrigéré à une température qui n'excède pas - 18ºC. Les semi-conserves peuvent être placées dans un comptoir réfrigéré à une température qui n'excède pas 10ºC. Les produits marins non emballés et conservés dans un comptoir réfrigéré doivent être à l'abri des manipulations du public. Le comptoir réfrigéré doit également être aménagé de manière à être exempt de toute accumulation d'eau ou d'exsudats.
     :
       long: Sea food products may be exposed outside the cold chamber only for the time required for the operations of preparation and cutting. Sea food products offered for retail sale must be placed in a refrigerated counter at a temperature not exceeding 4ºC, and frozen sea food products must be placed in a refrigerated counter at a temperature not exceeding -18ºC. Semi-preserved foods may be placed in a refrigerated counter at a temperature not exceeding 10ºC. Unpackaged sea food products kept in a refrigerated counter must be protected against handling by the public. A refrigerated counter must also be arranged so as to be free from any accumulation of water or exudation.
-      short: Keep seafood refrigerated
+      short: Not keeping seafood refrigerated
       article: Regulation respecting food, article 9.9.6
       citation: LRQ c. P-29 r.1 a. 9.9.6
 
     ? Les produits marins non emballés doivent être maintenus à l'abri des manipulations du public.
     :
       long: Unpackaged sea food products must be protected against handling by the public.
-      short: Don't let the public handle unpackaged seafood
+      short: Letting the public handle unpackaged seafood
       article: Regulation respecting food, article 9.3.1.23
       citation: LRQ c. P-29 r.1 a. 9.3.1.23
 
     ? ! 'Les surfaces du matériel, de l''équipement, des ustensiles et des contenants qui entrent en contact direct avec les produits, à l''exception des fruits et légumes frais entiers qui ne font pas l''objet de préparation, doivent être faites d''un matériau:  1° qui ne peut être corrodé; résistant aux opérations de lavage, de nettoyage ou de désinfection; 3° non toxique et non en état ou en voie de putréfaction; 4° non absorbant et imperméable; 5° inaltérable par les produits et fabriqué de façon à ne pas altérer les produits. Ces surfaces doivent être exemptes de particules détachables, d''aspérités ou de fissures.'
     :
       long: ! 'The surface of the material, equipment, utensils, and containers that come into direct contact with products, except for whole fresh fruits and vegetables that are not used in the preparation, must be made of a material that is: 1) not corroded; 2) withstands washing, cleaning or disinfection; 3) non-toxic and not rotten or in the process of rotting; 4) nonabsorbent and waterproof; 5) unaffected by the products and manufactured in such manner that it does not alter the products. The surfaces must be free of loose particles, bumps or cracks.'
-      short: Equipment is food grade and free of loose particles, bumps or cracks
+      short: Equipment is not food grade and free of loose particles, bumps or cracks
       article: Regulation respecting food, article 2.1.4
       citation: LRQ c. P-29 r.1 a. 2.1.4
 
     ? Nul ne peut faire emploi sur un produit, son récipient, son étiquette, son emballage, sur un écriteau afférent ou dans un document concernant la publicité, la détention, la manutention ou la mise en circulation d'un produit pour la vente, d'une indication inexacte, fausse, trompeuse ou susceptible de créer chez l'acheteur une confusion sur l'origine, la nature, la catégorie, la classe, la qualité, l'état, la quantité, la composition, la conservation ou l'utilisation sécuritaire du produit. Est assimilée à une indication inexacte, fausse ou trompeuse, l'absence d'indication ou une indication incompréhensible ou illisible sur l'un des éléments mentionnés ci-haut.
     :
       long: No person shall use on a product, its container, label or package, on any sign relating thereto or in any document concerning the advertising, keeping, handling or distribution of a product for sale, any inaccurate, false or misleading indication or indication that could confuse the purchaser as to the source, nature, category, class, quality, condition, quantity, composition, preservation or safe use of the product. The absence of an indication, or an incomprehensible or illegible indication, on any of the elements described above is considered to be an inaccurate, false or misleading indication.
-      short: No inaccurate, false, misleading, incomprehensible or missing food labels
+      short: Inaccurate, false, misleading, incomprehensible or missing food labels
       article: Food Products Act, article 4
       citation: LRQ c. P-29 a. 4
 
     ? Nul ne peut préparer, détenir en vue de la vente ou de la fourniture de services moyennant rémunération, recevoir, acheter pour fins de revente, mettre en vente ou en dépôt, vendre, donner à des fins promotionnelles, transporter, faire transporter ou accepter pour transport, tout produit destiné à la consommation humaine qui est impropre à cette consommation, qui est altéré de manière à le rendre impropre à cette consommation, dont l'innocuité n'est pas assurée pour cette consommation ou qui n'est pas conforme aux exigences de la présente loi et des règlements.
     :
       long: No person shall prepare, keep for sale or for the furnishing of a service for remuneration, receive, purchase for resale, offer for sale or leave on consignment, sell, give for promotional purposes, transport, cause to be transported or accept for transportation any product intended for human consumption that is unfit for human consumption, that is so deteriorated as to be unfit for human consumption, whose safety for human consumption is uncertain, or that does not meet the requirements of this Act and the regulations.
-      short: Don't sell or trade in food unfit to eat
+      short: Selling or trading in food unfit to eat
       article: Food Products Act, article 3
       citation: LRQ c. P-29 a. 3
 
     ? Nul ne peut, sans l'assentiment d'une personne autorisée, vendre ou offrir en vente un produit saisi ou confisqué ni enlever ou permettre d'enlever ce produit, son contenant, le bulletin de saisie ou de confiscation, ni enlever ou briser un scellé apposé par une personne autorisée.
     :
       long: No person shall, without the consent of an authorized person, sell or offer for sale a seized or confiscated product or remove or allow the removal of such product, its container, or the writ of seizure or confiscation, or remove or break a seal affixed by an authorized person.
-      short: Don't sell or remove seized or confiscated items
+      short: Selling or taking seized or confiscated items
       article: Food Products Act, article 37
       citation: LRQ c. P-29 a. 37
 
     ? Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière.
     :
       long: No person shall, without holding a permit in force, operate a dairy plant.
-      short: Don't operate a dairy plant without a permit
+      short: Operating a dairy plant without a permit
       article: Food Products Act, article 9 para. k.1
       citation: LRQ c. P-29 a. 9 para. k.1
 
     ? Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net.
     :
       long: Every product conditioned with a view to sell must display on its container, package or wrapping, in indelible, plainly legible and conspicuous characters the markings necessary to show the nature, condition, composition, use, exact quantity, origin and all other particulars of the product; the name and address of the manufacturer, preparer, conditioner, packer, supplier or distributor; its place of manufacture, preparation or conditioning. Listing of the constituents of a product must be according to decreasing order of their proportions in the product. The indication of weight must take into account the loss to which the product may normally be subject after its conditioning and must be expressed as net weight.
-      short: Label food properly
+      short: Labelling food improperly
       article: Regulation respecting food, article 3.3.3
       citation: LRQ c. P-29 r.1 a. 3.3.3
 
     ? ! 'Toute personne tenue de se munir d''un permis ou de s''enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l''espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d''où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l''entreposeur, les nom et adresse de l''entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l''estampille dans le cas des viandes et aliments carnés en provenance d''un exploitant autorisé.'
     :
       long: ! 'Every person who is required to hold a permit or to register under the Act must keep registers and retain vouchers of his operations at the disposal of inspectors. The said registers and vouchers must indicate: the nature and quantity of the products bought or received; the date of their purchase or receipt and, for each lot of live marine bivalve molluscs, the species, the date of fishing or harvesting and the area or sector of origin; the name and address of the supplier and, in the case of a warehouser, the name and address of the consignor and the number corresponding to the same lot of products stored, with mention of the number of the stamp in the case of meat or meat products coming from an authorized operator.'
-      short: Keep proper books and records
+      short: Not keeping proper books and records
       article: Regulation respecting food, article 2.2.5
       citation: LRQ c. P-29 r.1 a. 2.2.5

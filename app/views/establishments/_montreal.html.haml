@@ -47,7 +47,6 @@
                 %p
                   %strong
                     %i.icon-exclamation-sign
-                    =t '.failure'
                   = regulation inspection.regulation, '#'
                 %p.summary
                   =t('.inspection', amount: number_to_currency(inspection.amount), span: distance_of_time_in_words(inspection.inspection_date, inspection.judgment_date)).html_safe

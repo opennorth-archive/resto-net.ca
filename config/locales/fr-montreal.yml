@@ -30,42 +30,42 @@ fr:
     ? Dans les locaux où s'effectue la découpe, le hachage et la préparation des viandes, la température doit être d'au plus 10ºC.
     :
       long: Dans les locaux où s'effectue la découpe, le hachage et la préparation des viandes, la température doit être d'au plus 10ºC.
-      short: Découper, hacher et préparer des viandes à moins de 10ºC
+      short: Découper, hacher et préparer des viandes à plus de 10ºC
       article: Règlement sur les aliments, article 6.3.3.6 # 6.3.3.3.b
       citation: LRQ c. P-29 r.1 a. 6.3.3.6 # 6.3.3.3.b
 
     ? Dans un local ou véhicule utilisé pour la préparation de produits; les planchers doivent être non absorbants, lavables, sans fissures et exempts de bran de scie, de carton, de sel ou de toute matière sèche ou humide.
     :
       long: Dans un local ou véhicule utilisé pour la préparation de produits; les planchers doivent être non absorbants, lavables, sans fissures et exempts de bran de scie, de carton, de sel ou de toute matière sèche ou humide.
-      short: Les planchers sont non absorbants, lavables, sans fissures et exempts de bran de scie, de carton ou de sel
+      short: Les planchers ne sont pas non-absorbants, lavables, sans fissures et exempts de bran de scie, de carton ou de sel
       article: Règlement sur les aliments, article 2.1.5
       citation: LRQ c. P-29 r.1 a. 2.1.5
 
     ? Dans un local ou véhicule utilisé pour la préparation de produits; les portes, murs et plafonds doivent être lavables, lisses, non en état ou en voie de putréfaction et exempts d'aspérités ou d'écailles.
     :
       long: Dans un local ou véhicule utilisé pour la préparation de produits; les portes, murs et plafonds doivent être lavables, lisses, non en état ou en voie de putréfaction et exempts d'aspérités ou d'écailles.
-      short: Les portes, murs et plafonds sont lavables, lisses et exempts d'aspérités, d'écailles ou de pourriture
+      short: Les portes, murs et plafonds ne sont pas lavables, lisses et exempts d'aspérités, d'écailles ou de pourriture
       article: Règlement sur les aliments, article 2.1.5
       citation: LRQ c. P-29 r.1 a. 2.1.5
 
     ? Dans un local, une aire ou un véhicule utilisé pour la préparation des produits personne ne peut y faire usage de tabac.
     :
       long: Dans un local, une aire ou un véhicule utilisé pour la préparation des produits personne ne peut y faire usage de tabac.
-      short: Défense de fumer
+      short: Fumer le tabac
       article: Règlement sur les aliments, article 2.2.3
       citation: LRQ c. P-29 r.1 a. 2.2.3
 
     ? Il est interdit d'entraver le travail d'une personne autorisée dans l'exercice de ses fonctions, de l'induire en erreur ou de tenter de le faire, de négliger ou de refuser de lui obéir. Cette personne doit, sur demande, s'identifier et exhiber un certificat, signé par le ministre, attestant sa qualité.
     :
       long: Il est interdit d'entraver le travail d'une personne autorisée dans l'exercice de ses fonctions, de l'induire en erreur ou de tenter de le faire, de négliger ou de refuser de lui obéir. Cette personne doit, sur demande, s'identifier et exhiber un certificat, signé par le ministre, attestant sa qualité.
-      short: Ne pas entraver une inspection sanitaire
+      short: Entraver une inspection sanitaire
       article: Loi sur les produits alimentaires, article 36
       citation: LRQ c. P-29 a. 36
 
     ? L'exploitant d'une conserverie ou d'un établissement, d'un lieu ou d'un véhicule où l'on prépare, conditionne, transforme, emballe, entrepose, débarque, reçoit, donne à des fins promotionnelles, met en vente ou vend des produits ou détient des produits en vue de la vente ou de la fourniture de services moyennant rémunération ou du don à des fins promotionnelles, doit maintenir la conserverie, l'établissement, le lieu, les locaux, le véhicule et le matériel propres. Cet exploitant doit empêcher que l'aménagement des installations, l'exécution des opérations de préparation, de conditionnement ou de transformation des produits, leur entreposage ou l'exécution de toute autre opération ou l'utilisation du matériel soient susceptibles d'affecter la salubrité des produits ou les conditions sanitaires de l'exploitation.
     :
       long: L'exploitant d'une conserverie ou d'un établissement, d'un lieu ou d'un véhicule où l'on prépare, conditionne, transforme, emballe, entrepose, débarque, reçoit, donne à des fins promotionnelles, met en vente ou vend des produits ou détient des produits en vue de la vente ou de la fourniture de services moyennant rémunération ou du don à des fins promotionnelles, doit maintenir la conserverie, l'établissement, le lieu, les locaux, le véhicule et le matériel propres. Cet exploitant doit empêcher que l'aménagement des installations, l'exécution des opérations de préparation, de conditionnement ou de transformation des produits, leur entreposage ou l'exécution de toute autre opération ou l'utilisation du matériel soient susceptibles d'affecter la salubrité des produits ou les conditions sanitaires de l'exploitation.
-      short: Tout garder propre
+      short: Propreté
       article: Loi sur les produits alimentaires, article 3.1
       citation: LRQ c. P-29 a. 3.1
 
@@ -73,7 +73,7 @@ fr:
     ? L'exploitant doit empêcher que l'aménagement des installations, l'exécution des opérations de préparation, de conditionnement ou de transformation des produits, leur entreposage ou l'exécution de toute autre opération ou l'utilisation du matériel soient susceptiibles d'affecter la salubrité des produits ou les conditions sanitaire de l'exploitantion.
     :
       long: L'exploitant d'une conserverie ou d'un établissement, d'un lieu ou d'un véhicule où l'on prépare, conditionne, transforme, emballe, entrepose, débarque, reçoit, donne à des fins promotionnelles, met en vente ou vend des produits ou détient des produits en vue de la vente ou de la fourniture de services moyennant rémunération ou du don à des fins promotionnelles, doit maintenir la conserverie, l'établissement, le lieu, les locaux, le véhicule et le matériel propres. Cet exploitant doit empêcher que l'aménagement des installations, l'exécution des opérations de préparation, de conditionnement ou de transformation des produits, leur entreposage ou l'exécution de toute autre opération ou l'utilisation du matériel soient susceptibles d'affecter la salubrité des produits ou les conditions sanitaires de l'exploitation.
-      short: Tout garder propre
+      short: Propreté
       article: Loi sur les produits alimentaires, article 3.1
       citation: LRQ c. P-29 a. 3.1
       exclude: true
@@ -81,139 +81,139 @@ fr:
     ? La classe de couleur inscrite sur le petit contenant de sirop d'érable doit correspondre à la classe de couleur du sirop qu'il contient telle que déterminée au moyen d'un spectrophotomètre conformément au tableau B de l'annexe 8.B.
     :
       long: La classe de couleur inscrite sur le petit contenant de sirop d'érable doit correspondre à la classe de couleur du sirop qu'il contient telle que déterminée au moyen d'un spectrophotomètre conformément au tableau B de l'annexe 8.B.
-      short: Étiquetage adéquat de la classe de couleur de sirop
+      short: Étiquetage inadéquat de la classe de couleur de sirop
       article: Règlement sur les aliments, article 8.7.2
       citation: LRQ c. P-29 r.1 a. 8.7.2
 
     ? La viande hachée doit être exempte de toute trace d'additifs. Le boeuf ou le veau haché doit être exempt de viande de porc.
     :
       long: La viande hachée doit être exempte de toute trace d'additifs. Le boeuf ou le veau haché doit être exempt de viande de porc.
-      short: La viande hachée est exempte d'additifs et le boeuf ou le veau haché est exempt de porc
+      short: La viande hachée n'est pas exempte d'additifs et le boeuf ou le veau haché n'est pas exempt de porc
       article: Règlement sur les aliments, article 6.4.1.20
       citation: LRQ c. P-29 r.1 a. 6.4.1.20
 
     ? ! 'Le lieu ou le véhicule doit être aéré, ventilé et disposer: d''eau potable courante chaude et froide;  d''un appareil distributeur de savon liquide ou en poudre. La température de l''eau chaude doit être d''au moins 60ºC. Le local, l''aire ou le véhicule utilisé pour la préparation des produits doit, en plus, disposer d''un évier, de serviettes individuelles jetables et être muni d''un système de récupération ou d''évacuation des eaux usées.'
     :
       long: ! 'Le lieu ou le véhicule doit être aéré, ventilé et disposer: d''eau potable courante chaude et froide;  d''un appareil distributeur de savon liquide ou en poudre. La température de l''eau chaude doit être d''au moins 60ºC. Le local, l''aire ou le véhicule utilisé pour la préparation des produits doit, en plus, disposer d''un évier, de serviettes individuelles jetables et être muni d''un système de récupération ou d''évacuation des eaux usées.'
-      short: Les lieux sont ventilés et disposent d'équipements pour se laver les mains
+      short: Les lieux ne sont pas ventilés ou ne disposent pas d'équipements pour se laver les mains
       article: Règlement sur les aliments, article 2.1.3
       citation: LRQ c. P-29 r.1 a. 2.1.3
 
     ? Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d'animaux y compris les insectes et les rongeurs ou de leurs excréments.
     :
       long: Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d'animaux y compris les insectes et les rongeurs ou de leurs excréments.
-      short: Pas de contaminants, de polluants, d'animaux y compris les rats et les insectes ou de leurs excréments
+      short: Contaminants, polluants, animaux y compris les rats et les insectes ou leurs excréments
       article: Règlement sur les aliments, article 2.1.2
       citation: LRQ c. P-29 r.1 a. 2.1.2
 
     ? Le produit altérable à la chaleur à l'exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu'à sa livraison au consommateur, sauf pendant le temps requis pour l'application d'un procédé de fabrication ou d'un traitement reconnu en industrie alimentaire et qui exige une plus haute température.
     :
       long: Le produit altérable à la chaleur à l'exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu'à sa livraison au consommateur, sauf pendant le temps requis pour l'application d'un procédé de fabrication ou d'un traitement reconnu en industrie alimentaire et qui exige une plus haute température.
-      short: Les produits alérables à la chaleur sauf les fruits et légumes frais entiers sont conservés à moins de 4ºC
+      short: Les produits alérables à la chaleur sauf les fruits et légumes frais entiers sont conservés à plus de 4ºC
       article: Règlement sur les aliments, article 1.4.1
       citation: LRQ c. P-29 r.1 a. 1.4.1
 
     ? Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d'au moins 60°C jusqu'à sa livraison.
     :
       long: Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d'au moins 60°C jusqu'à sa livraison.
-      short: Garder les produits périssables vendu ou servi chaud à au moins 60ºC
+      short: Garder les produits périssables vendu ou servi chaud à moins de 60ºC
       article: Règlement sur les aliments, article 1.4.1
       citation: LRQ c. P-29 r.1 a. 1.4.1
 
     ? Le sirop d'érable en petits contenants doit être conforme aux conditions suivantes: a) provenir exclusivement de la sève d'érable ou d'un autre produit de l'érable; b) être propre, sain et comestible; c) être exempt d'odeur ou de goût désagréable ou étranger à l'érable; d) être exempt de goût de bourgeon relié à la présence d'acides aminés; e) être exempt de fermentation et de moisi; f) être exempt de substances organiques visqueuses ou filantes résultant d'une transformation microbiologique; g) avoir une teneur minimale en extraits secs solubles de 66 pourcent à 20ºC mesurée au moyen d'un réfractomètre; h) être d'une catégorie déterminée selon l'annexe 8.A; et i) être de l'une des classes de couleur prescrite au tableau A de l'annexe 8.B.
     :
       long: Le sirop d'érable en petits contenants doit être conforme aux conditions suivantes: a) provenir exclusivement de la sève d'érable ou d'un autre produit de l'érable; b) être propre, sain et comestible; c) être exempt d'odeur ou de goût désagréable ou étranger à l'érable; d) être exempt de goût de bourgeon relié à la présence d'acides aminés; e) être exempt de fermentation et de moisi; f) être exempt de substances organiques visqueuses ou filantes résultant d'une transformation microbiologique; g) avoir une teneur minimale en extraits secs solubles de 66 pourcent à 20ºC mesurée au moyen d'un réfractomètre; h) être d'une catégorie déterminée selon l'annexe 8.A; et i) être de l'une des classes de couleur prescrite au tableau A de l'annexe 8.B.
-      short: Le sirop d'érable est propre, sain et comestible
+      short: Le sirop d'érable n'est pas propre, sain et comestible
       article: Règlement sur les aliments, article 8.4.1
       citation: LRQ c. P-29 r.1 a. 8.4.1
 
     ? Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l'entreposage, au transport, à l'étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.
     :
       long: Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l'entreposage, au transport, à l'étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.
-      short: Tout garder propre
+      short: Propreté
       article: Règlement sur les aliments, article 2.2.1
       citation: LRQ c. P-29 r.1 a. 2.2.1
 
     ? Les oeufs placés dans des cartons alvéolés peuvent être offerts en vente en dehors de leur boîte ou de leur caisse à l'établissement du détaillant, si les inscriptions prescrites par l'article 5.4.3 sont inscrites, en caractères indélébiles, sur un écriteau placé près des cartons alvéolés. Les cartons mis à la disposition des consommateurs pour le transport des oeufs doivent être neufs et porter, en caractères indélébiles, les inscriptions prescrites par l'article 5.4.3 ou ne porter aucune inscription.
     :
       long: Les oeufs placés dans des cartons alvéolés peuvent être offerts en vente en dehors de leur boîte ou de leur caisse à l'établissement du détaillant, si les inscriptions prescrites par l'article 5.4.3 sont inscrites, en caractères indélébiles, sur un écriteau placé près des cartons alvéolés. Les cartons mis à la disposition des consommateurs pour le transport des oeufs doivent être neufs et porter, en caractères indélébiles, les inscriptions prescrites par l'article 5.4.3 ou ne porter aucune inscription.
-      short: Les cartons d'oeufs sont étiquetés correctement
+      short: Les cartons d'oeufs sont étiquetés incorrectement
       article: Règlement sur les aliments, article 5.4.6
       citation: LRQ c. P-29 r.1 a. 5.4.6
 
     ? Les personnes affectées à la préparation des produits, au lavage ou au nettoyage du matériel et de l'équipement doivent ne porter aucun vernis à ongles, ni montres, bagues, boucles d'oreilles ou autres bijoux.
     :
       long: Les personnes affectées à la préparation des produits, au lavage ou au nettoyage du matériel et de l'équipement doivent ne porter aucun vernis à ongles, ni montres, bagues, boucles d'oreilles ou autres bijoux.
-      short: Ne porter aucun vernis à ongles, ni montres ou bijoux
+      short: Porter du vernis à ongles, des montres ou des bijoux
       article: Règlement sur les aliments, article 2.2.3
       citation: LRQ c. P-29 r.1 a. 2.2.3
 
     ? ! 'Les personnes affectées à la préparation des produits, au lavage ou au nettoyage du matériel et de l''équipement doivent: porter un bonnet ou une résille propre qui recouvre entièrement les cheveux; porter un couvre-barbe propre qui recouvre entièrement la barbe.'
     :
       long: ! 'Les personnes affectées à la préparation des produits, au lavage ou au nettoyage du matériel et de l''équipement doivent: porter un bonnet ou une résille propre qui recouvre entièrement les cheveux; porter un couvre-barbe propre qui recouvre entièrement la barbe.'
-      short: Porter un bonnet ou une résille et un couvre-barbe
+      short: Ne pas porter de bonnet, de résille ou de couvre-barbe
       article: Règlement sur les aliments, article 2.2.3
       citation: LRQ c. P-29 r.1 a. 2.2.3
 
     ? Les produits marins ne doivent être exposés en dehors de l'installation frigorifique que le temps nécessaire aux opérations de préparation et de coupe. Les produits marins offerts à la vente en détail doivent être placés dans un comptoir réfrigéré à une température qui n'excède pas 4ºC et les produits marins congelés doivent être placés dans un comptoir réfrigéré à une température qui n'excède pas - 18ºC. Les semi-conserves peuvent être placées dans un comptoir réfrigéré à une température qui n'excède pas 10ºC. Les produits marins non emballés et conservés dans un comptoir réfrigéré doivent être à l'abri des manipulations du public. Le comptoir réfrigéré doit également être aménagé de manière à être exempt de toute accumulation d'eau ou d'exsudats.
     :
       long: Les produits marins ne doivent être exposés en dehors de l'installation frigorifique que le temps nécessaire aux opérations de préparation et de coupe. Les produits marins offerts à la vente en détail doivent être placés dans un comptoir réfrigéré à une température qui n'excède pas 4ºC et les produits marins congelés doivent être placés dans un comptoir réfrigéré à une température qui n'excède pas - 18ºC. Les semi-conserves peuvent être placées dans un comptoir réfrigéré à une température qui n'excède pas 10ºC. Les produits marins non emballés et conservés dans un comptoir réfrigéré doivent être à l'abri des manipulations du public. Le comptoir réfrigéré doit également être aménagé de manière à être exempt de toute accumulation d'eau ou d'exsudats.
-      short: Conserver les fruits de mer au froid
+      short: Ne pas conserver les fruits de mer au froid
       article: Règlement sur les aliments, article 9.9.6
       citation: LRQ c. P-29 r.1 a. 9.9.6
 
     ? Les produits marins non emballés doivent être maintenus à l'abri des manipulations du public.
     :
       long: Les produits marins non emballés doivent être maintenus à l'abri des manipulations du public.
-      short: Le public ne peut pas manipuler des produits marins non emballés
+      short: Le public peut manipuler des produits marins non-emballés
       article: Règlement sur les aliments, article 9.3.1.23
       citation: LRQ c. P-29 r.1 a. 9.3.1.23
 
     ? ! 'Les surfaces du matériel, de l''équipement, des ustensiles et des contenants qui entrent en contact direct avec les produits, à l''exception des fruits et légumes frais entiers qui ne font pas l''objet de préparation, doivent être faites d''un matériau:  1° qui ne peut être corrodé; résistant aux opérations de lavage, de nettoyage ou de désinfection; 3° non toxique et non en état ou en voie de putréfaction; 4° non absorbant et imperméable; 5° inaltérable par les produits et fabriqué de façon à ne pas altérer les produits. Ces surfaces doivent être exemptes de particules détachables, d''aspérités ou de fissures.'
     :
       long: ! 'Les surfaces du matériel, de l''équipement, des ustensiles et des contenants qui entrent en contact direct avec les produits, à l''exception des fruits et légumes frais entiers qui ne font pas l''objet de préparation, doivent être faites d''un matériau:  1° qui ne peut être corrodé; résistant aux opérations de lavage, de nettoyage ou de désinfection; 3° non toxique et non en état ou en voie de putréfaction; 4° non absorbant et imperméable; 5° inaltérable par les produits et fabriqué de façon à ne pas altérer les produits. Ces surfaces doivent être exemptes de particules détachables, d''aspérités ou de fissures.'
-      short: Tous les équipements conviennent à la manipulation de nourriture, sont propres et exempts de particules détachables, d'aspérités ou de fissures
+      short: Les équipements ne conviennent pas à la manipulation de nourriture, ne sont pas propres ou exempts de particules détachables, d'aspérités ou de fissures
       article: Règlement sur les aliments, article 2.1.4
       citation: LRQ c. P-29 r.1 a. 2.1.4
 
     ? Nul ne peut faire emploi sur un produit, son récipient, son étiquette, son emballage, sur un écriteau afférent ou dans un document concernant la publicité, la détention, la manutention ou la mise en circulation d'un produit pour la vente, d'une indication inexacte, fausse, trompeuse ou susceptible de créer chez l'acheteur une confusion sur l'origine, la nature, la catégorie, la classe, la qualité, l'état, la quantité, la composition, la conservation ou l'utilisation sécuritaire du produit. Est assimilée à une indication inexacte, fausse ou trompeuse, l'absence d'indication ou une indication incompréhensible ou illisible sur l'un des éléments mentionnés ci-haut.
     :
       long: Nul ne peut faire emploi sur un produit, son récipient, son étiquette, son emballage, sur un écriteau afférent ou dans un document concernant la publicité, la détention, la manutention ou la mise en circulation d'un produit pour la vente, d'une indication inexacte, fausse, trompeuse ou susceptible de créer chez l'acheteur une confusion sur l'origine, la nature, la catégorie, la classe, la qualité, l'état, la quantité, la composition, la conservation ou l'utilisation sécuritaire du produit. Est assimilée à une indication inexacte, fausse ou trompeuse, l'absence d'indication ou une indication incompréhensible ou illisible sur l'un des éléments mentionnés ci-haut.
-      short: Pas d'étiquetage inexact, faux, trompeur, incompréhensible ou manquant
+      short: Étiquetage inexact, faux, trompeur, incompréhensible ou manquant
       article: Loi sur les produits alimentaires, article 4
       citation: LRQ c. P-29 a. 4
 
     ? Nul ne peut préparer, détenir en vue de la vente ou de la fourniture de services moyennant rémunération, recevoir, acheter pour fins de revente, mettre en vente ou en dépôt, vendre, donner à des fins promotionnelles, transporter, faire transporter ou accepter pour transport, tout produit destiné à la consommation humaine qui est impropre à cette consommation, qui est altéré de manière à le rendre impropre à cette consommation, dont l'innocuité n'est pas assurée pour cette consommation ou qui n'est pas conforme aux exigences de la présente loi et des règlements.
     :
       long: Nul ne peut préparer, détenir en vue de la vente ou de la fourniture de services moyennant rémunération, recevoir, acheter pour fins de revente, mettre en vente ou en dépôt, vendre, donner à des fins promotionnelles, transporter, faire transporter ou accepter pour transport, tout produit destiné à la consommation humaine qui est impropre à cette consommation, qui est altéré de manière à le rendre impropre à cette consommation, dont l'innocuité n'est pas assurée pour cette consommation ou qui n'est pas conforme aux exigences de la présente loi et des règlements.
-      short: Ne pas vendre ou échanger de la nourriture impropre à la consommation
+      short: Vendre ou échanger de la nourriture impropre à la consommation
       article: Loi sur les produits alimentaires, article 3
       citation: LRQ c. P-29 a. 3
 
     ? Nul ne peut, sans l'assentiment d'une personne autorisée, vendre ou offrir en vente un produit saisi ou confisqué ni enlever ou permettre d'enlever ce produit, son contenant, le bulletin de saisie ou de confiscation, ni enlever ou briser un scellé apposé par une personne autorisée.
     :
       long: Nul ne peut, sans l'assentiment d'une personne autorisée, vendre ou offrir en vente un produit saisi ou confisqué ni enlever ou permettre d'enlever ce produit, son contenant, le bulletin de saisie ou de confiscation, ni enlever ou briser un scellé apposé par une personne autorisée.
-      short: Ne pas vendre ou offrir un produit saisi ou confisqué
+      short: Vendre ou offrir un produit saisi ou confisqué
       article: Loi sur les produits alimentaires, article 37
       citation: LRQ c. P-29 a. 37
 
     ? Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière.
     :
       long: Nul ne peut, sans être titulaire d'un permis en vigueur, exploiter une usine laitière.
-      short: Ne pas exploiter une usine laitière sans permis
+      short: Exploiter une usine laitière sans permis
       article: Loi sur les produits alimentaires, article 9 para. k.1
       citation: LRQ c. P-29 a. 9 para. k.1
 
     ? Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net.
     :
       long: Tout produit conditionné en vue de la vente doit porter, en caractères indélébiles, très lisibles et apparents, sur le récipient, l'emballage ou l'enveloppe qui le contient les inscriptions nécessaires pour révéler la nature, l'état, la composition, l'utilisation, la quantité exacte, l'origine et toute particularité du produit; les nom et adresse du fabricant, préparateur, conditionneur, emballeur, fournisseur ou distributeur; le lieu de fabrication, préparation ou conditionnement du produit. L'énumération des composants doit figurer par ordre d'importance décroissant. L'indication de poids doit tenir compte de la perte que peut normalement subir le produit après son conditionnement et être exprimée en poids net.
-      short: Étiqueter les produits correctement
+      short: Étiqueter les produits incorrectement
       article: Règlement sur les aliments, article 3.3.3
       citation: LRQ c. P-29 r.1 a. 3.3.3
 
     ? ! 'Toute personne tenue de se munir d''un permis ou de s''enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l''espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d''où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l''entreposeur, les nom et adresse de l''entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l''estampille dans le cas des viandes et aliments carnés en provenance d''un exploitant autorisé.'
     :
       long: ! 'Toute personne tenue de se munir d''un permis ou de s''enregistrer en vertu de la Loi doit tenir des registres et pièces justificatives de ses opérations et les garder à la disposition des inspecteurs. Ces registres et pièces justificatives doivent indiquer: la nature et la quantité des produits achetés ou reçus; la date de leur achat ou réception et, dans le cas des mollusques bivalves marins vivants et pour chaque lot, l''espèce, la date de cueillette ou de récolte et la zone ou le secteur de zone d''où provient ce lot; les nom et adresse du fournisseur et, dans le cas de l''entreposeur, les nom et adresse de l''entrepositaire ainsi que le numéro correspondant à un même lot de produits entreposés avec mention du numéro de l''estampille dans le cas des viandes et aliments carnés en provenance d''un exploitant autorisé.'
-      short: Tenir correctement les registres et pièces justificatives requises
+      short: Ne pas tenir correctement les registres et pièces justificatives requises
       article: Règlement sur les aliments, article 2.2.5
       citation: LRQ c. P-29 r.1 a. 2.2.5

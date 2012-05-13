@@ -94,7 +94,6 @@ fr:
       tweet_related: nordouvert
       inspections: Historique d’inspections
       inspection: Condamné <span>%{span}</span> plus tard à une amende de <span>%{amount}</span>
-      failure: "Infraction :"
   inspections:
     index:
       title: ""
