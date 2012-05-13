@@ -370,29 +370,18 @@ h1 {
     h4 {
       clear: left;
       margin-bottom: 1em;
-      padding-top: 1em;
+      padding-top: 2em;
       border-bottom: 1px solid #ddd;
       font-size: 18px;
       line-height: 0;
-      text-align: center;
       span {
-        padding: 0 0.5em;
+        color: $logo-color;
+        padding: 0 0.3em;
         background-color: #fff;
       }
     }
     li {
       clear: left;
-    }
-    p {
-      span {
-        display: inline-block;
-        margin-top: -4px;
-        padding: 12px 10px;
-        background-color: #fff;
-        font-weight: bold;
-        line-height: 0;
-        @include border-radius(20px);
-      }
     }
   }
   .twitter-box {
