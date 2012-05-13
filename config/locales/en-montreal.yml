@@ -39,14 +39,14 @@ en:
       long: On premises or in a vehicle used for product preparation; the floors must be nonabsorbent, washable, free of cracks and sawdust, cardboard, salt or any other dry or moist material.
       short: Floors are not nonabsorbent, washable and free of cracks and sawdust, cardboard or salt
       article: Regulation respecting food, article 2.1.5
-      citation: LRQ c. P-29 r.1 a. 2.1.5
+      citation: LRQ c. P-29 r.1 a. 2.1.5 (2)
 
     ? Dans un local ou véhicule utilisé pour la préparation de produits; les portes, murs et plafonds doivent être lavables, lisses, non en état ou en voie de putréfaction et exempts d'aspérités ou d'écailles.
     :
       long: On premises or in a vehicle used for product preparation; the doors, walls and ceilings must be washable, smooth, not rotten or in the process of rotting and free of bumps or peeling.
       short: Doors, walls and ceilings are not washable, smooth and free of bumps, peeling or rot
       article: Regulation respecting food, article 2.1.5
-      citation: LRQ c. P-29 r.1 a. 2.1.5
+      citation: LRQ c. P-29 r.1 a. 2.1.5 (1)
 
     ? Dans un local, une aire ou un véhicule utilisé pour la préparation des produits personne ne peut y faire usage de tabac.
     :
@@ -111,14 +111,14 @@ en:
       long: Products subject to deterioration by heat except for fresh whole fruits and vegetables must be cooled without delay and kept at a constant internal and surrounding temperature not exceeding 4ºC until delivered to the consumer, except during the time needed for processing or treatment requiring a higher temperature and recognized by the food industry.
       short: Storing heat-sensitive food except for fresh whole fruits and veggies at over 4ºC
       article: Regulation respecting food, article 1.4.1
-      citation: LRQ c. P-29 r.1 a. 1.4.1
+      citation: LRQ c. P-29 r.1 a. 1.4.1 (¶2)
 
     ? Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d'au moins 60°C jusqu'à sa livraison.
     :
       long: A perishable product sold hot or served hot to the consumer must be kept at a internal temperature of at least 60ºC until its delivery.
       short: Not keeping perisable items sold or served hot at over 60ºC
       article: Regulation respecting food, article 1.4.1
-      citation: LRQ c. P-29 r.1 a. 1.4.1
+      citation: LRQ c. P-29 r.1 a. 1.4.1 (¶5)
 
     ? Le sirop d'érable en petits contenants doit être conforme aux conditions suivantes: a) provenir exclusivement de la sève d'érable ou d'un autre produit de l'érable; b) être propre, sain et comestible; c) être exempt d'odeur ou de goût désagréable ou étranger à l'érable; d) être exempt de goût de bourgeon relié à la présence d'acides aminés; e) être exempt de fermentation et de moisi; f) être exempt de substances organiques visqueuses ou filantes résultant d'une transformation microbiologique; g) avoir une teneur minimale en extraits secs solubles de 66 pourcent à 20ºC mesurée au moyen d'un réfractomètre; h) être d'une catégorie déterminée selon l'annexe 8.A; et i) être de l'une des classes de couleur prescrite au tableau A de l'annexe 8.B.
     :
@@ -146,14 +146,14 @@ en:
       long: Persons who prepare products, wash or clean material and equipment must refrain from wearing nail polish, watches, rings, earrings or other jewellery.
       short: Wearing nail polish, watches or jewelry
       article: Regulation respecting food, article 2.2.3
-      citation: LRQ c. P-29 r.1 a. 2.2.3
+      citation: LRQ c. P-29 r.1 a. 2.2.3 (5)
 
     ? ! 'Les personnes affectées à la préparation des produits, au lavage ou au nettoyage du matériel et de l''équipement doivent: porter un bonnet ou une résille propre qui recouvre entièrement les cheveux; porter un couvre-barbe propre qui recouvre entièrement la barbe.'
     :
       long: ! 'Persons who prepare products, wash or clean material and equipment must: wear a hat or a clean hairnet that completely covers the hair; wear a clean beard-covering that completely covers the beard.'
       short: Not wearing hats or hairnets and beard covers
       article: Regulation respecting food, article 2.2.3
-      citation: LRQ c. P-29 r.1 a. 2.2.3
+      citation: LRQ c. P-29 r.1 a. 2.2.3 (1-2)
 
     ? Les produits marins ne doivent être exposés en dehors de l'installation frigorifique que le temps nécessaire aux opérations de préparation et de coupe. Les produits marins offerts à la vente en détail doivent être placés dans un comptoir réfrigéré à une température qui n'excède pas 4ºC et les produits marins congelés doivent être placés dans un comptoir réfrigéré à une température qui n'excède pas - 18ºC. Les semi-conserves peuvent être placées dans un comptoir réfrigéré à une température qui n'excède pas 10ºC. Les produits marins non emballés et conservés dans un comptoir réfrigéré doivent être à l'abri des manipulations du public. Le comptoir réfrigéré doit également être aménagé de manière à être exempt de toute accumulation d'eau ou d'exsudats.
     :
