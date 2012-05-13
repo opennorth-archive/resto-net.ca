@@ -1,10 +1,11 @@
 RestoNet::Application.routes.draw do
   filter :locale
 
-  # @todo how to write constraints block?
-  match '/', to: 'pages#city', constraints: lambda { |r| r.subdomain.present? && r.subdomain != 'www' }
-  resources :establishments, only: [:index, :show], constraints: lambda { |r| r.subdomain.present? && r.subdomain != 'www' }
-  resources :inspections, only: [:index], constraints: lambda { |r| r.subdomain.present? && r.subdomain != 'www' }
+  constraints lambda { |r| r.subdomain.present? && r.subdomain != 'www' } do
+    match '/', to: 'pages#city'
+    resources :establishments, only: [:index, :show]
+    resources :inspections, only: [:index]
+  end
 
   match 'channel', to: 'pages#channel'
   match 'about', to: 'pages#about'

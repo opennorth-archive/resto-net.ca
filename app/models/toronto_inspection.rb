@@ -9,7 +9,7 @@ class TorontoInspection < Inspection
   validates_numericality_of :amount, allow_blank: true
   validates_uniqueness_of :dinesafe_id
 
-  scope :fined, where(:amount.gt => 0) # @todo use blank scope instead
+  scope :fined, where(:amount.gt => 0)
 
   def establishment
     toronto_establishment

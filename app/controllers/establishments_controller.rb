@@ -14,7 +14,7 @@ class EstablishmentsController < ApplicationController
       @attribute = :name
       @direction = :asc
     end
-    @establishments = establishments.sort(@attribute.send(@direction)).limit(50) # @todo paginate
+    @establishments = establishments.sort(@attribute.send(@direction)).limit(50)
     @maximum = @establishments.first[@attribute].to_i
     respond_with @establishments
 

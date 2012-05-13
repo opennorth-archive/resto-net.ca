@@ -77,6 +77,7 @@ en:
   establishments:
     index:
       title: ""
+      topmost: "Top 50:"
     show:
       title: Resto-Net - Inspection reports for %{name} in %{city}
     montreal:

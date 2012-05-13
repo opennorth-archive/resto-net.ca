@@ -8,7 +8,7 @@ class MontrealInspection < Inspection
   validates_presence_of :description, :judgment_date, :amount
   validates_numericality_of :amount, only_integer: true, greater_than: 0, allow_blank: true
 
-  scope :fined, where(:amount.gt => 0) # @todo use blank scope instead
+  scope :fined, where # all inspections are fines
 
   def establishment
     montreal_establishment

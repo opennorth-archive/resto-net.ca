@@ -1,6 +1,8 @@
 = render 'shared/search'
 .container
-  %h2=t @attribute
+  %h2
+    =t '.topmost'
+    =t @attribute
   .row
     - @establishments.each_slice(25).each_with_index do |slice,i|
       .span6
@@ -8,7 +10,7 @@
           - slice.each_with_index do |establishment,j|
             %tr
               %td.index
-                = i * 25 + j + 1 # @todo change with pagination
+                = i * 25 + j + 1
               %td
                 = link_to establishment.name, establishment_path(establishment)
               - unless @attribute == :name
@@ -17,5 +19,3 @@
                     .item-bar(class="bar#{establishment[@attribute].to_i * 10 / @maximum}")
                       .item-number
                         = number_to_human establishment[@attribute], precision: 0
-
-  /@todo paginate
