@@ -75,7 +75,7 @@ fr:
       long: L'exploitant d'une conserverie ou d'un établissement, d'un lieu ou d'un véhicule où l'on prépare, conditionne, transforme, emballe, entrepose, débarque, reçoit, donne à des fins promotionnelles, met en vente ou vend des produits ou détient des produits en vue de la vente ou de la fourniture de services moyennant rémunération ou du don à des fins promotionnelles, doit maintenir la conserverie, l'établissement, le lieu, les locaux, le véhicule et le matériel propres. Cet exploitant doit empêcher que l'aménagement des installations, l'exécution des opérations de préparation, de conditionnement ou de transformation des produits, leur entreposage ou l'exécution de toute autre opération ou l'utilisation du matériel soient susceptibles d'affecter la salubrité des produits ou les conditions sanitaires de l'exploitation.
       short: Propreté
       article: Loi sur les produits alimentaires, article 3.1
-      citation: LRQ c. P-29 a. 3.1
+      citation: LRQ c. P-29 a. 3.1 *
       exclude: true
 
     ? La classe de couleur inscrite sur le petit contenant de sirop d'érable doit correspondre à la classe de couleur du sirop qu'il contient telle que déterminée au moyen d'un spectrophotomètre conformément au tableau B de l'annexe 8.B.
