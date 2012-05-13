@@ -9,6 +9,7 @@ RestoNet::Application.routes.draw do
   match 'channel', to: 'pages#channel'
   match 'about', to: 'pages#about'
   match 'api', to: 'pages#api'
+  match 'request', to: 'pages#request'
 
   root to: 'pages#index'
 
