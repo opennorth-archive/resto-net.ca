@@ -1039,10 +1039,10 @@
   <etablissement>BOULANGERIE PATISSERIE PICADILLY</etablissement>
   <adresse>542 Av. Ogilvy </adresse>
   <ville>Montréal</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
   <date_infraction>24 septembre 2010</date_infraction>
   <date_jugement>29 août 2011</date_jugement>
-  <montant>1000 $</montant>
+  <montant>1400 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>TARIQ MAHMOOD</proprietaire>
@@ -1050,10 +1050,10 @@
   <etablissement>MARCHE JUNAID</etablissement>
   <adresse>908 Rue Jean-Talon Ouest </adresse>
   <ville>Montréal</ville>
-  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
+  <description>Le lieu ou le véhicule doit être aéré, ventilé et disposer: d&apos;eau potable courante chaude et froide;  d&apos;un appareil distributeur de savon liquide ou en poudre. La température de l&apos;eau chaude doit être d&apos;au moins 60ºC. Le local, l&apos;aire ou le véhicule utilisé pour la préparation des produits doit, en plus, disposer d&apos;un évier, de serviettes individuelles jetables et être muni d&apos;un système de récupération ou d&apos;évacuation des eaux usées.</description>
   <date_infraction>19 mars 2010</date_infraction>
   <date_jugement>29 août 2011</date_jugement>
-  <montant>1500 $</montant>
+  <montant>300 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>9136-7862 QUEBEC INC.</proprietaire>
@@ -1061,10 +1061,10 @@
   <etablissement>BOULANGERIE PATISSERIE PICADILLY</etablissement>
   <adresse>542 Av. Ogilvy </adresse>
   <ville>Montréal</ville>
-  <description>Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d&apos;au moins 60°C jusqu&apos;à sa livraison.</description>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
   <date_infraction>24 septembre 2010</date_infraction>
   <date_jugement>29 août 2011</date_jugement>
-  <montant>1400 $</montant>
+  <montant>1000 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>9136-7862 QUEBEC INC.</proprietaire>
@@ -1089,26 +1089,26 @@
   <montant>1100 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>TARIQ MAHMOOD</proprietaire>
-  <categorie>Boucherie-épicerie</categorie>
-  <etablissement>MARCHE JUNAID</etablissement>
-  <adresse>908 Rue Jean-Talon Ouest </adresse>
-  <ville>Montréal</ville>
-  <description>Le lieu ou le véhicule doit être aéré, ventilé et disposer: d&apos;eau potable courante chaude et froide;  d&apos;un appareil distributeur de savon liquide ou en poudre. La température de l&apos;eau chaude doit être d&apos;au moins 60ºC. Le local, l&apos;aire ou le véhicule utilisé pour la préparation des produits doit, en plus, disposer d&apos;un évier, de serviettes individuelles jetables et être muni d&apos;un système de récupération ou d&apos;évacuation des eaux usées.</description>
-  <date_infraction>19 mars 2010</date_infraction>
-  <date_jugement>29 août 2011</date_jugement>
-  <montant>300 $</montant>
-</contrevenant>
-<contrevenant>
   <proprietaire>9136-7862 QUEBEC INC.</proprietaire>
   <categorie>Pâtisserie</categorie>
   <etablissement>BOULANGERIE PATISSERIE PICADILLY</etablissement>
   <adresse>542 Av. Ogilvy </adresse>
   <ville>Montréal</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <description>Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d&apos;au moins 60°C jusqu&apos;à sa livraison.</description>
   <date_infraction>24 septembre 2010</date_infraction>
   <date_jugement>29 août 2011</date_jugement>
   <montant>1400 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>TARIQ MAHMOOD</proprietaire>
+  <categorie>Boucherie-épicerie</categorie>
+  <etablissement>MARCHE JUNAID</etablissement>
+  <adresse>908 Rue Jean-Talon Ouest </adresse>
+  <ville>Montréal</ville>
+  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
+  <date_infraction>19 mars 2010</date_infraction>
+  <date_jugement>29 août 2011</date_jugement>
+  <montant>1500 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>Esrabian</proprietaire>
@@ -1716,17 +1716,6 @@
   <montant>1000 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>VINCENT MASSA</proprietaire>
-  <categorie>Épicerie avec préparation</categorie>
-  <etablissement>QUALITIFRUITS</etablissement>
-  <adresse>5818 Av. Westminster </adresse>
-  <ville>Côte Saint-Luc</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>22 juillet 2010</date_infraction>
-  <date_jugement>28 avril 2011</date_jugement>
-  <montant>1650 $</montant>
-</contrevenant>
-<contrevenant>
   <proprietaire>9176-9125 QUEBEC INC.</proprietaire>
   <categorie>Restaurant service rapide</categorie>
   <etablissement>PARIS CAFE</etablissement>
@@ -1747,6 +1736,17 @@
   <date_infraction>22 juillet 2010</date_infraction>
   <date_jugement>28 avril 2011</date_jugement>
   <montant>250 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>VINCENT MASSA</proprietaire>
+  <categorie>Épicerie avec préparation</categorie>
+  <etablissement>QUALITIFRUITS</etablissement>
+  <adresse>5818 Av. Westminster </adresse>
+  <ville>Côte Saint-Luc</ville>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <date_infraction>22 juillet 2010</date_infraction>
+  <date_jugement>28 avril 2011</date_jugement>
+  <montant>1650 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>9093-0280 QUEBEC INC.</proprietaire>
@@ -1798,7 +1798,7 @@
   <etablissement>RESTAURANT WING PHAT INC.</etablissement>
   <adresse>4201 Rue Jarry Est </adresse>
   <ville>St-Léonard</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
   <date_infraction>02 octobre 2009</date_infraction>
   <date_jugement>23 mars 2011</date_jugement>
   <montant>1000 $</montant>
@@ -1809,21 +1809,10 @@
   <etablissement>RESTAURANT WING PHAT INC.</etablissement>
   <adresse>4201 Rue Jarry Est </adresse>
   <ville>St-Léonard</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
   <date_infraction>02 octobre 2009</date_infraction>
   <date_jugement>23 mars 2011</date_jugement>
   <montant>1000 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>KRYSTAL BO-DAN IMPORT EXPORT INC.</proprietaire>
-  <categorie>Charcuterie</categorie>
-  <etablissement>KRYSTAL BO-DAN IMPORT EXPORT INC.</etablissement>
-  <adresse>440 Rue Sicard </adresse>
-  <ville>Montréal</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>23 avril 2009</date_infraction>
-  <date_jugement>14 mars 2011</date_jugement>
-  <montant>1500 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>LA BOUCHERIE DE MAGALIE INC.</proprietaire>
@@ -1859,26 +1848,15 @@
   <montant>700 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>9116-4798 QUEBEC INC.</proprietaire>
+  <proprietaire>9203-1707 QUEBEC INC.</proprietaire>
   <categorie>Restaurant</categorie>
-  <etablissement>RESTO-BAR LE CLUB SANDWICHES</etablissement>
-  <adresse>1570 Rue Sainte-Catherine Est </adresse>
-  <ville>Montréal</ville>
+  <etablissement>MONSIEUR PATATES FRITES( ROYAL POULET FRIT ET PIZZA)</etablissement>
+  <adresse>12680 Boul. Gouin Ouest </adresse>
+  <ville>Pierrefonds</ville>
   <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>16 mars 2010</date_infraction>
+  <date_infraction>31 mars 2010</date_infraction>
   <date_jugement>09 mars 2011</date_jugement>
-  <montant>2000 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>MARIA SECCARECCIA</proprietaire>
-  <categorie>Épicerie avec préparation</categorie>
-  <etablissement>FRUITERIE LEOPOLDO ENRG</etablissement>
-  <adresse>182 Pl. du Marché-du-Nord </adresse>
-  <ville>Montréal</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>28 mai 2010</date_infraction>
-  <date_jugement>09 mars 2011</date_jugement>
-  <montant>500 $</montant>
+  <montant>1500 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>SHICH POULET ROYAL INC.</proprietaire>
@@ -1892,14 +1870,36 @@
   <montant>900 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>9203-1707 QUEBEC INC.</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>MONSIEUR PATATES FRITES( ROYAL POULET FRIT ET PIZZA)</etablissement>
-  <adresse>12680 Boul. Gouin Ouest </adresse>
-  <ville>Pierrefonds</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>31 mars 2010</date_infraction>
+  <proprietaire>MARIA SECCARECCIA</proprietaire>
+  <categorie>Épicerie avec préparation</categorie>
+  <etablissement>FRUITERIE LEOPOLDO ENRG</etablissement>
+  <adresse>182 Pl. du Marché-du-Nord </adresse>
+  <ville>Montréal</ville>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <date_infraction>28 mai 2010</date_infraction>
   <date_jugement>09 mars 2011</date_jugement>
+  <montant>500 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>9116-4798 QUEBEC INC.</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>RESTO-BAR LE CLUB SANDWICHES</etablissement>
+  <adresse>1570 Rue Sainte-Catherine Est </adresse>
+  <ville>Montréal</ville>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>16 mars 2010</date_infraction>
+  <date_jugement>09 mars 2011</date_jugement>
+  <montant>2000 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>9105-8016 QUEBEC INC.</proprietaire>
+  <categorie>Pâtisserie</categorie>
+  <etablissement>PRODUIT PITA ACHTAROUTE</etablissement>
+  <adresse>1575 Rue Antonio-Barbeau </adresse>
+  <ville>Montréal</ville>
+  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
+  <date_infraction>26 juin 2009</date_infraction>
+  <date_jugement>03 mars 2011</date_jugement>
   <montant>1500 $</montant>
 </contrevenant>
 <contrevenant>
@@ -1919,17 +1919,6 @@
   <etablissement>PRODUIT PITA ACHTAROUTE</etablissement>
   <adresse>1575 Rue Antonio-Barbeau </adresse>
   <ville>Montréal</ville>
-  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
-  <date_infraction>06 novembre 2009</date_infraction>
-  <date_jugement>03 mars 2011</date_jugement>
-  <montant>2000 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>9105-8016 QUEBEC INC.</proprietaire>
-  <categorie>Pâtisserie</categorie>
-  <etablissement>PRODUIT PITA ACHTAROUTE</etablissement>
-  <adresse>1575 Rue Antonio-Barbeau </adresse>
-  <ville>Montréal</ville>
   <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
   <date_infraction>15 septembre 2009</date_infraction>
   <date_jugement>03 mars 2011</date_jugement>
@@ -1942,9 +1931,9 @@
   <adresse>1575 Rue Antonio-Barbeau </adresse>
   <ville>Montréal</ville>
   <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
-  <date_infraction>26 juin 2009</date_infraction>
+  <date_infraction>06 novembre 2009</date_infraction>
   <date_jugement>03 mars 2011</date_jugement>
-  <montant>1500 $</montant>
+  <montant>2000 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>9092-4341 QUEBEC INC.</proprietaire>
@@ -2048,7 +2037,7 @@
 <contrevenant>
   <proprietaire>9191-7021 QUEBEC INC.</proprietaire>
   <categorie>Boulangerie</categorie>
-  <etablissement>BOULANGERIE &amp; VIENNOISERIES ALMA (FARHAT PITA)</etablissement>
+  <etablissement>BOUL.&amp;VIENNOISERIES ALMA (FARHAT PITA)</etablissement>
   <adresse>4600 Boul. des Grandes-Prairies </adresse>
   <ville>St-Léonard</ville>
   <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
@@ -2059,7 +2048,7 @@
 <contrevenant>
   <proprietaire>9191-7021 QUEBEC INC.</proprietaire>
   <categorie>Boulangerie</categorie>
-  <etablissement>BOULANGERIE &amp; VIENNOISERIES ALMA (FARHAT PITA)</etablissement>
+  <etablissement>BOUL.&amp;VIENNOISERIES ALMA (FARHAT PITA)</etablissement>
   <adresse>4600 Boul. des Grandes-Prairies </adresse>
   <ville>St-Léonard</ville>
   <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
@@ -2070,7 +2059,7 @@
 <contrevenant>
   <proprietaire>9191-7021 QUEBEC INC.</proprietaire>
   <categorie>Boulangerie</categorie>
-  <etablissement>BOULANGERIE &amp; VIENNOISERIES ALMA (FARHAT PITA)</etablissement>
+  <etablissement>BOUL.&amp;VIENNOISERIES ALMA (FARHAT PITA)</etablissement>
   <adresse>4600 Boul. des Grandes-Prairies </adresse>
   <ville>St-Léonard</ville>
   <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
@@ -2167,6 +2156,61 @@
   <montant>1500 $</montant>
 </contrevenant>
 <contrevenant>
+  <proprietaire>124643 CANADA INC.</proprietaire>
+  <categorie>Produits à base de protéines végétales</categorie>
+  <etablissement>PRODUITS ALIMENTAIRES ORIENTAL ENR</etablissement>
+  <adresse>6909 Rue Marconi </adresse>
+  <ville>Montréal</ville>
+  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
+  <date_infraction>11 décembre 2009</date_infraction>
+  <date_jugement>31 janvier 2011</date_jugement>
+  <montant>1000 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>9091-1314 QUEBEC INC.</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>NICK LE ROI DU SOUS-MARIN 2000</etablissement>
+  <adresse>7900 Rue Saint-Hubert </adresse>
+  <ville>Montréal</ville>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>19 mars 2010</date_infraction>
+  <date_jugement>31 janvier 2011</date_jugement>
+  <montant>800 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>9176-5321 QUEBEC INC.</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>RESTAURANT MITERAS ENR</etablissement>
+  <adresse>2320 Boul. Rosemont </adresse>
+  <ville>Montréal</ville>
+  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
+  <date_infraction>07 octobre 2009</date_infraction>
+  <date_jugement>31 janvier 2011</date_jugement>
+  <montant>1200 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>ALEJANDRO VIDAL</proprietaire>
+  <categorie>Pâtisserie</categorie>
+  <etablissement>BOULANGERIE ET PATISSERIE RIVIERA</etablissement>
+  <adresse>435 Rue Jean-Talon Ouest </adresse>
+  <ville>Montréal</ville>
+  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
+  <date_infraction>08 janvier 2010</date_infraction>
+  <date_jugement>31 janvier 2011</date_jugement>
+  <montant>1500 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>9091-1314 QUEBEC INC.</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>NICK LE ROI DU SOUS-MARIN 2000</etablissement>
+  <adresse>7900 Rue Saint-Hubert </adresse>
+  <ville>Montréal</ville>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <date_infraction>19 mars 2010</date_infraction>
+  <date_jugement>31 janvier 2011</date_jugement>
+  <montant>1000 $</montant>
+</contrevenant>
+<contrevenant>
   <proprietaire>9002-5941 QUEBEC INC.</proprietaire>
   <categorie>Casse-croûte</categorie>
   <etablissement>CAFE DU SOLEIL</etablissement>
@@ -2178,26 +2222,15 @@
   <montant>700 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>9196-0328 QUEBEC INC.</proprietaire>
+  <proprietaire>9138-2432 QUEBEC INC.</proprietaire>
   <categorie>Restaurant</categorie>
-  <etablissement>RESTAURANT JONAS</etablissement>
-  <adresse>7685 Rue Saint-Denis </adresse>
-  <ville>Montréal</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>03 mai 2010</date_infraction>
-  <date_jugement>31 janvier 2011</date_jugement>
-  <montant>2000 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>3762637 CANADA INC.</proprietaire>
-  <categorie>Usine produit autre</categorie>
-  <etablissement>SOLLY&apos;S - TRAITEUR BONGIORNO</etablissement>
-  <adresse>7354 Ch. de la Côte-Saint-Luc </adresse>
-  <ville>Montréal</ville>
+  <etablissement>GIGI PIZZA</etablissement>
+  <adresse>10421 Boul. Gouin Ouest </adresse>
+  <ville>Roxboro</ville>
   <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>01 octobre 2009</date_infraction>
+  <date_infraction>30 septembre 2009</date_infraction>
   <date_jugement>31 janvier 2011</date_jugement>
-  <montant>1000 $</montant>
+  <montant>700 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>9116-4798 QUEBEC INC.</proprietaire>
@@ -2222,50 +2255,6 @@
   <montant>1200 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>124643 CANADA INC.</proprietaire>
-  <categorie>Produits à base de protéines végétales</categorie>
-  <etablissement>PRODUITS ALIMENTAIRES ORIENTAL ENR</etablissement>
-  <adresse>6909 Rue Marconi </adresse>
-  <ville>Montréal</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>27 novembre 2009</date_infraction>
-  <date_jugement>31 janvier 2011</date_jugement>
-  <montant>1000 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>124643 CANADA INC.</proprietaire>
-  <categorie>Produits à base de protéines végétales</categorie>
-  <etablissement>PRODUITS ALIMENTAIRES ORIENTAL ENR</etablissement>
-  <adresse>6909 Rue Marconi </adresse>
-  <ville>Montréal</ville>
-  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
-  <date_infraction>11 décembre 2009</date_infraction>
-  <date_jugement>31 janvier 2011</date_jugement>
-  <montant>1000 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>ALEJANDRO VIDAL</proprietaire>
-  <categorie>Pâtisserie</categorie>
-  <etablissement>BOULANGERIE ET PATISSERIE RIVIERA</etablissement>
-  <adresse>435 Rue Jean-Talon Ouest </adresse>
-  <ville>Montréal</ville>
-  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
-  <date_infraction>08 janvier 2010</date_infraction>
-  <date_jugement>31 janvier 2011</date_jugement>
-  <montant>1500 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>9176-5321 QUEBEC INC.</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>RESTAURANT MITERAS ENR</etablissement>
-  <adresse>2320 Boul. Rosemont </adresse>
-  <ville>Montréal</ville>
-  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
-  <date_infraction>07 octobre 2009</date_infraction>
-  <date_jugement>31 janvier 2011</date_jugement>
-  <montant>1200 $</montant>
-</contrevenant>
-<contrevenant>
   <proprietaire>VILLA FRONTENAC INC.</proprietaire>
   <categorie>Restaurant</categorie>
   <etablissement>RESTAURANT VILLA FRONTENAC</etablissement>
@@ -2277,48 +2266,37 @@
   <montant>1000 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>9091-1314 QUEBEC INC.</proprietaire>
+  <proprietaire>9196-0328 QUEBEC INC.</proprietaire>
   <categorie>Restaurant</categorie>
-  <etablissement>NICK LE ROI DU SOUS-MARIN 2000</etablissement>
-  <adresse>7900 Rue Saint-Hubert </adresse>
-  <ville>Montréal</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>19 mars 2010</date_infraction>
-  <date_jugement>31 janvier 2011</date_jugement>
-  <montant>800 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>9091-1314 QUEBEC INC.</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>NICK LE ROI DU SOUS-MARIN 2000</etablissement>
-  <adresse>7900 Rue Saint-Hubert </adresse>
+  <etablissement>RESTAURANT JONAS</etablissement>
+  <adresse>7685 Rue Saint-Denis </adresse>
   <ville>Montréal</ville>
   <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>19 mars 2010</date_infraction>
+  <date_infraction>03 mai 2010</date_infraction>
+  <date_jugement>31 janvier 2011</date_jugement>
+  <montant>2000 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>124643 CANADA INC.</proprietaire>
+  <categorie>Produits à base de protéines végétales</categorie>
+  <etablissement>PRODUITS ALIMENTAIRES ORIENTAL ENR</etablissement>
+  <adresse>6909 Rue Marconi </adresse>
+  <ville>Montréal</ville>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>27 novembre 2009</date_infraction>
   <date_jugement>31 janvier 2011</date_jugement>
   <montant>1000 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>9138-2432 QUEBEC INC.</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>GIGI PIZZA</etablissement>
-  <adresse>10421 Boul. Gouin Ouest </adresse>
-  <ville>Roxboro</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>30 septembre 2009</date_infraction>
-  <date_jugement>31 janvier 2011</date_jugement>
-  <montant>700 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>SOHEL AHMED RAHMAN</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>RESTAURANT BOMBAY TANDOORI</etablissement>
-  <adresse>2520 Rue du Centre </adresse>
+  <proprietaire>3762637 CANADA INC.</proprietaire>
+  <categorie>Usine produit autre</categorie>
+  <etablissement>SOLLY&apos;S - TRAITEUR BONGIORNO</etablissement>
+  <adresse>7354 Ch. de la Côte-Saint-Luc </adresse>
   <ville>Montréal</ville>
   <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>02 février 2010</date_infraction>
-  <date_jugement>28 janvier 2011</date_jugement>
-  <montant>900 $</montant>
+  <date_infraction>01 octobre 2009</date_infraction>
+  <date_jugement>31 janvier 2011</date_jugement>
+  <montant>1000 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>SOCIETE HOTELIERE HUNSONS INC.</proprietaire>
@@ -2332,6 +2310,17 @@
   <montant>1500 $</montant>
 </contrevenant>
 <contrevenant>
+  <proprietaire>SOHEL AHMED RAHMAN</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>RESTAURANT BOMBAY TANDOORI</etablissement>
+  <adresse>2520 Rue du Centre </adresse>
+  <ville>Montréal</ville>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>02 février 2010</date_infraction>
+  <date_jugement>28 janvier 2011</date_jugement>
+  <montant>900 $</montant>
+</contrevenant>
+<contrevenant>
   <proprietaire>DENIVAL MADOCHEE</proprietaire>
   <categorie>Restaurant</categorie>
   <etablissement>RESTAURANT KISKEYA</etablissement>
@@ -2341,6 +2330,28 @@
   <date_infraction>08 octobre 2009</date_infraction>
   <date_jugement>27 janvier 2011</date_jugement>
   <montant>750 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>DENIVAL MADOCHEE</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>RESTAURANT KISKEYA</etablissement>
+  <adresse>3211 Rue Denis-Papin </adresse>
+  <ville>Montréal</ville>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>07 décembre 2009</date_infraction>
+  <date_jugement>27 janvier 2011</date_jugement>
+  <montant>1100 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>DENIVAL MADOCHEE</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>RESTAURANT KISKEYA</etablissement>
+  <adresse>3211 Rue Denis-Papin </adresse>
+  <ville>Montréal</ville>
+  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
+  <date_infraction>07 décembre 2009</date_infraction>
+  <date_jugement>27 janvier 2011</date_jugement>
+  <montant>1100 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>DENIVAL MADOCHEE</proprietaire>
@@ -2365,28 +2376,6 @@
   <montant>2000 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>DENIVAL MADOCHEE</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>RESTAURANT KISKEYA</etablissement>
-  <adresse>3211 Rue Denis-Papin </adresse>
-  <ville>Montréal</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>07 décembre 2009</date_infraction>
-  <date_jugement>27 janvier 2011</date_jugement>
-  <montant>1100 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>DENIVAL MADOCHEE</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>RESTAURANT KISKEYA</etablissement>
-  <adresse>3211 Rue Denis-Papin </adresse>
-  <ville>Montréal</ville>
-  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
-  <date_infraction>07 décembre 2009</date_infraction>
-  <date_jugement>27 janvier 2011</date_jugement>
-  <montant>1100 $</montant>
-</contrevenant>
-<contrevenant>
   <proprietaire>9078-7656 QUEBEC INC.</proprietaire>
   <categorie>Boucherie-épicerie</categorie>
   <etablissement>FRUITERIE MILE-END</etablissement>
@@ -2398,81 +2387,15 @@
   <montant>1500 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>EMILIE ST-GERMAIN</proprietaire>
-  <categorie>Restaurant service rapide</categorie>
-  <etablissement>CHEZ MILIE CASSE-CROUTE</etablissement>
-  <adresse>3183 Rue Jarry Est </adresse>
+  <proprietaire>CITE CACHERE INC.</proprietaire>
+  <categorie>Épicerie avec préparation</categorie>
+  <etablissement>CITE CACHERE INC.</etablissement>
+  <adresse>4765 Av. Van Horne </adresse>
   <ville>Montréal</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>10 février 2010</date_infraction>
-  <date_jugement>25 janvier 2011</date_jugement>
-  <montant>2500 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>MICHEL GHARZOUZI</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>RESTAURANT SAMIRAMISS</etablissement>
-  <adresse>885 Boul. Décarie </adresse>
-  <ville>St-Laurent</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>03 février 2010</date_infraction>
-  <date_jugement>25 janvier 2011</date_jugement>
-  <montant>1600 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>MICHEL GHARZOUZI</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>RESTAURANT SAMIRAMISS</etablissement>
-  <adresse>885 Boul. Décarie </adresse>
-  <ville>St-Laurent</ville>
   <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
-  <date_infraction>03 février 2010</date_infraction>
+  <date_infraction>10 mars 2010</date_infraction>
   <date_jugement>25 janvier 2011</date_jugement>
   <montant>1600 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>PATISSERIE TRAITEUR LE SAVOIR FAIRE INC.</proprietaire>
-  <categorie>Pâtisserie</categorie>
-  <etablissement>PATISSERIE TRAITEUR LE SAVOIR FAIRE INC.</etablissement>
-  <adresse>4302 Boul. Henri-Bourassa Est </adresse>
-  <ville>Montréal-Nord</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>05 février 2010</date_infraction>
-  <date_jugement>25 janvier 2011</date_jugement>
-  <montant>2000 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>REFLET CREOLE INC.</proprietaire>
-  <categorie>Restaurant mets pour emporter</categorie>
-  <etablissement>REFLET CREOLE INC.</etablissement>
-  <adresse>8549 Boul. Pie-IX </adresse>
-  <ville>Montréal</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>26 novembre 2009</date_infraction>
-  <date_jugement>25 janvier 2011</date_jugement>
-  <montant>1500 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>EMILIE ST-GERMAIN</proprietaire>
-  <categorie>Restaurant service rapide</categorie>
-  <etablissement>CHEZ MILIE CASSE-CROUTE</etablissement>
-  <adresse>3183 Rue Jarry Est </adresse>
-  <ville>Montréal</ville>
-  <description>Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d&apos;au moins 60°C jusqu&apos;à sa livraison.</description>
-  <date_infraction>10 février 2010</date_infraction>
-  <date_jugement>25 janvier 2011</date_jugement>
-  <montant>1500 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>ROBERT BARBIER</proprietaire>
-  <categorie>Boucherie-épicerie</categorie>
-  <etablissement>BOUCHERIE L&apos;EXCELLENCE</etablissement>
-  <adresse>3565 Rue Bélair </adresse>
-  <ville>Montréal</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
-  <date_infraction>26 novembre 2009</date_infraction>
-  <date_jugement>25 janvier 2011</date_jugement>
-  <montant>1800 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>LES ALIMENTS NUTRIFRESH LIMITEE</proprietaire>
@@ -2508,17 +2431,6 @@
   <montant>250 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>PATISSERIE TRAITEUR LE SAVOIR FAIRE INC.</proprietaire>
-  <categorie>Pâtisserie</categorie>
-  <etablissement>PATISSERIE TRAITEUR LE SAVOIR FAIRE INC.</etablissement>
-  <adresse>4302 Boul. Henri-Bourassa Est </adresse>
-  <ville>Montréal-Nord</ville>
-  <description>Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d&apos;au moins 60°C jusqu&apos;à sa livraison.</description>
-  <date_infraction>05 février 2010</date_infraction>
-  <date_jugement>25 janvier 2011</date_jugement>
-  <montant>2500 $</montant>
-</contrevenant>
-<contrevenant>
   <proprietaire>RESTAURANT RUBIS ROUGE INC.</proprietaire>
   <categorie>Restaurant</categorie>
   <etablissement>RESTAURANT RUBIS ROUGE</etablissement>
@@ -2541,6 +2453,83 @@
   <montant>1400 $</montant>
 </contrevenant>
 <contrevenant>
+  <proprietaire>MICHEL GHARZOUZI</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>RESTAURANT SAMIRAMISS</etablissement>
+  <adresse>885 Boul. Décarie </adresse>
+  <ville>St-Laurent</ville>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>03 février 2010</date_infraction>
+  <date_jugement>25 janvier 2011</date_jugement>
+  <montant>1600 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>MICHEL GHARZOUZI</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>RESTAURANT SAMIRAMISS</etablissement>
+  <adresse>885 Boul. Décarie </adresse>
+  <ville>St-Laurent</ville>
+  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
+  <date_infraction>03 février 2010</date_infraction>
+  <date_jugement>25 janvier 2011</date_jugement>
+  <montant>1600 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>REFLET CREOLE INC.</proprietaire>
+  <categorie>Restaurant mets pour emporter</categorie>
+  <etablissement>REFLET CREOLE INC.</etablissement>
+  <adresse>8549 Boul. Pie-IX </adresse>
+  <ville>Montréal</ville>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <date_infraction>26 novembre 2009</date_infraction>
+  <date_jugement>25 janvier 2011</date_jugement>
+  <montant>1500 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>EMILIE ST-GERMAIN</proprietaire>
+  <categorie>Restaurant service rapide</categorie>
+  <etablissement>CHEZ MILIE CASSE-CROUTE</etablissement>
+  <adresse>3183 Rue Jarry Est </adresse>
+  <ville>Montréal</ville>
+  <description>Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d&apos;au moins 60°C jusqu&apos;à sa livraison.</description>
+  <date_infraction>10 février 2010</date_infraction>
+  <date_jugement>25 janvier 2011</date_jugement>
+  <montant>1500 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>EMILIE ST-GERMAIN</proprietaire>
+  <categorie>Restaurant service rapide</categorie>
+  <etablissement>CHEZ MILIE CASSE-CROUTE</etablissement>
+  <adresse>3183 Rue Jarry Est </adresse>
+  <ville>Montréal</ville>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <date_infraction>10 février 2010</date_infraction>
+  <date_jugement>25 janvier 2011</date_jugement>
+  <montant>2500 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>PATISSERIE TRAITEUR LE SAVOIR FAIRE INC.</proprietaire>
+  <categorie>Pâtisserie</categorie>
+  <etablissement>PATISSERIE TRAITEUR LE SAVOIR FAIRE INC.</etablissement>
+  <adresse>4302 Boul. Henri-Bourassa Est </adresse>
+  <ville>Montréal-Nord</ville>
+  <description>Le produit périssable vendu chaud ou servi chaud au consommateur doit être gardé à une température interne d&apos;au moins 60°C jusqu&apos;à sa livraison.</description>
+  <date_infraction>05 février 2010</date_infraction>
+  <date_jugement>25 janvier 2011</date_jugement>
+  <montant>2500 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>PATISSERIE TRAITEUR LE SAVOIR FAIRE INC.</proprietaire>
+  <categorie>Pâtisserie</categorie>
+  <etablissement>PATISSERIE TRAITEUR LE SAVOIR FAIRE INC.</etablissement>
+  <adresse>4302 Boul. Henri-Bourassa Est </adresse>
+  <ville>Montréal-Nord</ville>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <date_infraction>05 février 2010</date_infraction>
+  <date_jugement>25 janvier 2011</date_jugement>
+  <montant>2000 $</montant>
+</contrevenant>
+<contrevenant>
   <proprietaire>HUNG MA DUC</proprietaire>
   <categorie>Restaurant</categorie>
   <etablissement>CHEZ MING</etablissement>
@@ -2552,15 +2541,15 @@
   <montant>1400 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>CITE CACHERE INC.</proprietaire>
-  <categorie>Épicerie avec préparation</categorie>
-  <etablissement>CITE CACHERE INC.</etablissement>
-  <adresse>4765 Av. Van Horne </adresse>
+  <proprietaire>ROBERT BARBIER</proprietaire>
+  <categorie>Boucherie-épicerie</categorie>
+  <etablissement>BOUCHERIE L&apos;EXCELLENCE</etablissement>
+  <adresse>3565 Rue Bélair </adresse>
   <ville>Montréal</ville>
-  <description>Le lieu ou le véhicule doit être exempt de contaminants, de polluants, de toute espèce d&apos;animaux y compris les insectes et les rongeurs ou de leurs excréments.</description>
-  <date_infraction>10 mars 2010</date_infraction>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>26 novembre 2009</date_infraction>
   <date_jugement>25 janvier 2011</date_jugement>
-  <montant>1600 $</montant>
+  <montant>1800 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>9163-7686 QUEBEC INC.</proprietaire>
@@ -2590,10 +2579,10 @@
   <etablissement>RESTAURANT NHU Y</etablissement>
   <adresse>134 Rue Jean-Talon Ouest </adresse>
   <ville>Montréal</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
   <date_infraction>01 octobre 2010</date_infraction>
   <date_jugement>18 janvier 2011</date_jugement>
-  <montant>1000 $</montant>
+  <montant>2500 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>THI KHANH VY PHAM</proprietaire>
@@ -2601,10 +2590,10 @@
   <etablissement>RESTAURANT NHU Y</etablissement>
   <adresse>134 Rue Jean-Talon Ouest </adresse>
   <ville>Montréal</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
   <date_infraction>01 octobre 2010</date_infraction>
   <date_jugement>18 janvier 2011</date_jugement>
-  <montant>2500 $</montant>
+  <montant>1000 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>SERVICES ALIMENTAIRES DU QUARTIER NORD INC.</proprietaire>
@@ -2618,13 +2607,13 @@
   <montant>1200 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>LES PROVISIONS CALDWELL INC.</proprietaire>
-  <categorie>Épicerie avec préparation</categorie>
-  <etablissement>LES PROVISIONS CALDWELL INC.</etablissement>
-  <adresse>7025 Ch. Kildare </adresse>
-  <ville>Côte Saint-Luc</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>15 avril 2010</date_infraction>
+  <proprietaire>141203 CANADA INC.</proprietaire>
+  <categorie>Restaurant</categorie>
+  <etablissement>JARDIN PEKIN 2</etablissement>
+  <adresse>4794 Boul. Saint-Jean </adresse>
+  <ville>Pierrefonds</ville>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>06 juillet 2010</date_infraction>
   <date_jugement>11 janvier 2011</date_jugement>
   <montant>1000 $</montant>
 </contrevenant>
@@ -2634,8 +2623,19 @@
   <etablissement>JARDIN PEKIN 2</etablissement>
   <adresse>4794 Boul. Saint-Jean </adresse>
   <ville>Pierrefonds</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
   <date_infraction>06 juillet 2010</date_infraction>
+  <date_jugement>11 janvier 2011</date_jugement>
+  <montant>1200 $</montant>
+</contrevenant>
+<contrevenant>
+  <proprietaire>LES PROVISIONS CALDWELL INC.</proprietaire>
+  <categorie>Épicerie avec préparation</categorie>
+  <etablissement>LES PROVISIONS CALDWELL INC.</etablissement>
+  <adresse>7025 Ch. Kildare </adresse>
+  <ville>Côte Saint-Luc</ville>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
+  <date_infraction>15 avril 2010</date_infraction>
   <date_jugement>11 janvier 2011</date_jugement>
   <montant>1000 $</montant>
 </contrevenant>
@@ -2651,15 +2651,15 @@
   <montant>250 $</montant>
 </contrevenant>
 <contrevenant>
-  <proprietaire>141203 CANADA INC.</proprietaire>
+  <proprietaire>RESTAURANT WING PHAT INC.</proprietaire>
   <categorie>Restaurant</categorie>
-  <etablissement>JARDIN PEKIN 2</etablissement>
-  <adresse>4794 Boul. Saint-Jean </adresse>
-  <ville>Pierrefonds</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>06 juillet 2010</date_infraction>
-  <date_jugement>11 janvier 2011</date_jugement>
-  <montant>1200 $</montant>
+  <etablissement>RESTAURANT WING PHAT INC.</etablissement>
+  <adresse>4201 Rue Jarry Est </adresse>
+  <ville>St-Léonard</ville>
+  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <date_infraction>29 mars 2010</date_infraction>
+  <date_jugement>10 janvier 2011</date_jugement>
+  <montant>1300 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>RESTAURANT WING PHAT INC.</proprietaire>
@@ -2667,7 +2667,7 @@
   <etablissement>RESTAURANT WING PHAT INC.</etablissement>
   <adresse>4201 Rue Jarry Est </adresse>
   <ville>St-Léonard</ville>
-  <description>Les lieux, véhicules, équipements, matériaux et ustensiles servant à la préparation au conditionnement, à l&apos;entreposage, au transport, à l&apos;étiquetage et au service des produits, ainsi que les autres installations et locaux sanitaires, doivent être propres.</description>
+  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
   <date_infraction>29 mars 2010</date_infraction>
   <date_jugement>10 janvier 2011</date_jugement>
   <montant>1300 $</montant>
@@ -2693,17 +2693,6 @@
   <date_infraction>03 février 2010</date_infraction>
   <date_jugement>10 janvier 2011</date_jugement>
   <montant>1100 $</montant>
-</contrevenant>
-<contrevenant>
-  <proprietaire>RESTAURANT WING PHAT INC.</proprietaire>
-  <categorie>Restaurant</categorie>
-  <etablissement>RESTAURANT WING PHAT INC.</etablissement>
-  <adresse>4201 Rue Jarry Est </adresse>
-  <ville>St-Léonard</ville>
-  <description>Le produit altérable à la chaleur à l&apos;exception des fruits et légumes frais entiers doit être refroidi sans retard et maintenu constamment à une température interne et ambiante ne dépassant pas 4ºC jusqu&apos;à sa livraison au consommateur, sauf pendant le temps requis pour l&apos;application d&apos;un procédé de fabrication ou d&apos;un traitement reconnu en industrie alimentaire et qui exige une plus haute température.</description>
-  <date_infraction>29 mars 2010</date_infraction>
-  <date_jugement>10 janvier 2011</date_jugement>
-  <montant>1300 $</montant>
 </contrevenant>
 <contrevenant>
   <proprietaire>2967-9719 QUEBEC INC.</proprietaire>
