@@ -37,3 +37,9 @@
                   .item-number
                     = number_to_human establishment.fines_total, precision: 0
       = link_to t('.next'), establishments_path(order: 'fines_total')
+
+- content_for :footer do
+  :javascript
+    var zoom = #{t '.zoom'};
+    var center = new L.LatLng(#{t '.center.latitude'}, #{t '.center.longitude'});
+    var bounds = new L.LatLngBounds(new L.LatLng(#{t '.southwest.latitude'}, #{t '.southwest.longitude'}), new L.LatLng(#{t '.northeast.latitude'}, #{t '.northeast.longitude'}));

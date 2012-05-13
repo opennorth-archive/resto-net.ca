@@ -70,6 +70,16 @@ en:
       title: Resto-Net - Restaurant Health Inspections and Food Safety in %{city}
     montreal:
       next: Next ›
+      zoom: 10
+      center:
+        latitude: 45.56
+        longitude: -73.72
+      northeast:
+        latitude: 45.40
+        longitude: -73.98
+      southwest:
+        latitude: 45.71
+        longitude: -73.47
     about:
       title: About Resto-Net
     api:

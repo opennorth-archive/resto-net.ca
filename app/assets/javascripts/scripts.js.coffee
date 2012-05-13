@@ -22,6 +22,20 @@ $ ->
   $('a[rel=popover]').popover
     template: '<div class="popover"><div class="arrow"></div><div class="popover-inner"><blockquote><p class="popover-content"></p><small class="popover-title"></small></blockquote></div></div>'
 
+  if center? and zoom? and bounds?
+    map = new L.Map('map', {
+      center: center,
+      zoom: zoom,
+      layers: [
+        new L.TileLayer('http://{s}.tile.cloudmade.com/266d579a42a943a78166a0a732729463/51080/256/{z}/{x}/{y}.png', {
+          attribution: '© 2011 <a href="http://cloudmade.com/">CloudMade</a> – Map data <a href="http://creativecommons.org/licenses/by-sa/2.0/">CCBYSA</a> 2011 <a href="http://openstreetmap.org/">OpenStreetMap.org</a> – <a href="http://cloudmade.com/about/api-terms-and-conditions">Terms of Use</a>'
+        })
+      ],
+      maxZoom: 17
+    });
+    # @todo geolocate (check if in bounds), add markers
+
+
   $('#twitter').submit (e) ->
     city = $('#twitter input').val()
     if city isnt '' and city isnt 'my city'

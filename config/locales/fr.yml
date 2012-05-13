@@ -70,6 +70,16 @@ fr:
       title: Resto-Net - Inspections des aliments et Sécurité alimentaire à %{city}
     montreal:
       next: Prochain ›
+      zoom: 10
+      center:
+        latitude: 45.56
+        longitude: -73.72
+      northeast:
+        latitude: 45.40
+        longitude: -73.98
+      southwest:
+        latitude: 45.71
+        longitude: -73.47
     about:
       title: À propos de Resto-Net
     api:
