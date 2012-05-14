@@ -1,3 +1,4 @@
+# coding: utf-8
 $.fn.popover.Constructor.prototype.setContent = ->
     $tip = @tip()
     $tip.find('.popover-title').html @getTitle()
@@ -60,18 +61,23 @@ $ ->
     map.on 'locationfound', (event) ->
       if bounds.contains event.latlng
         map.addLayer new L.Marker event.latlng, clickable: false
-        map.setView event.latlng, 13
+        map.setView event.latlng, 16
     map.locate()
 
+    styles = _.map [36, 52, 67, 77, 87, 102, 112], (size, i) ->
+      url: "/assets/clusters/#{i + 2}.png"
+      width: size
+      height: size
+      opt_textColor: 'white'
+    clusterer = new LeafClusterer map, null, styles: styles
     markers = _.map establishments, (establishment) ->
       icon = L.Icon.extend
         iconUrl: "/assets/icons/red#{establishment.icon}.png"
         iconSize: new L.Point 27, 27
         shadowUrl: null
       marker = new L.Marker new L.LatLng(establishment.lat, establishment.lng), icon: new icon
-      map.addLayer marker
+      clusterer.addMarker marker
       marker.bindPopup popupTemplate establishment
-    # @todo clustering
 
   if latlng?
     map = new L.Map 'mini-map',

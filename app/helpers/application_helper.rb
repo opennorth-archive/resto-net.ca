@@ -15,6 +15,10 @@ module ApplicationHelper
     t "#{controller.controller_name}.#{controller.action_name}.title", args
   end
 
+  def meta_description
+    content_for?(:meta_description) ? content_for(:meta_description) : og_description
+  end
+
   # Open Graph tags
   def og_title
     # @todo pages#city, about, api
@@ -101,14 +105,6 @@ module ApplicationHelper
         icon:   '%02d' % establishment.fines_count, # JavaScript doesn't have sprintf
       }
     end.to_json
-  end
-
-
-
-  # @todo past this point
-
-  def meta_description
-    content_for?(:meta_description) ? content_for(:meta_description) : og_description
   end
 
 end
