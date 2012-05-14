@@ -55,7 +55,6 @@ $ ->
           attribution: '© 2011 <a href="http://cloudmade.com/">CloudMade</a> – Map data <a href="http://creativecommons.org/licenses/by-sa/2.0/">CCBYSA</a> 2011 <a href="http://openstreetmap.org/">OpenStreetMap.org</a> – <a href="http://cloudmade.com/about/api-terms-and-conditions">Terms of Use</a>'
       ],
       minZoom: zoom
-      maxZoom: 17
     map.attributionControl.setPrefix null
 
     map.on 'locationfound', (event) ->
@@ -65,11 +64,14 @@ $ ->
     map.locate()
 
     markers = _.map establishments, (establishment) ->
-      marker = new L.Marker new L.LatLng(establishment.lat, establishment.lng)
+      icon = L.Icon.extend
+        iconUrl: "/assets/icons/red#{establishment.icon}.png"
+        iconSize: new L.Point 27, 27
+        shadowUrl: null
+      marker = new L.Marker new L.LatLng(establishment.lat, establishment.lng), icon: new icon
       map.addLayer marker
       marker.bindPopup popupTemplate establishment
-
-
+    # @todo clustering
 
   if latlng?
     map = new L.Map 'mini-map',
