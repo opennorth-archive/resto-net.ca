@@ -15,6 +15,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  # @todo update as more cities are added
   def subdomains
     %w(edmonton gatineau montreal ottawa toronto vancouver)
   end

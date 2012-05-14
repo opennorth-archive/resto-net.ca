@@ -8,39 +8,68 @@ I18n =
   en:
     tweet_text: 'Hey @resto_net, please make %{city} your next city. cc @opennorth'
     tweet_related: 'opennorth'
+    summary:
+      one: 'Fined <b>once</b> for <b>%{total}</b> on %{date}'
+      other: 'Fined <b>%{count} times</b> totaling <b>%{total}</b>, most recently %{amount} on %{date}'
   fr:
     tweet_text: 'Hé @resto_net, svp ajouter prochainement la ville de %{city}. cc @opennorth'
     tweet_related: 'nordouvert'
+    summary:
+      one: 'Condamné à <b>une amende</b> de <b>%{total}</b> le %{date}'
+      other: 'Condamné à <b>%{count} amendes</b> totalisant <b>%{total}</b>, plus récemment %{amount} le %{date}'
 
-t = (string, args = {}) ->
+# t is undefined in template unless it is global.
+window.t = (string, args = {}) ->
   current_locale = args.locale or locale
-  string = I18n[current_locale][string] or string
+  if 'count' of args
+    if args.count == 1
+      string = I18n[current_locale][string].one
+    else
+      string = I18n[current_locale][string].other
+  else
+    string = I18n[current_locale][string] or string
   string = string.replace ///%\{#{key}\}///g, value for key, value of args
   string
+
+popupTemplate = _.template """
+<h3><a href="<%= url %>"><%= name %></a></h3>
+<p><%= t('summary', {count: count, total: total, amount: amount, date: date}) %></p>
+"""
 
 $ ->
   $('a[rel=popover]').popover
     template: '<div class="popover"><div class="arrow"></div><div class="popover-inner"><blockquote><p class="popover-content"></p><small class="popover-title"></small></blockquote></div></div>'
 
-  if center? and zoom? and bounds?
-    map = new L.Map('map', {
-      center: center,
-      zoom: zoom,
-      layers: [
-        new L.TileLayer('http://{s}.tile.cloudmade.com/266d579a42a943a78166a0a732729463/51080/256/{z}/{x}/{y}.png', {
-          attribution: '© 2011 <a href="http://cloudmade.com/">CloudMade</a> – Map data <a href="http://creativecommons.org/licenses/by-sa/2.0/">CCBYSA</a> 2011 <a href="http://openstreetmap.org/">OpenStreetMap.org</a> – <a href="http://cloudmade.com/about/api-terms-and-conditions">Terms of Use</a>'
-        })
-      ],
-      maxZoom: 17
-    });
-    # @todo geolocate (check if in bounds), add markers
-
-
-  $('#twitter').submit (e) ->
+  $('#twitter').submit (event) ->
     city = $('#twitter input').val()
     if city isnt '' and city isnt 'my city'
       window.open("http://twitter.com/share?url=#{encodeURIComponent 'http://resto-net.ca/'}&text=#{encodeURIComponent t('tweet_text', city: city)}&related=resto_net,#{t 'tweet_related'}&lang=#{locale}", 'intent', 'width=550,height=450');
-    e.preventDefault()
+    event.preventDefault()
+
+  if center? and zoom? and bounds?
+    map = new L.Map 'map',
+      center: center
+      zoom: zoom
+      layers: [
+        new L.TileLayer 'http://{s}.tile.cloudmade.com/266d579a42a943a78166a0a732729463/51080/256/{z}/{x}/{y}.png',
+          attribution: '© 2011 <a href="http://cloudmade.com/">CloudMade</a> – Map data <a href="http://creativecommons.org/licenses/by-sa/2.0/">CCBYSA</a> 2011 <a href="http://openstreetmap.org/">OpenStreetMap.org</a> – <a href="http://cloudmade.com/about/api-terms-and-conditions">Terms of Use</a>'
+      ],
+      minZoom: zoom
+      maxZoom: 17
+    map.attributionControl.setPrefix null
+
+    map.on 'locationfound', (event) ->
+      if bounds.contains event.latlng
+        map.addLayer new L.Marker event.latlng, clickable: false
+        map.setView event.latlng, 13
+    map.locate()
+
+    markers = _.map establishments, (establishment) ->
+      marker = new L.Marker new L.LatLng(establishment.lat, establishment.lng)
+      map.addLayer marker
+      marker.bindPopup popupTemplate establishment
+
+
 
   if latlng?
     map = new L.Map 'mini-map',
@@ -53,4 +82,4 @@ $ ->
       minZoom: 10
       maxZoom: 18
     map.attributionControl.setPrefix null
-    map.addLayer new L.Marker latlng
+    map.addLayer new L.Marker latlng, clickable: false

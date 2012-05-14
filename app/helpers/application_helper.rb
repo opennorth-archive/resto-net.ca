@@ -87,32 +87,27 @@ module ApplicationHelper
     link_to regulation[:short], options, {'rel' => 'popover', 'data-title' => regulation[:article], 'data-content' => regulation[:long]}.merge(html_options)
   end
 
+  def establishments_json(establishments)
+    establishments.map do |establishment|
+      inspection = establishment.inspections.first
+      { url:    establishment_path(establishment),
+        name:   establishment.name,
+        lat:    establishment.latitude,
+        lng:    establishment.longitude,
+        count:  establishment.fines_count,
+        total:  number_to_currency(establishment.fines_total),
+        date:   l(inspection.inspection_date),
+        amount: number_to_currency(inspection.amount),
+      }
+    end.to_json
+  end
+
 
 
   # @todo past this point
 
   def meta_description
     content_for?(:meta_description) ? content_for(:meta_description) : og_description
-  end
-
-  # icons from http://code.google.com/p/google-maps-icons/
-  def establishments_json(establishments)
-    establishments.select{|e| e.geocoded?}.map do |establishment|
-      infraction = establishment.infractions.first
-      {
-        :id     => establishment.id,
-        :lat    => establishment.latitude,
-        :lng    => establishment.longitude,
-        :name   => establishment.name,
-        :url    => url_for(establishment),
-        :count  => establishment.infractions_count,
-        :amount => number_to_currency(establishment.infractions_amount),
-        :latest => {
-          :date   => l(infraction.judgment_date),
-          :amount => number_to_currency(infraction.amount),
-        },
-      }
-    end.to_json
   end
 
 end

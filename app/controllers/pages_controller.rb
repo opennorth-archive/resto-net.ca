@@ -7,6 +7,7 @@ class PagesController < ApplicationController
 
   # @note don't need to filter by source, as class filters by city already
   def city
+    @establishments = establishments.geocoded
     unless establishments.only_fines?
       @inspections = inspections.sort(:inspection_date.desc).limit(10)
     end
@@ -14,6 +15,7 @@ class PagesController < ApplicationController
       @fines          = inspections.fined.sort(:inspection_date.desc).limit(10)
       @fines_count    = establishments.sort(:fines_count.desc).limit(10)
       @fines_total    = establishments.sort(:fines_total.desc).limit(10)
+      # To scale the small bar graphs.
       @max_fine_count = @fines_count.first.fines_count
       @max_fine_total = @fines_total.first.fines_total.to_i
     end
