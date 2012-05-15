@@ -4,6 +4,7 @@ fr:
   name: Resto-Net
   url: http://resto-net.ca/
 
+  send: Envoyez
   montreal: Montréal
 
   latest_inspections: Dernières inspections
@@ -62,6 +63,21 @@ fr:
       facebook_url: http://www.facebook.com/pages/Resto-Net/329006463817897
 
   pages:
+    mapaq_request:
+      title: MAPAQ
+      subject_label: Sujet
+      default_subject : Demande des résultats d'inspections de salubrité pour %{establishment_name}
+      your_email: Votre adresse email
+      your_name: Votre nom 
+      message: "En tant que client du restaurant %{establishment_name} situé à %{address} , je souhaite savoir si cet établissement a récemment été inspecté pour conformité aux normes de salubrité. Les restaurants ont-ils réussi ou reçu des avertissements ou même des amendes?
+
+À Montréal, il y a plus 800 intoxications alimentaires liées à la salubrité tous les ans. Ces intoxications causent beaucoup de peine aux personnes qui sont malades et qui ne peuvent pas aller au travail, aider leur famille ou qui vomissent pendant plusieurs heures. Il y a des moyens faciles de réduire la quantité d’intoxications alimentaires au Québec.
+
+Par exemple, quand la ville de Los Angeles aux États-Unis a introduit un système qui indique les résultats des inspections dans les vitrines des restaurants, le nombre d’intoxications liées à la salubrité a baissé par plus de 20 % en trois ans (http://books.google.ca/books?id=vSJcyLQgrKcC&lpg=PA244&dq=los%20angeles%20food%20inspection%20data%20transparency%20fung&pg=PA83#v=onepage&q=los%20angeles&f=false)
+
+Lorsque Toronto a mis en place un système semblable en 2001, le niveau de conformité parmi les restaurants a augmenté de 50 % à 92 % selon la ville. Ceci veut dire moins de visites aux restaurants pour vérifier la conformité et donc moins de couts pour la division des inspections de salubrité dans les établissements alimentaires.
+
+En tant que citoyen québécois qui vie à Montréal, une ville internationale qui prise la qualité de ses restaurants, nous souhaitons que le ministère des Agricultures et des Pêches du Québec publiera en temps réel les résultats des inspections de salubrité dans un format ouvert et accessible sur le portail des données ouvertes de la ville de Montréal. (http://donnees.ville.montreal.qc.ca)"
     index:
       title: Resto-Net - Inspections des aliments Canada - Sécurité alimentaire à Montréal, Toronto, Gatineau
       header: Évitez les intoxications alimentaires.
