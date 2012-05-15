@@ -5,6 +5,7 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+
 gem 'graticule', '~> 2.2.0'
 gem 'haml-rails'
 gem 'nokogiri'
@@ -15,8 +16,10 @@ gem 'tire'
 gem 'yajl-ruby' # for tire
 gem 'rdiscount'
 
-# Routes
-gem 'mongo_mapper'
+gem 'bson', '1.3.1'
+gem 'bson_ext', '1.3.1'
+gem 'mongo', '1.3.1'
+gem 'mongo_mapper', '0.9.2'
 
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
