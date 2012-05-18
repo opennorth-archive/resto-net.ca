@@ -82,9 +82,8 @@ class Establishment
     end
   end
 
-  # @todo use yellow pages api?
   def reviews
-    term = name.gsub(/ Inc\.?/i, '') # @todo check for other cleanup, e.g. "the"
+    term = name.gsub(/\bInc\b\.?/i, '').strip # @todo do more cleanup, e.g. "The"
     response = Yelp.reviews term: term, location: full_address
     if response && response['name'] == term
       response['reviews']
