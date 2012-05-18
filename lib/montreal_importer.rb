@@ -14,14 +14,15 @@ class MontrealImporter
 
     puts "Importing infractions for #{@year}"
     Nokogiri::XML(content(source), nil, 'utf-8').xpath('//contrevenant').each do |xml|
+      establishment_name = get_name(xml, 'etablissement')
       establishment = MontrealEstablishment.find_or_create_by_name_and_address_and_city(
-        get_name(xml, 'etablissement'),
+        establishment_name,
         xml.at_xpath('adresse').text.strip,
         xml.at_xpath('ville').text.strip,
         establishment_type: xml.at_xpath('categorie').text.strip, 
         owner_name: get_name(xml, 'proprietaire'))
       inspection = establishment.montreal_inspections.build(
-        name: get_name(xml, 'etablissement'),
+        name: establishment_name,
         description: xml.at_xpath('description').text.strip,
         inspection_date: get_date(xml, 'date_infraction'),
         judgment_date: get_date(xml, 'date_jugement'),
