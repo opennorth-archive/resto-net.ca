@@ -36,7 +36,7 @@ class Establishment
   end
 
   def self.only_fines?
-    %w(montreal).include? source
+    false
   end
 
   # @see Inspection#short_name
@@ -68,9 +68,9 @@ class Establishment
     if geocodeable?
       begin
         location = Geocoder.locate "#{address}, #{city}"
+        print '.'
         %w(latitude longitude street region locality country postal_code).each do |attribute|
           self[attribute] = location.send attribute
-          print '.'
         end
       rescue Graticule::CredentialsError # too many queries
         print '~'
@@ -85,16 +85,14 @@ class Establishment
   # @todo use yellow pages api?
   def reviews
     term = name.gsub(/ Inc\.?/i, '') # @todo check for other cleanup, e.g. "the"
-    begin
-      response = Yelp.reviews term: term, location: full_address
-      if response && response['name'] == term
-        response['reviews']
-      else
-        []
-      end
-    rescue
+    response = Yelp.reviews term: term, location: full_address
+    if response && response['name'] == term
+      response['reviews']
+    else
       []
     end
+  rescue
+    []
   end
 
 private

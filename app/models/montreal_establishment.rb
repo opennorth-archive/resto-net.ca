@@ -7,7 +7,7 @@ class MontrealEstablishment < Establishment
   key :address_fingerprint, String
   key :city_fingerprint, String
   key :fines_count, Integer
-  key :fines_total, Float # interoperable with Toronto
+  key :fines_total, Float
 
   many :montreal_inspections, dependent: :destroy
 
@@ -22,6 +22,10 @@ class MontrealEstablishment < Establishment
 
   def self.source
     'montreal'
+  end
+
+  def self.only_fines?
+    true
   end
 
   # @note doesn't update attributes on existing records

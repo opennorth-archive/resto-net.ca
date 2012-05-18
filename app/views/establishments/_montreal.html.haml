@@ -30,11 +30,11 @@
         = tweet_button t('.tweet_text', name: @establishment.name, address: @establishment.short_address, amount: number_to_currency(@establishment.fines_total)), 'data-size' => 'large'
 
       %h3=t '.inspections'
-      - last_year = nil
+      - previous = nil
       - @establishment.inspections.sort(:inspection_date.desc).group_by{|x| x.inspection_date.year}.each do |year,inspections|
-        - if last_year && last_year - 1 > year
+        - if previous && previous - 1 > year
           .ellipsis ⋮
-        - last_year = year
+        - previous = year
         %h4
           %span= year
         %ul.unstyled

@@ -6,7 +6,7 @@ class TorontoInspection < Inspection
   many :toronto_inspection_details
 
   validates_presence_of :dinesafe_id
-  validates_numericality_of :amount, allow_blank: true
+  validates_numericality_of :amount, allow_blank: true # has cents, can be zero
   validates_uniqueness_of :dinesafe_id
 
   scope :fined, where(:amount.gt => 0)

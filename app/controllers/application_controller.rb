@@ -11,13 +11,13 @@ class ApplicationController < ActionController::Base
       
   def requires_subdomain
     unless subdomains.include? request.subdomain
-      raise ActionController::RoutingError.new('Not Found') # @todo
+      raise ActionController::RoutingError.new('Not Found')
     end
   end
 
   # @todo update as more cities are added
   def subdomains
-    %w(edmonton gatineau montreal ottawa toronto vancouver)
+    %w(montreal toronto) # edmonton gatineau ottawa vancouver
   end
 
   def establishments

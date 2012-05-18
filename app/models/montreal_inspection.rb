@@ -1,7 +1,7 @@
 class MontrealInspection < Inspection
   key :description, String
   key :judgment_date, Date
-  key :amount, Float # interoperable with Toronto
+  key :amount, Float
 
   belongs_to :montreal_establishment
 

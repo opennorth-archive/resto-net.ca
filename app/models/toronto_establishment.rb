@@ -9,11 +9,11 @@ class TorontoEstablishment < Establishment
 
   many :toronto_inspections, dependent: :destroy
 
-  before_create :geocode
-
   validates_presence_of :address, :city, :establishment_type, :dinesafe_id, :minimum_inspections_per_year
   validates_numericality_of :minimum_inspections_per_year, only_integer: true, greater_than: 0, allow_blank: true
   validates_uniqueness_of :dinesafe_id
+
+  before_create :geocode
 
   def inspections
     toronto_inspections

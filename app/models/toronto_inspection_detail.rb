@@ -12,7 +12,7 @@ class TorontoInspectionDetail
   belongs_to :toronto_inspection
 
   validates_presence_of :dinesafe_id, :status
-  validates_presence_of :severity, :description, :action, unless: proc {|c| c.pass? || c.out_of_business?} 
+  validates_presence_of :severity, :description, :action, unless: -> {|c| c.pass? || c.out_of_business?}
   validates_numericality_of :amount, allow_blank: true # has cents, can be zero
   validates_inclusion_of :status, in: [
     'Closed',
@@ -29,13 +29,13 @@ class TorontoInspectionDetail
     'Order',
     'Closure Order',
     'Summons and Health Hazard Order',
-  ], unless: proc {|c| c.pass? || c.out_of_business?} , allow_blank: true
+  ], unless: -> {|c| c.pass? || c.out_of_business?} , allow_blank: true
   validates_inclusion_of :severity, in: [
     'C - Crucial',
     'S - Significant',
     'M - Minor',
     'NA - Not Applicable',
-  ], unless: proc {|c| c.pass? || c.out_of_business?} , allow_blank: true
+  ], unless: -> {|c| c.pass? || c.out_of_business?} , allow_blank: true
   validates_inclusion_of :court_outcome, in: [
     'Pending',
     'Conviction - Suspended Sentence',
@@ -43,7 +43,7 @@ class TorontoInspectionDetail
     'Conviction - Fined',
     'Charges Withdrawn',
     'Charges Quashed',
-  ], unless: proc {|c| c.pass? || c.out_of_business?}, allow_blank: true
+  ], unless: -> {|c| c.pass? || c.out_of_business?}, allow_blank: true
   validate :uniqueness_of_dinesafe_id
 
   after_create :increment_cache
