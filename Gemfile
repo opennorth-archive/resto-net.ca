@@ -14,12 +14,14 @@ gem 'rdiscount' # for haml-rails
 gem 'unicode_utils'
 gem 'tire'
 gem 'yajl-ruby' # for tire
-gem 'rdiscount'
 
-gem 'bson', '1.3.1'
-gem 'bson_ext', '1.3.1'
-gem 'mongo', '1.3.1'
-gem 'mongo_mapper', '0.9.2'
+# @note other developers may need to provide explicit versions, e.g.:
+# gem 'bson', '1.3.1'
+# gem 'bson_ext', '1.3.1'
+# gem 'mongo', '1.3.1'
+# gem 'mongo_mapper', '0.9.2'
+gem 'bson_ext'
+gem 'mongo_mapper'
 
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'

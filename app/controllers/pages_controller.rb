@@ -21,6 +21,15 @@ class PagesController < ApplicationController
     end
   end
 
+  def mapaq
+    @establishment = establishments.find params[:id]
+    # @todo split into a different action, add a "thankyou" action
+    if request.post? and params[:email]
+      CampaignMailer.mapaq(params[:email]).deliver
+      @message = params[:email][:message]
+    end
+  end
+
   def about
     render "about_#{I18n.locale}"
   end
@@ -31,24 +40,5 @@ class PagesController < ApplicationController
 
   def channel
     render layout: false
-  end
-
-  def mapaq_request
-    @establishment = MontrealEstablishment.find(params[:establishment_id]) if params[:establishment_id]
-    if params[:email]
-      MapaqMailer.mail(params[:email][:cc], params[:email][:message], params[:email][:subject], params[:email][:name])
-      @message = params[:email][:message]
-    end
-    render 'mapaq_request'
-  end
-
-private
-
-  def establishments
-    "#{request.subdomain.capitalize}Establishment".constantize
-  end
-
-  def inspections
-    "#{request.subdomain.capitalize}Inspection".constantize
   end
 end

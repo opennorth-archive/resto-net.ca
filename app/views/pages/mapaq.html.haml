@@ -1,0 +1,13 @@
+.band
+  .container
+    = form_for :email do |f|
+      = f.hidden_field :establishment_id, :value => @establishment.id
+      = f.label :cc, t('.your_email')
+      = f.text_field :cc
+      = f.label :name, t('.your_name')
+      = f.text_field :name
+      = f.label :subject,  t('.subject_label')
+      = f.text_field :subject, :value => t('.default_subject', establishment_name: @establishment.name)
+      = f.label :message
+      = f.text_area :message, :value => t('.message', establishment_name: @establishment.name, address: @establishment.address)
+      = f.submit t('.send')
