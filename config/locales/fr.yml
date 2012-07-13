@@ -141,7 +141,7 @@ fr:
       tweet_text_detail: "%{name} (%{address}) a été condamné à une amende de %{amount} le %{date}"
       tweet_related: nordouvert
       inspections: Historique d’inspections
-      inspection: Condamné à une amende de <strong>%{amount}</strong>, <strong>%{span}</strong> après l'infraction
+      inspection: Condamné <strong>%{span}</strong> après cette infraction à une amende de <strong>%{amount}</strong>
   inspections:
     index:
       title: ""

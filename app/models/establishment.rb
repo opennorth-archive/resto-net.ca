@@ -83,7 +83,7 @@ class Establishment
   end
 
   def reviews
-    term = name.gsub(/\bInc\b\.?/i, '').strip # @todo do more cleanup, e.g. "The"
+    term = name.gsub(/\bInc\b\.?/i, '').strip # @note can do more cleanup, e.g. "The"
     response = Yelp.reviews term: term, location: full_address
     if response && response['name'] == term
       response['reviews']

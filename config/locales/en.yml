@@ -141,7 +141,7 @@ en:
       tweet_text_detail: "%{name} (%{address}) was fined %{amount} on %{date}"
       tweet_related: opennorth
       inspections: Inspection History
-      inspection: Fined <strong>%{amount}</strong>, <strong>%{span}</strong> after the inspection
+      inspection: Fined <strong>%{span}</strong> after this inspection for <strong>%{amount}</strong>
   inspections:
     index:
       title: ""

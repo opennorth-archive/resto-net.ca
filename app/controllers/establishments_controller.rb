@@ -1,7 +1,7 @@
 class EstablishmentsController < ApplicationController
   before_filter :requires_subdomain
   caches_page :show
-  caches_action :index, :cache_path => -> { params.slice :q }
+  caches_action :index, :cache_path => ->(c) { params.slice :q }
 
   respond_to :html, :json, :xml
 
