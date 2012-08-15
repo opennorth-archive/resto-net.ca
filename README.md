@@ -30,3 +30,9 @@ Resto-Net depends on [MongoDB](http://www.mongodb.org/) and [ElasticSearch](http
     heroku addons:add releases:basic
     heroku addons:add cron:daily
     heroku addons:add logging:expanded
+
+## Bugs? Questions?
+
+This app's main repository is on GitHub: [http://github.com/opennorth/resto-net.ca](http://github.com/opennorth/resto-net.ca), where your contributions, forks, bug reports, feature requests, and feedback are greatly welcomed.
+
+Copyright (c) 2012 Open North Inc., released under the MIT license
