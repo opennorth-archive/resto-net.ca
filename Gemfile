@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '1.9.3'
 
 gem 'rails', '3.2.1'
 
@@ -23,7 +24,6 @@ gem 'bson_ext'
 gem 'mongo_mapper'
 
 group :development, :test do
-  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'rspec-rails', '~> 2.6'
 end
 
