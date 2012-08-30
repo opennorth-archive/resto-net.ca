@@ -1,7 +1,9 @@
 class EstablishmentsController < ApplicationController
   before_filter :requires_subdomain
   caches_page :show
-  caches_action :index, :cache_path => ->(c) { params.slice :q }
+  caches_action :index, cache_path: ->(c) do
+    params.slice :q # @todo http://broadcastingadam.com/2012/07/advanced_caching_part_1-caching_strategies/
+ end
 
   respond_to :html, :json, :xml
 

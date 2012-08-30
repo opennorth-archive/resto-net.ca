@@ -9,6 +9,8 @@ class TorontoInspection < Inspection
   validates_numericality_of :amount, allow_blank: true # has cents, can be zero
   validates_uniqueness_of :dinesafe_id
 
+  ensure_index [[:dinesafe_id, 1]], unique: true
+
   scope :fined, where(:amount.gt => 0)
 
   def establishment

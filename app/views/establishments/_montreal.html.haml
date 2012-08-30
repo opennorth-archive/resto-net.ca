@@ -6,18 +6,18 @@
 /    :date => l(@establishment.montreal_inspections.first.judgment_date))
 
 .container
-  #banner
-    .row
-      .span12
-        %h2=t '.banner_header'
-    .row
-      .span8
-        %p=t '.banner_body'
-        %p
-          %strong=t '.banner_call_to_action'
-      .span4
-        = link_to t('.banner_button'), "/mapaq_request/#{@establishment.id}"
-  .row
+  /#banner
+  /  .row
+  /    .span12
+  /      %h2=t '.banner_header'
+  /  .row
+  /    .span8
+  /      %p=t '.banner_body'
+  /      %p
+  /        %strong=t '.banner_call_to_action'
+  /    .span4
+  /      = link_to t('.banner_button'), "/mapaq_request/#{@establishment.id}"
+  #establishment.row
     .span8
       %h2
         = @establishment.name

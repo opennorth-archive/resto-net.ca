@@ -13,6 +13,8 @@ class TorontoEstablishment < Establishment
   validates_numericality_of :minimum_inspections_per_year, only_integer: true, greater_than: 0, allow_blank: true
   validates_uniqueness_of :dinesafe_id
 
+  ensure_index [[:dinesafe_id, 1]], unique: true
+
   before_create :geocode
 
   def inspections

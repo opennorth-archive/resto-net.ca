@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   def set_locale
-    I18n.locale = params[:locale] || cookies[:locale] || :en
+    I18n.locale = params[:locale] || cookies[:locale] || I18n.default_locale
     cookies[:locale] = I18n.locale unless cookies[:locale] == I18n.locale
   end
       

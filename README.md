@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/opennorth/resto-net.png)](https://gemnasium.com/opennorth/resto-net)
+
 # Dependencies
 
 Resto-Net depends on [MongoDB](http://www.mongodb.org/) and [ElasticSearch](http://www.elasticsearch.org/).
