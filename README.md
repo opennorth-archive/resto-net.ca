@@ -32,6 +32,7 @@ Resto-Net depends on [MongoDB](http://www.mongodb.org/) and [ElasticSearch](http
     heroku addons:add releases:basic
     heroku addons:add cron:daily
     heroku addons:add logging:expanded
+    heroku config:add SECRET_TOKEN=`bundle exec rake secret`
 
 ## Bugs? Questions?
 
