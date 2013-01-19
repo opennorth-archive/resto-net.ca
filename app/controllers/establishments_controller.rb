@@ -7,6 +7,7 @@ class EstablishmentsController < ApplicationController
 
   respond_to :html, :json, :xml
 
+  # @todo implement geospatial and fulltext search
   def index
     case params[:order]
     when 'fines_count', 'fines_total'
@@ -19,11 +20,6 @@ class EstablishmentsController < ApplicationController
     @establishments = establishments.sort(@attribute.send(@direction)).limit(50)
     @maximum = @establishments.first[@attribute].to_i
     respond_with @establishments
-
-    # @todo search
-    #q = params[:search]
-    #s = Tire.search 'establishments' do query { string q } end
-    #@establishments = s.results.select { |e| e.source.downcase == request.subdomain }
   end
 
   def show
