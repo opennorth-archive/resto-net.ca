@@ -1,4 +1,4 @@
-[![Dependency Status](https://gemnasium.com/opennorth/resto-net.png)](https://gemnasium.com/opennorth/resto-net)
+[![Dependency Status](https://gemnasium.com/opennorth/resto-net.ca.png)](https://gemnasium.com/opennorth/resto-net.ca)
 
 # Dependencies
 
