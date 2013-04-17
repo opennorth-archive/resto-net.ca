@@ -100,8 +100,8 @@ module ApplicationHelper
         lng:    establishment.longitude,
         count:  establishment.fines_count,
         total:  number_to_currency(establishment.fines_total),
-        date:   l(inspection.inspection_date),
-        amount: number_to_currency(inspection.amount),
+        date:   inspection && l(inspection.inspection_date),
+        amount: inspection && number_to_currency(inspection.amount),
         icon:   '%02d' % establishment.fines_count, # JavaScript doesn't have sprintf
       }
     end.to_json

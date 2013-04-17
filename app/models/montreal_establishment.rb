@@ -6,8 +6,8 @@ class MontrealEstablishment < Establishment
   key :name_fingerprint, String
   key :address_fingerprint, String
   key :city_fingerprint, String
-  key :fines_count, Integer
-  key :fines_total, Float
+  key :fines_count, Integer, default: 0
+  key :fines_total, Float, default: 0
 
   many :montreal_inspections, dependent: :destroy
 

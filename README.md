@@ -6,11 +6,12 @@ Resto-Net depends on [MongoDB](http://www.mongodb.org/) and [ElasticSearch](http
 
 # Getting Started
 
-    git clone git://github.com/opennorth/resto-net-national.git
-    cd resto-net-national
+    git clone git://github.com/opennorth/resto-net.ca.git
+    cd resto-net.ca
+    mkdir data
     bundle
     bundle exec rake db:setup
-    bundle exec rake data:montreal:import
+    bundle exec rake data:montreal:update
     bundle exec rake data:toronto:update
     bundle exec rake data:vancouver:import
 

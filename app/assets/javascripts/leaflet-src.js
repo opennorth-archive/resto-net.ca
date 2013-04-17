@@ -2096,8 +2096,8 @@ L.ImageOverlay = L.Class.extend({
 
 
 L.Icon = L.Class.extend({
-	iconUrl: L.ROOT_URL + 'images/marker.png',
-	shadowUrl: L.ROOT_URL + 'images/marker-shadow.png',
+	iconUrl: L.ROOT_URL + 'marker.png',
+	shadowUrl: L.ROOT_URL + 'marker-shadow.png',
 
 	iconSize: new L.Point(25, 41),
 	shadowSize: new L.Point(41, 41),

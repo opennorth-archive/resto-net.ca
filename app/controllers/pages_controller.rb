@@ -16,8 +16,8 @@ class PagesController < ApplicationController
       @fines_count    = establishments.sort(:fines_count.desc).limit(10)
       @fines_total    = establishments.sort(:fines_total.desc).limit(10)
       # To scale the small bar graphs.
-      @max_fine_count = @fines_count.first.fines_count
-      @max_fine_total = @fines_total.first.fines_total.to_i
+      @max_fine_count = @fines_count.first.try(:fines_count)
+      @max_fine_total = @fines_total.first.try(:fines_total).try(:to_i)
     end
   end
 

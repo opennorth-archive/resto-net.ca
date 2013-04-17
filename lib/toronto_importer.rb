@@ -9,7 +9,7 @@ class TorontoImporter
   def self.import
     self.download
     log 'Opening dinesafe.xml'
-    Nokogiri::XML(open(File.join(Rails.root, 'data', 'dinesafe.xml')).read, nil, 'utf-8').css('ROW').each do |row|
+    Nokogiri::XML(File.open(filepath).read, nil, 'utf-8').css('ROW').each do |row|
       establishment_attributes = {
         :name => get_name(row.at_css('ESTABLISHMENT_NAME').text),
         :address => row.at_css('ESTABLISHMENT_ADDRESS').text.strip,
@@ -43,8 +43,8 @@ class TorontoImporter
   end
 
   def self.download
-     File.open File.join(Rails.root, 'data', 'dinesafe.zip'), 'wb' do |f|
-       f.write open(URI.encode 'http://opendata.toronto.ca/public.health/dinesafe/dinesafe.zip').read
+     File.open(File.join(Rails.root, 'data', 'dinesafe.zip'), 'wb') do |f|
+       f.write open(URI.encode('http://opendata.toronto.ca/public.health/dinesafe/dinesafe.zip')).read
      end
      unzip File.join(Rails.root, 'data', 'dinesafe.zip'), File.join(Rails.root, 'data')
   end
@@ -64,7 +64,7 @@ private
   end
 
   def self.filepath
-    File.join Rails.root, 'data', 'dinesafe.xml'
+    File.join(Rails.root, 'data', 'dinesafe.xml')
   end
 
   def self.get_name(name)

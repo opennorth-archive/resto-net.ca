@@ -28,6 +28,11 @@ namespace :data do
       TorontoImporter.download
     end
 
+    desc 'Import all data'
+    task import: :environment do
+      TorontoImporter.import
+    end
+
     desc 'Download XML and import all data'
     task update: :environment do
       TorontoImporter.download
@@ -46,21 +51,18 @@ namespace :data do
 
     desc 'Download XML'
     task download: :environment do
-      (2007..Date.today.year).each do |year|
-        MontrealImporter.new(year).download!
-      end
+      MontrealImporter.download
     end
 
     desc 'Import all data'
     task import: :environment do
-      (2007..Date.today.year).each do |year|
-        MontrealImporter.new(year).scan
-      end
+      MontrealImporter.import
     end
 
-    desc 'Update data'
+    desc 'Download XML and import all data'
     task update: :environment do
-      MontrealImporter.new(Date.today.year).scan(:remote)
+      MontrealImporter.download
+      MontrealImporter.import
     end
 
     desc 'Find untranslated strings'

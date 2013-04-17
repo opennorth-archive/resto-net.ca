@@ -4,16 +4,12 @@ require 'open-uri'
 require 'unicode_utils/titlecase'
 
 class MontrealImporter
-  def initialize(year = nil)
-    I18n.locale = :fr
-    @year = year || Date.today.year
-  end
+  I18n.locale = :fr
 
-  def scan(source = nil)
+  def self.import
     latest_judgment_date = MontrealInspection.first(order: 'judgment_date DESC').judgment_date rescue Date.new(2007, 1, 1)
 
-    puts "Importing infractions for #{@year}"
-    Nokogiri::XML(content(source), nil, 'utf-8').xpath('//contrevenant').each do |xml|
+    Nokogiri::XML(File.open(filepath).read, nil, 'iso-8859-1').xpath('//contrevenant').each do |xml|
       establishment = MontrealEstablishment.find_or_create_by_name_and_address_and_city(
         get_name(xml, 'etablissement'),
         xml.at_xpath('adresse').text.strip,
@@ -35,46 +31,24 @@ class MontrealImporter
     puts 'Done'
   end
 
-  def download
-    if downloaded?
-      puts "Skipping #{filename}"
-    else
-      download!
-    end
-  end
-
-  def download!
-    FileUtils.mkdir_p File.join(Rails.root, 'data')
-    puts "Downloading #{filename}"
-    File.open filename, 'wb' do |f|
-      f.write content(:remote)
+  def self.download
+    File.open(filepath, 'wb') do |f|
+      f.write open(URI.encode('http://depot.ville.montreal.qc.ca/inspection-aliments-contrevenants/data.xml')).read
     end
   end
 
 private
 
-  def filename
-    File.join Rails.root, 'data', "#{@year}.xml"
-  end
-
-  def downloaded?
-    File.exists? filename
-  end
-
-  def content(source = nil)
-    if source.nil? && downloaded? || source == :local
-      File.read filename
-    else
-      open("http://ville.montreal.qc.ca/pls/portal/portalcon.contrevenants_recherche?p_mot_recherche=,tous,#{@year}").read
-    end
+  def self.filepath
+    File.join(Rails.root, 'data', 'data.xml')
   end
 
   # Names are originally in all caps.
-  def get_name(xml, xpath)
+  def self.get_name(xml, xpath)
     UnicodeUtils.titlecase(xml.at_xpath(xpath).text.gsub(/&amp;/, '&'), :fr).gsub("'S", "'s").strip
   end
 
-  def get_date(xml, xpath)
+  def self.get_date(xml, xpath)
     parts = xml.at_xpath(xpath).text.match /\A(\d+) (\p{L}+) (\d+)\z/
     Date.civil parts[3].to_i, I18n.t('date.month_names').index(parts[2]), parts[1].to_i
   end

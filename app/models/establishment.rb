@@ -68,13 +68,13 @@ class Establishment
     if geocodeable?
       begin
         location = Geocoder.locate "#{address}, #{city}"
-        print '.'
+        print ','
         %w(latitude longitude street region locality country postal_code).each do |attribute|
           self[attribute] = location.send attribute
         end
       rescue Graticule::CredentialsError # too many queries
+        Rails.logger.warn "Geocoding throttle for '#{name}' at '#{address}, #{city}': #{$!.message}"
         print '~'
-        retry
       rescue
         Rails.logger.warn "Geocoding error for '#{name}' at '#{address}, #{city}': #{$!.message}"
         print '!'
